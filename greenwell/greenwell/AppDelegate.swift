@@ -25,7 +25,53 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
-
+    
+    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+        let configuration = PropertiesManager.sharedInstance.configuration
+        let bluemixAppRoute = configuration["bluemixAppRoute"] as! String
+        let backendGuid = configuration["backendGuid"] as! String
+        // Initialize the Mobile First SDK with IBM Bluemix GUID and route
+        IMFClient.sharedInstance().initializeWithBackendRoute(bluemixAppRoute, backendGUID: backendGuid)
+        let push = IMFPushClient.sharedInstance()
+        print("-> Register device token to Mobile First Push for iOS8 Service \(IMFPush.version())");
+        push.registerDeviceToken(deviceToken, completionHandler: { (response, error) -> Void in
+            if error != nil {
+                print("-> Error during device registration to Mobile First Push for iOS8 Service \(error.description)")
+            }
+            else {
+                print("-> Response after device registration (json): \(response.responseJson.description)")
+                // Subscribe to tages to be notified of new publication in categories loan, insurance, investment and stockmarket
+//                push.subscribeToTags(["category:MACM Default Application:MACM:loan", "category:MACM Default Application:MACM:insurance", "category:MACM Default Application:MACM:investment", "category:MACM Default Application:MACM:stockmarket"], completionHandler: { (response, error) -> Void in
+//                    if error != nil {
+//                        print("-> Error during device subscription to tags \(error.description)")
+//                    } else {
+//                        print("-> Response after device subscription to tags (json): \(response.responseJson.description)")
+//                    }
+//                })
+            }
+        })
+    }
+    
+    func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
+        print("-> Application failed to register for remote notifications: \(error)")
+    }
+    
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject], fetchCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
+        print("DEBUG");
+        let contentAPS = userInfo["aps"] as! [NSObject : AnyObject]
+        if let contentAvailable = contentAPS["content-available"] as? Int {
+            //silent or mixed push
+            if contentAvailable == 1 {
+                completionHandler(UIBackgroundFetchResult.NewData)
+            } else {
+                completionHandler(UIBackgroundFetchResult.NoData)
+            }
+        } else {
+            //Default notification
+            completionHandler(UIBackgroundFetchResult.NoData)
+        }
+    }
+    
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

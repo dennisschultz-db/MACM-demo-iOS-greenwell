@@ -6,8 +6,13 @@ platform :ios, '8.0'
 
 target 'greenwell' do
     
+    pod 'IMFCore'
+    pod 'IMFPush' 
+    
+    pod 'CAASObjC', :git => 'https://github.com/digexp/MACM-SDK-iOS.git'
+
     # uncomment the following line to link the demo with the lastest version of the SDK, assuming that the MACM instance is compatible with this SDK
-    pod 'CAASObjC', :git => 'git@gitlabhost.rtp.raleigh.ibm.com:MACMTeam/MACM-SDK-iOS.git', :branch => 'xcode7'
+    #pod 'CAASObjC', :git => 'git@gitlabhost.rtp.raleigh.ibm.com:MACMTeam/MACM-SDK-iOS.git', :branch => 'xcode7'
 
     # use this git commit of the SDK in the demo to acces the MACM instance : "http://macm-pre-cf05.rtp.raleigh.ibm.com:10039"
     #pod 'CAASObjC', :git => 'git@github.rtp.raleigh.ibm.com:caas/ios_sdk.git', :commit => '38f64c9fb76ef53ab380791bf9207d40afe5fd0d'

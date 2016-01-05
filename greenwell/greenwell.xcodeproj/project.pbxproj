@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6F6F562902D54BCE24D5774F /* Pods_greenwell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE99BBA59E87928A28198128 /* Pods_greenwell.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		E4198ACB1B8F17360095E5B9 /* BeaconsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4198ACA1B8F17360095E5B9 /* BeaconsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		6F6F562902D54BCE24D5774F /* Pods_greenwell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE99BBA59E87928A28198128 /* Pods_greenwell.framework */; };
+		951D79F01C28AECF002936A0 /* PropertiesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951D79EF1C28AECF002936A0 /* PropertiesManager.swift */; };
+		951D79F21C28AEDE002936A0 /* greenwell.plist in Resources */ = {isa = PBXBuildFile; fileRef = 951D79F11C28AEDE002936A0 /* greenwell.plist */; };
+		E4198ACB1B8F17360095E5B9 /* BeaconsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4198ACA1B8F17360095E5B9 /* BeaconsViewController.swift */; };
 		E41E86621AEE544B000EAC50 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E41E86611AEE544B000EAC50 /* Localizable.strings */; };
 		E422CE4E1B84B60400971C7F /* MyAccountsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E422CE4D1B84B60400971C7F /* MyAccountsCollectionViewCell.swift */; };
 		E422CE501B84B6C700971C7F /* AnimatedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E422CE4F1B84B6C700971C7F /* AnimatedLabel.swift */; };
@@ -35,13 +37,15 @@
 		E47ED2101B87592900718A88 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47ED20F1B87592900718A88 /* DetailCell.swift */; };
 		E47ED2121B877E8A00718A88 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47ED2111B877E8A00718A88 /* SettingsViewController.swift */; };
 		E47F6F1F1ACD4C1100DCEDA2 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47F6F1E1ACD4C1100DCEDA2 /* Util.swift */; };
-		E48D27A21B8DD79200397050 /* BeaconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48D27A11B8DD79200397050 /* BeaconManager.swift */; settings = {ASSET_TAGS = (); }; };
+		E48D27A21B8DD79200397050 /* BeaconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48D27A11B8DD79200397050 /* BeaconManager.swift */; };
 		E48D27A41B8E09C700397050 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48D27A31B8E09C700397050 /* CoreLocation.framework */; };
 		E4963A6F1AD7F25700F271CD /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4963A6E1AD7F25700F271CD /* AccountCell.swift */; };
-		E49C8CD01B8F36D4005BC49D /* BeaconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49C8CCF1B8F36D4005BC49D /* BeaconCell.swift */; settings = {ASSET_TAGS = (); }; };
-		E49C8CD21B8F5DCE005BC49D /* BeaconDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49C8CD11B8F5DCE005BC49D /* BeaconDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E49C8CD01B8F36D4005BC49D /* BeaconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49C8CCF1B8F36D4005BC49D /* BeaconCell.swift */; };
+		E49C8CD21B8F5DCE005BC49D /* BeaconDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49C8CD11B8F5DCE005BC49D /* BeaconDetailViewController.swift */; };
 		E4C16DFB1B8B3DDF00C5B9AA /* ServerSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C16DFA1B8B3DDF00C5B9AA /* ServerSettingsViewController.swift */; };
 		E4CAB4A21B7B67FF000CCC66 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CAB4A11B7B67FF000CCC66 /* HeaderCollectionReusableView.swift */; };
+		E4D02A1D1BD92E7900B2AC9D /* .localized in Resources */ = {isa = PBXBuildFile; fileRef = E4D029CF1BD92E7900B2AC9D /* .localized */; };
+		E4D02A641BD92EA200B2AC9D /* appicon.png in Resources */ = {isa = PBXBuildFile; fileRef = E4D02A631BD92EA200B2AC9D /* appicon.png */; };
 		E4D2BB621B83610B00EEDCBA /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D2BB611B83610B00EEDCBA /* NavigationViewController.swift */; };
 		E4D2BB641B8376B100EEDCBA /* FiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D2BB631B8376B100EEDCBA /* FiltersViewController.swift */; };
 /* End PBXBuildFile section */
@@ -58,6 +62,8 @@
 
 /* Begin PBXFileReference section */
 		76353C17C219E6A0898F2EB0 /* Pods-greenwell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-greenwell.release.xcconfig"; path = "Pods/Target Support Files/Pods-greenwell/Pods-greenwell.release.xcconfig"; sourceTree = "<group>"; };
+		951D79EF1C28AECF002936A0 /* PropertiesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertiesManager.swift; sourceTree = "<group>"; };
+		951D79F11C28AEDE002936A0 /* greenwell.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = greenwell.plist; sourceTree = "<group>"; };
 		CE99BBA59E87928A28198128 /* Pods_greenwell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_greenwell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4198ACA1B8F17360095E5B9 /* BeaconsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconsViewController.swift; sourceTree = "<group>"; };
 		E41E86611AEE544B000EAC50 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -97,6 +103,8 @@
 		E49C8CD11B8F5DCE005BC49D /* BeaconDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconDetailViewController.swift; sourceTree = "<group>"; };
 		E4C16DFA1B8B3DDF00C5B9AA /* ServerSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerSettingsViewController.swift; sourceTree = "<group>"; };
 		E4CAB4A11B7B67FF000CCC66 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		E4D029CF1BD92E7900B2AC9D /* .localized */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .localized; sourceTree = "<group>"; };
+		E4D02A631BD92EA200B2AC9D /* appicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon.png; sourceTree = "<group>"; };
 		E4D2BB611B83610B00EEDCBA /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		E4D2BB631B8376B100EEDCBA /* FiltersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersViewController.swift; sourceTree = "<group>"; };
 		FD3F82D80F3DF165F2A70717 /* Pods-greenwell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-greenwell.debug.xcconfig"; path = "Pods/Target Support Files/Pods-greenwell/Pods-greenwell.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +130,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		951D79EA1C28ADCE002936A0 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				951D79F11C28AEDE002936A0 /* greenwell.plist */,
+				951D79EF1C28AECF002936A0 /* PropertiesManager.swift */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
 		CE92446A9499442A1815BE80 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +181,9 @@
 		E423CF321ABCAB0400CA1935 /* greenwell */ = {
 			isa = PBXGroup;
 			children = (
+				951D79EA1C28ADCE002936A0 /* Configuration */,
+				E4D029CE1BD92E7900B2AC9D /* Desktop */,
+				E4D02A631BD92EA200B2AC9D /* appicon.png */,
 				E423CF561ABCAB4D00CA1935 /* caas */,
 				E422CE4C1B84B1B400971C7F /* custom controls */,
 				E43A41721B6FB91B00CD34F4 /* new UI */,
@@ -242,6 +262,15 @@
 			name = "new UI";
 			sourceTree = "<group>";
 		};
+		E4D029CE1BD92E7900B2AC9D /* Desktop */ = {
+			isa = PBXGroup;
+			children = (
+				E4D029CF1BD92E7900B2AC9D /* .localized */,
+			);
+			name = Desktop;
+			path = ../../../../../../Desktop;
+			sourceTree = "<group>";
+		};
 		EF1C6643967D2D716C2DC05C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -304,7 +333,7 @@
 				TargetAttributes = {
 					E423CF2F1ABCAB0400CA1935 = {
 						CreatedOnToolsVersion = 6.3;
-						DevelopmentTeam = 67DBV735VF;
+						DevelopmentTeam = DS966V8F2D;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -346,10 +375,13 @@
 			files = (
 				E464D29E1ABCB06000E80FBE /* LaunchScreen.xib in Resources */,
 				E464D29D1ABCB06000E80FBE /* Images.xcassets in Resources */,
+				E4D02A641BD92EA200B2AC9D /* appicon.png in Resources */,
 				E464D2951ABCB06000E80FBE /* legal.rtf in Resources */,
 				E41E86621AEE544B000EAC50 /* Localizable.strings in Resources */,
 				E43A41741B6FB93E00CD34F4 /* main.storyboard in Resources */,
+				951D79F21C28AEDE002936A0 /* greenwell.plist in Resources */,
 				E464D2941ABCB06000E80FBE /* privacy.rtf in Resources */,
+				E4D02A1D1BD92E7900B2AC9D /* .localized in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +452,7 @@
 				E43A41761B7205E900CD34F4 /* InitialViewController.swift in Sources */,
 				E450B7FC1B821118001FC27A /* ArticleItem.swift in Sources */,
 				E442456E1B7A1F9700C261C9 /* OfferDetailsViewController.swift in Sources */,
+				951D79F01C28AECF002936A0 /* PropertiesManager.swift in Sources */,
 				E44245741B7A455800C261C9 /* CustomView.swift in Sources */,
 				E4D2BB621B83610B00EEDCBA /* NavigationViewController.swift in Sources */,
 				E4732FB21B8606BA00CF7AB4 /* AccountsTableViewController.swift in Sources */,
@@ -482,7 +515,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -504,7 +537,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "7e1024e3-caaf-4e43-ae2a-e1c4f7644833";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -528,7 +561,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -542,7 +575,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "7e1024e3-caaf-4e43-ae2a-e1c4f7644833";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -569,7 +602,19 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.$(PRODUCT_NAME)Banking";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"stdc++.6\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CAASObjC\"",
+					"-framework",
+					"\"IMFCore\"",
+					"-framework",
+					"\"IMFPush\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.GreenwellNative;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -596,7 +641,19 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.$(PRODUCT_NAME)Banking";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"stdc++.6\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CAASObjC\"",
+					"-framework",
+					"\"IMFCore\"",
+					"-framework",
+					"\"IMFPush\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.GreenwellNative;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

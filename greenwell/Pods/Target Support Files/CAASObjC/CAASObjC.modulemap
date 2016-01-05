@@ -1,0 +1,6 @@
+framework module CAASObjC {
+  umbrella header "CAASObjC-umbrella.h"
+
+  export *
+  module * { export * }
+}

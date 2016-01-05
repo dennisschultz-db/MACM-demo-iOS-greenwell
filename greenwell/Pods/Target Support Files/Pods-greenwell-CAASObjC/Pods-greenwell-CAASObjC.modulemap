@@ -1,6 +1,0 @@
-framework module CAASObjC {
-  umbrella header "Pods-greenwell-CAASObjC-umbrella.h"
-
-  export *
-  module * { export * }
-}

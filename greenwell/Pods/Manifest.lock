@@ -1,21 +1,26 @@
 PODS:
   - CAASObjC (1.0.0)
+  - IMFCore (1.0.11)
+  - IMFPush (1.0.0):
+    - IMFCore (~> 1.0.0)
 
 DEPENDENCIES:
-  - CAASObjC (from `git@gitlabhost.rtp.raleigh.ibm.com:MACMTeam/MACM-SDK-iOS.git`,
-    branch `xcode7`)
+  - CAASObjC (from `https://github.com/digexp/MACM-SDK-iOS.git`)
+  - IMFCore
+  - IMFPush
 
 EXTERNAL SOURCES:
   CAASObjC:
-    :branch: xcode7
-    :git: git@gitlabhost.rtp.raleigh.ibm.com:MACMTeam/MACM-SDK-iOS.git
+    :git: https://github.com/digexp/MACM-SDK-iOS.git
 
 CHECKOUT OPTIONS:
   CAASObjC:
-    :commit: 9facc3d7cbfe2016fb1d0c229278098928671d90
-    :git: git@gitlabhost.rtp.raleigh.ibm.com:MACMTeam/MACM-SDK-iOS.git
+    :commit: 3be39bd91e1026764007062fcb959db42b2d1a06
+    :git: https://github.com/digexp/MACM-SDK-iOS.git
 
 SPEC CHECKSUMS:
   CAASObjC: f07c5813bc3a2ffa6d774c11c4ec02c79af81502
+  IMFCore: 6a28c4a777819b9f957bf8c2644e3ebf72f2ccb6
+  IMFPush: 40412a5cc2b4cd9e6db9034d58d0eaa16f0d0f58
 
-COCOAPODS: 0.37.1
+COCOAPODS: 0.39.0

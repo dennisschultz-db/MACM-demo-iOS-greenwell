@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "24837971335B8946F29670845611DE5A3679B532",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "9696D0F4D62639AACF91B202970AC6131CB2AD3F" : 0,
+    "147B1674D6A0B9E0A1A4F5983C20851953D84064" : 0,
+    "24837971335B8946F29670845611DE5A3679B532" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A4606C5E-4AE6-45CC-8905-BFB055D98B29",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "9696D0F4D62639AACF91B202970AC6131CB2AD3F" : "ios_sdk",
+    "147B1674D6A0B9E0A1A4F5983C20851953D84064" : "greenwell-native-demo-ios",
+    "24837971335B8946F29670845611DE5A3679B532" : "MACM-demo-iOS-greenwell\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "greenwell",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "greenwell\/greenwell.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/github.rtp.raleigh.ibm.com\/caas\/greenwell-native-demo-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "147B1674D6A0B9E0A1A4F5983C20851953D84064"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/dschultz-mo\/MACM-demo-iOS-greenwell.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "24837971335B8946F29670845611DE5A3679B532"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.rtp.raleigh.ibm.com:caas\/ios_sdk.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9696D0F4D62639AACF91B202970AC6131CB2AD3F"
+    }
+  ]
+}

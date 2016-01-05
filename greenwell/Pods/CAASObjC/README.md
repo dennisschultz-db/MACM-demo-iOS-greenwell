@@ -1,13 +1,13 @@
 # MACM iOS SDK
 
-CAASObjC is an API written in Objective-C to access a MACM (Mobile Application Content Manager)server.
+CAASObjC is an API written in Objective-C to access a MACM (Mobile Application Content Manager) server and fetch content from it.
 
 ## Requirements
 
 - iOS 8.0+
-- XCode 7.0 latest beta
+- XCode 7.x
 
-## Install CocoaPods
+##<a name="cocoaInstall"></a> Install CocoaPods
 
 You need [CocoaPods](http://cocoapods.org) to install CAASObjC. To install CocoaPods, run the following command:
 ```
@@ -22,22 +22,18 @@ The repository comes with a sample, the CAASExample project. To run this sample,
 ```
 git clone https://github.com/digexp/MACM-SDK-iOS.git 
 ```
-- Specify the tenant in AppDelegate.swift around line 57
-```objective-c
-caasService = CAASService(baseURL: NSURL(string: "https://macmbeta.com")!,contextRoot:"wps",tenant:"YOUR TENANT")
-```
 - Install the pods
 ```
 pod install
 ```
-
-
-## Using in your project
-
-You need [CocoaPods](http://cocoapods.org) to install CAASObjC. To install CocoaPods, run the following command:
+- Specify the tenant in AppDelegate.swift line 41 (the sample won't compile without specifying the tenant):
+```Swift
+let tenant:String = "PUT YOUR TENANT ID HERE !!!!!"
 ```
-sudo gem install cocoapods 
-```
+
+## Using it for your own application
+
+You need [CocoaPods](http://cocoapods.org) to install CAASObjC. See [Install CocoaPods](#cocoaInstall) section for details.
 
 You then need to create a `Podfile` in the directory of your project file. Run the command:
 ```
@@ -47,7 +43,7 @@ pod init
 To install CAASObjC add the following line to your Podfile:
 
 ```ruby
-pod 'CAASObjC', :git => 'https://github.com/digexp/MACM-SDK-iOS.git', :branch => 'xcode7'
+pod 'CAASObjC', :git => 'https://github.com/digexp/MACM-SDK-iOS.git'
 ```
 
 If you want to use CAASObjC in a Swift application you must add the following line in your Podfile:
@@ -73,21 +69,21 @@ end
 
 ### Authentication
 
-There are 2 ways to authenticate adressing two different use cases:
+There are 2 ways to authenticate addressing two different use cases:
 
 #### Authentication with the credentials of the application
 
-- The username and password are harcoded in the application: The following initializer should be used:
+- The username and password are hard-coded in the application: The following initializer should be used:
 
 ```objective-c
-CAASService *caasService = [[CAASService alloc] initWithBaseURL:[NSURL URLWithString:@"http://macm.com"] contextRoot:@"myContext" tenant:@"myTenant" username:@"admin" password:@"foobar"];
+CAASService *caasService = [[CAASService alloc] initWithBaseURL:[NSURL URLWithString:@"https://macm-rendering.saas.ibmcloud.com"] contextRoot:@"wps" tenant:@"myTenant" username:@"admin" password:@"foobar"];
 ```
 
 #### Authentication with the credentials of the end user
 
 - The users must sign in against a MACM server with their own credentials: The following initializer must be used:
 ```objective-c
-CAASService *caasService = [[CAASService alloc] initWithBaseURL:[NSURL URLWithString::@"http://macm.com"] contextRoot:@"myContext" tenant:@"myTenant"];
+CAASService *caasService = [[CAASService alloc] initWithBaseURL:[NSURL URLWithString::@"https://macm-rendering.saas.ibmcloud.com"] contextRoot:@"wps" tenant:@"myTenant"];
 ```
 When the user provides its credentials, the following API checks these credentials against the MACM server:
 ```objective-c
@@ -106,7 +102,7 @@ When the user provides its credentials, the following API checks these credentia
 #### Querying a list of content items by path
 
 ```objective-c
-CAASContentItemsRequest *request = [[CAASContentItemsRequest alloc] initWithContentPath:@"libraryName/path" completionBlock:^(CAASContentItemsResult *requestResult) {
+CAASContentItemsRequest *request = [[CAASContentItemsRequest alloc] initWithContentPath:@"Samples/Content Types/Book" completionBlock:^(CAASContentItemsResult *requestResult) {
 
     if (requestResult.httpStatusCode == 200) {
     }
@@ -114,7 +110,7 @@ CAASContentItemsRequest *request = [[CAASContentItemsRequest alloc] initWithCont
 
 }];
 
-request.properties = @[@"id",@"title",@"keywords"];
+request.properties = @[CAASProperty.OID,CAASProperty.TITLE,CAASProperty.KEYWORDS];
 request.elements = @[@"author",@"cover",@"isbn",@"price",@"publish_date"];
 [self.caasService executeRequest:request];
 ```
@@ -131,7 +127,7 @@ CAASContentItemsRequest *request = [[CAASContentItemsRequest alloc] initWithOid:
 
 [self.caasService executeRequest:request];
 
-request.properties = @[@"id",@"title",@"keywords"];
+request.properties = @[CAASProperty.OID,CAASProperty.TITLE,CAASProperty.KEYWORDS];
 request.elements = @[@"author",@"cover",@"isbn",@"price",@"publish_date"];
 [self.caasService executeRequest:request];
 ```
@@ -139,7 +135,7 @@ request.elements = @[@"author",@"cover",@"isbn",@"price",@"publish_date"];
 #### Querying a single content item by path
 
 ```objective-c
-CAASContentItemRequest *request = [[CAASContentItemRequest alloc] initWithContentPath:@"myLibrary/myContentType/myObject"completionBlock:^(CAASContentItemResult *requestResult) {
+CAASContentItemRequest *request = [[CAASContentItemRequest alloc] initWithContentPath:@"Samples/some/content item path"completionBlock:^(CAASContentItemResult *requestResult) {
 
 
     if (requestResult.httpStatusCode == 200) {
@@ -148,7 +144,7 @@ CAASContentItemRequest *request = [[CAASContentItemRequest alloc] initWithConten
 
 }];
 
-request.properties = @[@"id",@"title",@"keywords"];
+request.properties = @[CAASProperty.OID,CAASProperty.TITLE,CAASProperty.KEYWORDS];
 request.elements = @[@"author",@"cover",@"isbn",@"price",@"publish_date"];
 [caasService executeRequest:request];
 ```
@@ -166,7 +162,7 @@ CAASContentItemRequest *request = [[CAASContentItemRequest alloc] initWithOid:@"
 
 }];
 
-request.properties = @[@"id",@"title",@"keywords"];
+request.properties = @[CAASProperty.OID,CAASProperty.TITLE,CAASProperty.KEYWORDS];
 request.elements = @[@"author",@"cover",@"isbn",@"price",@"publish_date"];
 [caasService executeRequest:request];
 ```
@@ -221,13 +217,15 @@ property to `true`. It allows to test with self-signed certificates.
 
 ```objective-c
 // create the service that connects to the MACM instance
-CAASService *caasService = [[CAASService alloc] initWithBaseURL:[NSURL URLWithString:@"http://macm.com"] contextRoot:@"myContext" tenant:@"myTenant" username:@"admin" password:@"foobar"];
+CAASService *caasService = [[CAASService alloc] initWithBaseURL:[NSURL URLWithString:@"https://macm-rendering.saas.ibmcloud.com"] contextRoot:@"wps" tenant:@"myTenant" username:@"admin" password:@"foobar"];
 
 caasService.allowUntrustedCertificates = YES;
 
 
 ```
 
+## Documentation references
 
+* [IBM Mobile Application Content Manager Knowledge Center](http://www-01.ibm.com/support/knowledgecenter/SSYK7J_8.5.0/macm/macm_rm.dita)
 
 

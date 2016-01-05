@@ -24,41 +24,36 @@ class Caas {
     var articles:[ArticleItem] = [ArticleItem]()
     
     /** URL of the MACM instance */
-    //http://macm.rtp.raleigh.ibm.com:10039/wps/portal/macm1
-   // var macminstance = "http://macm.rtp.raleigh.ibm.com:10039"  //"https://macmbeta.com"
-    //var macminstance = "http://macm-daily-est.rtp.raleigh.ibm.com:10039"  //"https://macmbeta.com"
-    var macminstance = "http://caas01.rtp.raleigh.ibm.com:10039/"  //"https://macmbeta.com"
-    //var macminstance = "https://macm-rendering.saas.ibmcloud.com/wps/myportal/vp3073/"
-    
-    /** library of content items */
-    var library = "greenwell"
-    //var library = "Samples"
-    
-    /** Tenant */
-    var tenant = "macm1" //"vp3001"
-   // var tenant = "vp3073"
-    
-    /** Anonymous username for connection to MACM instance */
-    var username = "wpsadmin" //"user3001"
-   
-   
-    var password = "wpsadmin"
-    //var username = "user3073"
-    //var password = "TPVxv%-832"
-   
-    
-    //var offerLibrary = "MACM Default Application/Content Types/Offer"
-    //var articleLibrary = "MACM Default Application/Content Types/Article"
-    //var iBeaconLibrary = "MACM Default Application/Content Types/iBeacon Notification"
-    
-   var offerLibrary = "Greenwell/Content Types/Offer"
-    var articleLibrary = "Greenwell/Content Types/Article"
-    var iBeaconLibrary = "Greenwell/Content Types/iBeacon Notification"
-   // var offerLibrary = "samples/Content Types/Offer"
-   // var articleLibrary = "samples/Content Types/Article"
-    //var iBeaconLibrary = "samples/Content Types/iBeacon Notification"
+    var macminstance = PropertiesManager.sharedInstance.configuration["MACMInstance"] as! String
 
     
+    /** library of content items */
+     var library = PropertiesManager.sharedInstance.configuration["library"] as! String
+    
+    /** Tenant */
+     var tenant = PropertiesManager.sharedInstance.configuration["tenant"] as! String
+    
+    /** Anonymous username for connection to MACM instance */
+     var username = PropertiesManager.sharedInstance.configuration["MACMUsername"] as! String
+    
+    /** Anonymous password for connection to MACM instance */
+    var password = PropertiesManager.sharedInstance.configuration["MACMPassword"] as! String
+    
+    var offerLibrary: String {
+        get {
+            return library + "/Content Types/Offer"
+        }
+    }
+    var articleLibrary: String {
+        get {
+            return library + "/Content Types/Article"
+        }
+    }
+    var iBeaconLibrary: String {
+        get {
+            return library + "/Content Types/iBeacon Notification"
+        }
+    }
     
     var caasService:CAASService!
     
@@ -73,9 +68,6 @@ class Caas {
     */
     func signIn(vc:UIViewController, completionBlock:(()->Void)?){
         
-        offerLibrary   = self.library+"/Content Types/Offer"
-        articleLibrary = self.library+"/Content Types/Article"
-        iBeaconLibrary = self.library+"/Content Types/iBeacon Notification"
         
         caasService = CAASService(baseURL: NSURL(string: macminstance)!, contextRoot: "wps", tenant: tenant)
         
@@ -110,6 +102,7 @@ class Caas {
                 AppDelegate.caas.username = pusername
                 AppDelegate.caas.password = ppassword
                 
+ 
                 NSNotificationCenter.defaultCenter().postNotificationName(ReloadContentFromMacmNotification, object: self)
                 successCompletionBlock!()
             } else {
@@ -140,6 +133,7 @@ class Caas {
         let contentItemsRequest = CAASContentItemsRequest(contentPath: offerLibrary, completionBlock: { (requestResult) -> Void in
             if (requestResult.error != nil) || (requestResult.httpStatusCode != 200) {
                 //self.presentNetworkError(vc, error: requestResult.error,httpStatusCode: requestResult.httpStatusCode)
+                print("Network error")
             } else if let contentItems = requestResult.contentItems {
                 
                 for contentItem in contentItems {
@@ -175,7 +169,7 @@ class Caas {
                             values.update(properties)
                             
                             offeringItem.summary =  values["Summary"] as! String
-                            offeringItem.price = values["Price"] as! String
+                            offeringItem.price = (values["Price"] != nil ? String(values["Price"]) : "")
                             offeringItem.body = values["Body"] as! String
                             offeringItem.keywords =  values["keywords"] as! String
                             
@@ -312,7 +306,7 @@ class Caas {
                             values.update(elements)
                             values.update(properties)
                             
-                            senderCompletionBlock(values["title"] as! String,values["Short Text 1"] as! String)  // TODO: replace with  Dialog Message
+                            senderCompletionBlock(values["title"] as! String,values["Dialog Message"] as! String)
                       }
                     }
                     self.caasService.executeRequest(itemRequest)
