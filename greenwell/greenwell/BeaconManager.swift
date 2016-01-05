@@ -27,7 +27,18 @@ class BeaconManager:NSObject, CLLocationManagerDelegate  {
         locationManager.requestAlwaysAuthorization()
         
         // add a default iBeacon to monitor GreenWheel Regions
-        addBeaconRegionWithUUID( NSUUID(UUIDString: "F0018B9B-7509-4C31-A905-1A27D39C003C")!, identifier: "GreenWheel iBeacon Region",category:Util.categoryNames["Greenwheel"]!,keywords: ["welcome","modelz","modelj"])
+        //addBeaconRegionWithUUID( NSUUID(UUIDString: "F0018B9B-7509-4C31-A905-1A27D39C003C")!, identifier: "GreenWheel iBeacon Region",category:Util.categoryNames["Greenwheel"]!,keywords: ["modelz","modelj"])
+        
+        addBeaconRegionWithUUID( NSUUID(UUIDString: "E2C56DB5-DFFB-48D2-B060-D0F5A71096E0")!, identifier: "GreenWheel iBeacon Welcome",category:Util.categoryNames["Greenwheel"]!,keywords: ["welcome"])
+        
+        addBeaconRegionWithUUID( NSUUID(UUIDString: "E2C56DB5-DFFB-48D2-B060-D0F5A71096E1")!, identifier: "GreenWheel iBeacon modelj",category:Util.categoryNames["Greenwheel"]!,keywords: ["modelj"])
+        
+        addBeaconRegionWithUUID( NSUUID(UUIDString: "E2C56DB5-DFFB-48D2-B060-D0F5A71096E2")!, identifier: "GreenWheel iBeacon modelz",category:Util.categoryNames["Greenwheel"]!,keywords: ["modelz"])
+        
+        addBeaconRegionWithUUID( NSUUID(UUIDString: "E2C56DB5-DFFB-48D2-B060-D0F5A71096E3")!, identifier: "GreenWheel iBeacon Car A",category:Util.categoryNames["Greenwheel"]!,keywords: ["carA"])
+        
+        addBeaconRegionWithUUID( NSUUID(UUIDString: "E2C56DB5-DFFB-48D2-B060-D0F5A71096E4")!, identifier: "GreenWheel iBeacon Car B",category:Util.categoryNames["Greenwheel"]!,keywords: ["carB"])
+        
 
     }
     

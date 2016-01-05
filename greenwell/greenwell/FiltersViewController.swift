@@ -51,7 +51,7 @@ class FiltersViewController: UIViewController {
     func setFilters(on:Bool) {
         Util.loanFilters["Transportation"] = on
         Util.loanFilters["Home"] = on
-        Util.loanFilters["Student"] = on
+        Util.loanFilters["Small Business"] = on
         Util.insuranceFilters["Transportation"] = on
         Util.insuranceFilters["Home"] = on
         Util.insuranceFilters["Life"] = on
@@ -65,7 +65,7 @@ class FiltersViewController: UIViewController {
     func refreshUIFromData() {
         loan_transportation.on = Util.loanFilters["Transportation"]!
         loan_home.on = Util.loanFilters["Home"]!
-        loan_student.on = Util.loanFilters["Student"]!
+        loan_student.on = Util.loanFilters["Small Business"]!
         insurance_transportation.on = Util.insuranceFilters["Transportation"]!
         insurance_home.on = Util.insuranceFilters["Home"]!
         insurance_life.on = Util.insuranceFilters["Life"]!
@@ -109,7 +109,7 @@ class FiltersViewController: UIViewController {
         case loan_home :
             Util.loanFilters["Home"] = s.on
         case loan_student :
-            Util.loanFilters["Student"] = s.on
+            Util.loanFilters["Small Business"] = s.on
         case insurance_transportation :
             Util.insuranceFilters["Transportation"] = s.on
         case insurance_home :

@@ -74,6 +74,33 @@ class InitialViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func touchLoginButton(sender: AnyObject) {
+        
+       let loginNum = pinTextfield.text
+        
+        if (loginNum == "111"){
+        userName = "Spencer"
+        actNum = "1245430"
+        print(userName,actNum)
+        
+        }
+        else if (loginNum == "123"){
+            userName = "Abby"
+            actNum = "2222858"
+            print(userName,actNum)
+        }
+            
+        else if (loginNum == "000"){
+            userName = "Robert"
+            actNum = "3720275"
+            print(userName,actNum)
+        
+        }
+        
+        else{
+            //userName == ""
+        print("nothing")
+        }
+        
         performSegueWithIdentifier("segueToHome", sender: sender)
     }
     

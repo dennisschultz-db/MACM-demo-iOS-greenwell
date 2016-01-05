@@ -1,0 +1,901 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Caas"
+provides-nominal:
+- "C9greenwell4Caas"
+provides-member:
+- ["C9greenwell4Caas", ""]
+- ["VSs10Dictionary", ""]
+- ["VSs10Dictionary", "update"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "NSURL"
+- !private "NSDate"
+- !private "CAASContentItemRequest"
+- "Int"
+- !private "BooleanLiteralType"
+- !private "ReloadContentFromMacmNotification"
+- "ArticleItem"
+- "String"
+- !private "!="
+- !private "AnyObject"
+- "NSError"
+- "Dictionary"
+- !private "NSNotificationCenter"
+- !private "!"
+- "NSIndexPath"
+- "OfferingItem"
+- !private "UIAlertController"
+- !private "NSHTTPURLResponse"
+- !private "AppDelegate"
+- !private "UIAlertAction"
+- "CAASService"
+- "Caas"
+- !private "NSObject"
+- !private "print"
+- !private "NSLocalizedString"
+- "Array"
+- !private "CAASContentItemsRequest"
+- "StringLiteralType"
+- "UIViewController"
+- !private "=="
+- "Void"
+- !private "CAASAssetRequest"
+- !private "||"
+- !private "+"
+depends-member:
+- !private ["PSs9AnyObject", "AppDelegate"]
+- ["PSs9AnyObject", "ArticleItem"]
+- !private ["PSs9AnyObject", "CAASAssetRequest"]
+- !private ["PSs9AnyObject", "CAASContentItemRequest"]
+- !private ["PSs9AnyObject", "CAASContentItemsRequest"]
+- !private ["PSs9AnyObject", "CAASService"]
+- !private ["PSs9AnyObject", "NSHTTPURLResponse"]
+- !private ["PSs9AnyObject", "NSIndexPath"]
+- !private ["PSs9AnyObject", "NSLocalizedString"]
+- !private ["PSs9AnyObject", "NSNotificationCenter"]
+- !private ["PSs9AnyObject", "NSURL"]
+- ["PSs9AnyObject", "OfferingItem"]
+- !private ["PSs9AnyObject", "ReloadContentFromMacmNotification"]
+- !private ["PSs9AnyObject", "UIAlertAction"]
+- !private ["PSs9AnyObject", "UIAlertController"]
+- !private ["PSs9AnyObject", "addAction"]
+- !private ["PSs9AnyObject", "anyCategories"]
+- !private ["PSs9AnyObject", "anyKeywords"]
+- !private ["PSs9AnyObject", "articleLibrary"]
+- !private ["PSs9AnyObject", "articles"]
+- !private ["PSs9AnyObject", "body"]
+- !private ["PSs9AnyObject", "caas"]
+- !private ["PSs9AnyObject", "caasService"]
+- !private ["PSs9AnyObject", "contentItem"]
+- !private ["PSs9AnyObject", "contentItems"]
+- !private ["PSs9AnyObject", "defaultCenter"]
+- !private ["PSs9AnyObject", "elements"]
+- !private ["PSs9AnyObject", "error"]
+- !private ["PSs9AnyObject", "executeRequest"]
+- !private ["PSs9AnyObject", "httpStatusCode"]
+- !private ["PSs9AnyObject", "iBeaconLibrary"]
+- !private ["PSs9AnyObject", "id"]
+- !private ["PSs9AnyObject", "image"]
+- !private ["PSs9AnyObject", "imageData"]
+- !private ["PSs9AnyObject", "imageURL"]
+- !private ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "isUserAlreadySignedIn"]
+- !private ["PSs9AnyObject", "keywords"]
+- !private ["PSs9AnyObject", "lastModifiedDate"]
+- !private ["PSs9AnyObject", "library"]
+- !private ["PSs9AnyObject", "localizedDescription"]
+- !private ["PSs9AnyObject", "localizedStringForStatusCode"]
+- !private ["PSs9AnyObject", "macminstance"]
+- !private ["PSs9AnyObject", "offerLibrary"]
+- !private ["PSs9AnyObject", "offerings"]
+- !private ["PSs9AnyObject", "password"]
+- !private ["PSs9AnyObject", "postNotificationName"]
+- !private ["PSs9AnyObject", "presentSignInError"]
+- !private ["PSs9AnyObject", "presentViewController"]
+- !private ["PSs9AnyObject", "price"]
+- !private ["PSs9AnyObject", "print"]
+- !private ["PSs9AnyObject", "properties"]
+- !private ["PSs9AnyObject", "signIn"]
+- !private ["PSs9AnyObject", "signOut"]
+- !private ["PSs9AnyObject", "summary"]
+- !private ["PSs9AnyObject", "tenant"]
+- !private ["PSs9AnyObject", "title"]
+- !private ["PSs9AnyObject", "username"]
+- ["PSs9AnyObject", ""]
+- !private ["C9greenwell11AppDelegate", "caas"]
+- !private ["Sa", "Element"]
+- !private ["Sa", "Generator"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "_Element"]
+- !private ["Sa", "append"]
+- !private ["Sa", "enumerate"]
+- ["Sa", "init"]
+- !private ["PSs23ArrayLiteralConvertible", "Element"]
+- !private ["PSs23ArrayLiteralConvertible", "Generator"]
+- !private ["PSs23ArrayLiteralConvertible", "Index"]
+- !private ["PSs23ArrayLiteralConvertible", "SubSequence"]
+- !private ["PSs23ArrayLiteralConvertible", "_Element"]
+- !private ["PSs23ArrayLiteralConvertible", "append"]
+- !private ["PSs23ArrayLiteralConvertible", "enumerate"]
+- ["PSs23ArrayLiteralConvertible", "init"]
+- !private ["VSs10ArraySlice", "Generator"]
+- !private ["VSs10ArraySlice", "Index"]
+- !private ["C9greenwell11ArticleItem", "body"]
+- !private ["C9greenwell11ArticleItem", "id"]
+- !private ["C9greenwell11ArticleItem", "imageData"]
+- !private ["C9greenwell11ArticleItem", "imageURL"]
+- !private ["C9greenwell11ArticleItem", "init"]
+- !private ["C9greenwell11ArticleItem", "keywords"]
+- !private ["C9greenwell11ArticleItem", "summary"]
+- !private ["C9greenwell11ArticleItem", "title"]
+- !private ["PSs22BidirectionalIndexType", "Distance"]
+- !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["PSs21BitwiseOperationsType", "Distance"]
+- !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["CSo16CAASAssetRequest", "init"]
+- !private ["CSo15CAASAssetResult", "image"]
+- !private ["CSo15CAASContentItem", "elements"]
+- !private ["CSo15CAASContentItem", "properties"]
+- !private ["CSo22CAASContentItemRequest", "init"]
+- !private ["CSo21CAASContentItemResult", "contentItem"]
+- !private ["CSo21CAASContentItemResult", "error"]
+- !private ["CSo21CAASContentItemResult", "httpStatusCode"]
+- !private ["CSo23CAASContentItemsRequest", "anyCategories"]
+- !private ["CSo23CAASContentItemsRequest", "anyKeywords"]
+- !private ["CSo23CAASContentItemsRequest", "init"]
+- !private ["CSo22CAASContentItemsResult", "contentItems"]
+- !private ["CSo22CAASContentItemsResult", "error"]
+- !private ["CSo22CAASContentItemsResult", "httpStatusCode"]
+- !private ["CSo11CAASRequest", "anyCategories"]
+- !private ["CSo11CAASRequest", "anyKeywords"]
+- !private ["CSo11CAASRequest", "init"]
+- !private ["CSo17CAASRequestResult", "contentItem"]
+- !private ["CSo17CAASRequestResult", "contentItems"]
+- !private ["CSo17CAASRequestResult", "error"]
+- !private ["CSo17CAASRequestResult", "httpStatusCode"]
+- !private ["CSo17CAASRequestResult", "image"]
+- !private ["CSo11CAASService", "executeRequest"]
+- !private ["CSo11CAASService", "init"]
+- !private ["CSo11CAASService", "isUserAlreadySignedIn"]
+- !private ["CSo11CAASService", "signIn"]
+- !private ["CSo11CAASService", "signOut"]
+- !private ["PSs11CVarArgType", "Distance"]
+- !private ["PSs11CVarArgType", "IntegerLiteralType"]
+- !private ["PSs11CVarArgType", "addAction"]
+- !private ["PSs11CVarArgType", "anyCategories"]
+- !private ["PSs11CVarArgType", "anyKeywords"]
+- !private ["PSs11CVarArgType", "body"]
+- !private ["PSs11CVarArgType", "caas"]
+- !private ["PSs11CVarArgType", "contentItem"]
+- !private ["PSs11CVarArgType", "contentItems"]
+- !private ["PSs11CVarArgType", "defaultCenter"]
+- !private ["PSs11CVarArgType", "elements"]
+- !private ["PSs11CVarArgType", "error"]
+- !private ["PSs11CVarArgType", "executeRequest"]
+- !private ["PSs11CVarArgType", "httpStatusCode"]
+- !private ["PSs11CVarArgType", "id"]
+- !private ["PSs11CVarArgType", "image"]
+- !private ["PSs11CVarArgType", "imageData"]
+- !private ["PSs11CVarArgType", "imageURL"]
+- !private ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "isUserAlreadySignedIn"]
+- !private ["PSs11CVarArgType", "keywords"]
+- !private ["PSs11CVarArgType", "lastModifiedDate"]
+- !private ["PSs11CVarArgType", "localizedDescription"]
+- !private ["PSs11CVarArgType", "localizedStringForStatusCode"]
+- !private ["PSs11CVarArgType", "postNotificationName"]
+- !private ["PSs11CVarArgType", "presentViewController"]
+- !private ["PSs11CVarArgType", "price"]
+- !private ["PSs11CVarArgType", "properties"]
+- !private ["PSs11CVarArgType", "signIn"]
+- !private ["PSs11CVarArgType", "signOut"]
+- !private ["PSs11CVarArgType", "summary"]
+- !private ["PSs11CVarArgType", "title"]
+- !private ["C9greenwell4Caas", "AnyObject"]
+- !private ["C9greenwell4Caas", "AppDelegate"]
+- ["C9greenwell4Caas", "ArticleItem"]
+- !private ["C9greenwell4Caas", "CAASAssetRequest"]
+- !private ["C9greenwell4Caas", "CAASContentItemRequest"]
+- !private ["C9greenwell4Caas", "CAASContentItemsRequest"]
+- ["C9greenwell4Caas", "CAASService"]
+- ["C9greenwell4Caas", "Int"]
+- !private ["C9greenwell4Caas", "NSDate"]
+- ["C9greenwell4Caas", "NSError"]
+- !private ["C9greenwell4Caas", "NSHTTPURLResponse"]
+- ["C9greenwell4Caas", "NSIndexPath"]
+- !private ["C9greenwell4Caas", "NSLocalizedString"]
+- !private ["C9greenwell4Caas", "NSNotificationCenter"]
+- !private ["C9greenwell4Caas", "NSObject"]
+- !private ["C9greenwell4Caas", "NSURL"]
+- ["C9greenwell4Caas", "OfferingItem"]
+- !private ["C9greenwell4Caas", "ReloadContentFromMacmNotification"]
+- ["C9greenwell4Caas", "String"]
+- !private ["C9greenwell4Caas", "UIAlertAction"]
+- !private ["C9greenwell4Caas", "UIAlertController"]
+- ["C9greenwell4Caas", "UIViewController"]
+- ["C9greenwell4Caas", "Void"]
+- ["C9greenwell4Caas", "articleLibrary"]
+- ["C9greenwell4Caas", "articles"]
+- ["C9greenwell4Caas", "attemptSignInAndChangeSettings"]
+- ["C9greenwell4Caas", "caasService"]
+- ["C9greenwell4Caas", "deinit"]
+- ["C9greenwell4Caas", "getArticles"]
+- ["C9greenwell4Caas", "getBeaconMessage"]
+- ["C9greenwell4Caas", "getOffers"]
+- ["C9greenwell4Caas", "iBeaconLibrary"]
+- ["C9greenwell4Caas", "init"]
+- ["C9greenwell4Caas", "library"]
+- ["C9greenwell4Caas", "macminstance"]
+- ["C9greenwell4Caas", "offerLibrary"]
+- ["C9greenwell4Caas", "offerings"]
+- ["C9greenwell4Caas", "password"]
+- ["C9greenwell4Caas", "presentNetworkError"]
+- ["C9greenwell4Caas", "presentSignInError"]
+- !private ["C9greenwell4Caas", "print"]
+- ["C9greenwell4Caas", "signIn"]
+- ["C9greenwell4Caas", "signOut"]
+- ["C9greenwell4Caas", "tenant"]
+- ["C9greenwell4Caas", "username"]
+- !private ["VSs9Character", "deinit"]
+- !private ["PSs14CollectionType", "Element"]
+- !private ["PSs14CollectionType", "Generator"]
+- !private ["PSs14CollectionType", "Index"]
+- !private ["PSs14CollectionType", "Key"]
+- !private ["PSs14CollectionType", "SubSequence"]
+- !private ["PSs14CollectionType", "Value"]
+- !private ["PSs14CollectionType", "_Element"]
+- !private ["PSs14CollectionType", "append"]
+- !private ["PSs14CollectionType", "enumerate"]
+- ["PSs14CollectionType", "init"]
+- !private ["PSs14CollectionType", "subscript"]
+- !private ["PSs14CollectionType", "update"]
+- !private ["PSs14CollectionType", "updateValue"]
+- !private ["PSs10Comparable", "Distance"]
+- !private ["PSs10Comparable", "IntegerLiteralType"]
+- !private ["PSs10Comparable", "_DisabledRangeIndex"]
+- !private ["PSs10Comparable", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "Element"]
+- !private ["PSs28CustomDebugStringConvertible", "Generator"]
+- !private ["PSs28CustomDebugStringConvertible", "Index"]
+- !private ["PSs28CustomDebugStringConvertible", "Key"]
+- !private ["PSs28CustomDebugStringConvertible", "Some"]
+- !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
+- !private ["PSs28CustomDebugStringConvertible", "Value"]
+- !private ["PSs28CustomDebugStringConvertible", "_Element"]
+- !private ["PSs28CustomDebugStringConvertible", "append"]
+- !private ["PSs28CustomDebugStringConvertible", "enumerate"]
+- ["PSs28CustomDebugStringConvertible", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "subscript"]
+- !private ["PSs28CustomDebugStringConvertible", "update"]
+- !private ["PSs28CustomDebugStringConvertible", "updateValue"]
+- !private ["PSs23CustomStringConvertible", "Distance"]
+- !private ["PSs23CustomStringConvertible", "Element"]
+- !private ["PSs23CustomStringConvertible", "Generator"]
+- !private ["PSs23CustomStringConvertible", "Index"]
+- !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["PSs23CustomStringConvertible", "Key"]
+- !private ["PSs23CustomStringConvertible", "SubSequence"]
+- !private ["PSs23CustomStringConvertible", "Value"]
+- !private ["PSs23CustomStringConvertible", "_Element"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "addAction"]
+- !private ["PSs23CustomStringConvertible", "anyCategories"]
+- !private ["PSs23CustomStringConvertible", "anyKeywords"]
+- !private ["PSs23CustomStringConvertible", "append"]
+- !private ["PSs23CustomStringConvertible", "body"]
+- !private ["PSs23CustomStringConvertible", "caas"]
+- !private ["PSs23CustomStringConvertible", "contentItem"]
+- !private ["PSs23CustomStringConvertible", "contentItems"]
+- !private ["PSs23CustomStringConvertible", "defaultCenter"]
+- !private ["PSs23CustomStringConvertible", "elements"]
+- !private ["PSs23CustomStringConvertible", "enumerate"]
+- !private ["PSs23CustomStringConvertible", "error"]
+- !private ["PSs23CustomStringConvertible", "executeRequest"]
+- !private ["PSs23CustomStringConvertible", "httpStatusCode"]
+- !private ["PSs23CustomStringConvertible", "id"]
+- !private ["PSs23CustomStringConvertible", "image"]
+- !private ["PSs23CustomStringConvertible", "imageData"]
+- !private ["PSs23CustomStringConvertible", "imageURL"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "isUserAlreadySignedIn"]
+- !private ["PSs23CustomStringConvertible", "keywords"]
+- !private ["PSs23CustomStringConvertible", "lastModifiedDate"]
+- !private ["PSs23CustomStringConvertible", "localizedDescription"]
+- !private ["PSs23CustomStringConvertible", "localizedStringForStatusCode"]
+- !private ["PSs23CustomStringConvertible", "postNotificationName"]
+- !private ["PSs23CustomStringConvertible", "presentViewController"]
+- !private ["PSs23CustomStringConvertible", "price"]
+- !private ["PSs23CustomStringConvertible", "properties"]
+- !private ["PSs23CustomStringConvertible", "signIn"]
+- !private ["PSs23CustomStringConvertible", "signOut"]
+- !private ["PSs23CustomStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "summary"]
+- !private ["PSs23CustomStringConvertible", "title"]
+- !private ["PSs23CustomStringConvertible", "update"]
+- !private ["PSs23CustomStringConvertible", "updateValue"]
+- ["VSs10Dictionary", "Dictionary"]
+- !private ["VSs10Dictionary", "Generator"]
+- !private ["VSs10Dictionary", "Index"]
+- !private ["VSs10Dictionary", "Key"]
+- !private ["VSs10Dictionary", "SubSequence"]
+- !private ["VSs10Dictionary", "Value"]
+- !private ["VSs10Dictionary", "_Element"]
+- !private ["VSs10Dictionary", "deinit"]
+- !private ["VSs10Dictionary", "subscript"]
+- ["VSs10Dictionary", "update"]
+- !private ["VSs10Dictionary", "updateValue"]
+- !private ["VSs19DictionaryGenerator", "Element"]
+- !private ["VSs15DictionaryIndex", "Distance"]
+- !private ["VSs15DictionaryIndex", "_DisabledRangeIndex"]
+- !private ["VSs15DictionaryIndex", "deinit"]
+- !private ["PSs28DictionaryLiteralConvertible", "Generator"]
+- !private ["PSs28DictionaryLiteralConvertible", "Index"]
+- !private ["PSs28DictionaryLiteralConvertible", "Key"]
+- !private ["PSs28DictionaryLiteralConvertible", "SubSequence"]
+- !private ["PSs28DictionaryLiteralConvertible", "Value"]
+- !private ["PSs28DictionaryLiteralConvertible", "_Element"]
+- !private ["PSs28DictionaryLiteralConvertible", "subscript"]
+- !private ["PSs28DictionaryLiteralConvertible", "update"]
+- !private ["PSs28DictionaryLiteralConvertible", "updateValue"]
+- !private ["Sd", "deinit"]
+- !private ["VSs18EnumerateGenerator", "Element"]
+- !private ["VSs17EnumerateSequence", "Generator"]
+- !private ["PSs9Equatable", "Alert"]
+- !private ["PSs9Equatable", "Default"]
+- !private ["PSs9Equatable", "Distance"]
+- !private ["PSs9Equatable", "IntegerLiteralType"]
+- !private ["PSs9Equatable", "_DisabledRangeIndex"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- !private ["PSs9Equatable", "addAction"]
+- !private ["PSs9Equatable", "anyCategories"]
+- !private ["PSs9Equatable", "anyKeywords"]
+- !private ["PSs9Equatable", "body"]
+- !private ["PSs9Equatable", "caas"]
+- !private ["PSs9Equatable", "contentItem"]
+- !private ["PSs9Equatable", "contentItems"]
+- !private ["PSs9Equatable", "defaultCenter"]
+- !private ["PSs9Equatable", "elements"]
+- !private ["PSs9Equatable", "error"]
+- !private ["PSs9Equatable", "executeRequest"]
+- !private ["PSs9Equatable", "httpStatusCode"]
+- !private ["PSs9Equatable", "id"]
+- !private ["PSs9Equatable", "image"]
+- !private ["PSs9Equatable", "imageData"]
+- !private ["PSs9Equatable", "imageURL"]
+- !private ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "isUserAlreadySignedIn"]
+- !private ["PSs9Equatable", "keywords"]
+- !private ["PSs9Equatable", "lastModifiedDate"]
+- !private ["PSs9Equatable", "localizedDescription"]
+- !private ["PSs9Equatable", "localizedStringForStatusCode"]
+- !private ["PSs9Equatable", "postNotificationName"]
+- !private ["PSs9Equatable", "presentViewController"]
+- !private ["PSs9Equatable", "price"]
+- !private ["PSs9Equatable", "properties"]
+- !private ["PSs9Equatable", "signIn"]
+- !private ["PSs9Equatable", "signOut"]
+- !private ["PSs9Equatable", "summary"]
+- !private ["PSs9Equatable", "title"]
+- !private ["PSs9ErrorType", "localizedDescription"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Sf", "deinit"]
+- !private ["PSs16ForwardIndexType", "Distance"]
+- !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
+- !private ["PSs16ForwardIndexType", "_DisabledRangeIndex"]
+- !private ["PSs13GeneratorType", "Element"]
+- !private ["PSs8Hashable", "Alert"]
+- !private ["PSs8Hashable", "Default"]
+- !private ["PSs8Hashable", "Distance"]
+- !private ["PSs8Hashable", "IntegerLiteralType"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- !private ["PSs8Hashable", "addAction"]
+- !private ["PSs8Hashable", "anyCategories"]
+- !private ["PSs8Hashable", "anyKeywords"]
+- !private ["PSs8Hashable", "body"]
+- !private ["PSs8Hashable", "caas"]
+- !private ["PSs8Hashable", "contentItem"]
+- !private ["PSs8Hashable", "contentItems"]
+- !private ["PSs8Hashable", "defaultCenter"]
+- !private ["PSs8Hashable", "elements"]
+- !private ["PSs8Hashable", "error"]
+- !private ["PSs8Hashable", "executeRequest"]
+- !private ["PSs8Hashable", "httpStatusCode"]
+- !private ["PSs8Hashable", "id"]
+- !private ["PSs8Hashable", "image"]
+- !private ["PSs8Hashable", "imageData"]
+- !private ["PSs8Hashable", "imageURL"]
+- !private ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "isUserAlreadySignedIn"]
+- !private ["PSs8Hashable", "keywords"]
+- !private ["PSs8Hashable", "lastModifiedDate"]
+- !private ["PSs8Hashable", "localizedDescription"]
+- !private ["PSs8Hashable", "localizedStringForStatusCode"]
+- !private ["PSs8Hashable", "postNotificationName"]
+- !private ["PSs8Hashable", "presentViewController"]
+- !private ["PSs8Hashable", "price"]
+- !private ["PSs8Hashable", "properties"]
+- !private ["PSs8Hashable", "signIn"]
+- !private ["PSs8Hashable", "signOut"]
+- !private ["PSs8Hashable", "summary"]
+- !private ["PSs8Hashable", "title"]
+- !private ["PSs9Indexable", "Element"]
+- !private ["PSs9Indexable", "Generator"]
+- !private ["PSs9Indexable", "Index"]
+- !private ["PSs9Indexable", "Key"]
+- !private ["PSs9Indexable", "SubSequence"]
+- !private ["PSs9Indexable", "Value"]
+- !private ["PSs9Indexable", "_Element"]
+- !private ["PSs9Indexable", "append"]
+- !private ["PSs9Indexable", "enumerate"]
+- ["PSs9Indexable", "init"]
+- !private ["PSs9Indexable", "subscript"]
+- !private ["PSs9Indexable", "update"]
+- !private ["PSs9Indexable", "updateValue"]
+- !private ["VSs17IndexingGenerator", "Element"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "deinit"]
+- !private ["VSs5Int16", "deinit"]
+- !private ["VSs5Int32", "deinit"]
+- !private ["VSs5Int64", "deinit"]
+- !private ["VSs4Int8", "deinit"]
+- !private ["PSs21IntegerArithmeticType", "Distance"]
+- !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs25IntegerLiteralConvertible", "Distance"]
+- !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs11IntegerType", "Distance"]
+- !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "Distance"]
+- !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "init"]
+- !private ["PSs21MutableCollectionType", "Element"]
+- !private ["PSs21MutableCollectionType", "Generator"]
+- !private ["PSs21MutableCollectionType", "Index"]
+- !private ["PSs21MutableCollectionType", "SubSequence"]
+- !private ["PSs21MutableCollectionType", "_Element"]
+- !private ["PSs21MutableCollectionType", "append"]
+- !private ["PSs21MutableCollectionType", "enumerate"]
+- ["PSs21MutableCollectionType", "init"]
+- !private ["PSs16MutableIndexable", "Element"]
+- !private ["PSs16MutableIndexable", "Generator"]
+- !private ["PSs16MutableIndexable", "Index"]
+- !private ["PSs16MutableIndexable", "SubSequence"]
+- !private ["PSs16MutableIndexable", "_Element"]
+- !private ["PSs16MutableIndexable", "append"]
+- !private ["PSs16MutableIndexable", "enumerate"]
+- ["PSs16MutableIndexable", "init"]
+- !private ["PSs16MutableSliceable", "Element"]
+- !private ["PSs16MutableSliceable", "Generator"]
+- !private ["PSs16MutableSliceable", "Index"]
+- !private ["PSs16MutableSliceable", "SubSequence"]
+- !private ["PSs16MutableSliceable", "_Element"]
+- !private ["PSs16MutableSliceable", "append"]
+- !private ["PSs16MutableSliceable", "enumerate"]
+- ["PSs16MutableSliceable", "init"]
+- !private ["PSo8NSCoding", "addAction"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "localizedDescription"]
+- !private ["PSo8NSCoding", "localizedStringForStatusCode"]
+- !private ["PSo8NSCoding", "presentViewController"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "localizedDescription"]
+- !private ["PSo9NSCopying", "localizedStringForStatusCode"]
+- !private ["CSo7NSError", "localizedDescription"]
+- !private ["PSo26NSExtensionRequestHandling", "addAction"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "presentViewController"]
+- !private ["CSo17NSHTTPURLResponse", "localizedStringForStatusCode"]
+- !private ["CSo11NSIndexPath", "init"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo20NSNotificationCenter", "defaultCenter"]
+- !private ["CSo20NSNotificationCenter", "postNotificationName"]
+- !private ["CSo8NSObject", "addAction"]
+- !private ["CSo8NSObject", "anyCategories"]
+- !private ["CSo8NSObject", "anyKeywords"]
+- !private ["CSo8NSObject", "body"]
+- !private ["CSo8NSObject", "caas"]
+- !private ["CSo8NSObject", "contentItem"]
+- !private ["CSo8NSObject", "contentItems"]
+- !private ["CSo8NSObject", "defaultCenter"]
+- !private ["CSo8NSObject", "deinit"]
+- !private ["CSo8NSObject", "elements"]
+- !private ["CSo8NSObject", "error"]
+- !private ["CSo8NSObject", "executeRequest"]
+- !private ["CSo8NSObject", "httpStatusCode"]
+- !private ["CSo8NSObject", "id"]
+- !private ["CSo8NSObject", "image"]
+- !private ["CSo8NSObject", "imageData"]
+- !private ["CSo8NSObject", "imageURL"]
+- !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "isUserAlreadySignedIn"]
+- !private ["CSo8NSObject", "keywords"]
+- !private ["CSo8NSObject", "lastModifiedDate"]
+- !private ["CSo8NSObject", "localizedDescription"]
+- !private ["CSo8NSObject", "localizedStringForStatusCode"]
+- !private ["CSo8NSObject", "postNotificationName"]
+- !private ["CSo8NSObject", "presentViewController"]
+- !private ["CSo8NSObject", "price"]
+- !private ["CSo8NSObject", "properties"]
+- !private ["CSo8NSObject", "signIn"]
+- !private ["CSo8NSObject", "signOut"]
+- !private ["CSo8NSObject", "summary"]
+- !private ["CSo8NSObject", "title"]
+- !private ["PSo16NSObjectProtocol", "addAction"]
+- !private ["PSo16NSObjectProtocol", "anyCategories"]
+- !private ["PSo16NSObjectProtocol", "anyKeywords"]
+- !private ["PSo16NSObjectProtocol", "body"]
+- !private ["PSo16NSObjectProtocol", "caas"]
+- !private ["PSo16NSObjectProtocol", "contentItem"]
+- !private ["PSo16NSObjectProtocol", "contentItems"]
+- !private ["PSo16NSObjectProtocol", "defaultCenter"]
+- !private ["PSo16NSObjectProtocol", "elements"]
+- !private ["PSo16NSObjectProtocol", "error"]
+- !private ["PSo16NSObjectProtocol", "executeRequest"]
+- !private ["PSo16NSObjectProtocol", "httpStatusCode"]
+- !private ["PSo16NSObjectProtocol", "id"]
+- !private ["PSo16NSObjectProtocol", "image"]
+- !private ["PSo16NSObjectProtocol", "imageData"]
+- !private ["PSo16NSObjectProtocol", "imageURL"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "isUserAlreadySignedIn"]
+- !private ["PSo16NSObjectProtocol", "keywords"]
+- !private ["PSo16NSObjectProtocol", "lastModifiedDate"]
+- !private ["PSo16NSObjectProtocol", "localizedDescription"]
+- !private ["PSo16NSObjectProtocol", "localizedStringForStatusCode"]
+- !private ["PSo16NSObjectProtocol", "postNotificationName"]
+- !private ["PSo16NSObjectProtocol", "presentViewController"]
+- !private ["PSo16NSObjectProtocol", "price"]
+- !private ["PSo16NSObjectProtocol", "properties"]
+- !private ["PSo16NSObjectProtocol", "signIn"]
+- !private ["PSo16NSObjectProtocol", "signOut"]
+- !private ["PSo16NSObjectProtocol", "summary"]
+- !private ["PSo16NSObjectProtocol", "title"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "localizedDescription"]
+- !private ["PSo14NSSecureCoding", "localizedStringForStatusCode"]
+- !private ["CSo8NSString", "deinit"]
+- !private ["CSo8NSString", "init"]
+- !private ["CSo5NSURL", "init"]
+- !private ["CSo13NSURLResponse", "localizedStringForStatusCode"]
+- !private ["PSo20NSURLSessionDelegate", "executeRequest"]
+- !private ["PSo20NSURLSessionDelegate", "init"]
+- !private ["PSo20NSURLSessionDelegate", "isUserAlreadySignedIn"]
+- !private ["PSo20NSURLSessionDelegate", "signIn"]
+- !private ["PSo20NSURLSessionDelegate", "signOut"]
+- !private ["PSo24NSURLSessionTaskDelegate", "executeRequest"]
+- !private ["PSo24NSURLSessionTaskDelegate", "init"]
+- !private ["PSo24NSURLSessionTaskDelegate", "isUserAlreadySignedIn"]
+- !private ["PSo24NSURLSessionTaskDelegate", "signIn"]
+- !private ["PSo24NSURLSessionTaskDelegate", "signOut"]
+- !private ["PSs21NilLiteralConvertible", "Some"]
+- !private ["C9greenwell12OfferingItem", "body"]
+- !private ["C9greenwell12OfferingItem", "id"]
+- !private ["C9greenwell12OfferingItem", "imageData"]
+- !private ["C9greenwell12OfferingItem", "imageURL"]
+- !private ["C9greenwell12OfferingItem", "init"]
+- !private ["C9greenwell12OfferingItem", "keywords"]
+- !private ["C9greenwell12OfferingItem", "lastModifiedDate"]
+- !private ["C9greenwell12OfferingItem", "price"]
+- !private ["C9greenwell12OfferingItem", "summary"]
+- !private ["C9greenwell12OfferingItem", "title"]
+- !private ["Sq", "Some"]
+- !private ["Sq", "deinit"]
+- !private ["PSs16OutputStreamType", "init"]
+- !private ["PSs21RandomAccessIndexType", "Distance"]
+- !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["VSs5Range", "deinit"]
+- !private ["PSs30RangeReplaceableCollectionType", "Element"]
+- !private ["PSs30RangeReplaceableCollectionType", "Generator"]
+- !private ["PSs30RangeReplaceableCollectionType", "Index"]
+- !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["PSs30RangeReplaceableCollectionType", "_Element"]
+- !private ["PSs30RangeReplaceableCollectionType", "append"]
+- !private ["PSs30RangeReplaceableCollectionType", "enumerate"]
+- ["PSs30RangeReplaceableCollectionType", "init"]
+- !private ["PSs16RawRepresentable", "Alert"]
+- !private ["PSs16RawRepresentable", "Default"]
+- !private ["PSs12SequenceType", "Element"]
+- !private ["PSs12SequenceType", "Generator"]
+- !private ["PSs12SequenceType", "Index"]
+- !private ["PSs12SequenceType", "Key"]
+- !private ["PSs12SequenceType", "SubSequence"]
+- !private ["PSs12SequenceType", "Value"]
+- !private ["PSs12SequenceType", "_Element"]
+- !private ["PSs12SequenceType", "append"]
+- !private ["PSs12SequenceType", "enumerate"]
+- ["PSs12SequenceType", "init"]
+- !private ["PSs12SequenceType", "subscript"]
+- !private ["PSs12SequenceType", "update"]
+- !private ["PSs12SequenceType", "updateValue"]
+- !private ["PSs17SignedIntegerType", "Distance"]
+- !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs16SignedNumberType", "Distance"]
+- !private ["PSs16SignedNumberType", "IntegerLiteralType"]
+- !private ["VSs5Slice", "Generator"]
+- !private ["VSs5Slice", "Index"]
+- !private ["VSs5Slice", "SubSequence"]
+- !private ["VSs5Slice", "_Element"]
+- !private ["PSs10Streamable", "init"]
+- !private ["PSs10Strideable", "Distance"]
+- !private ["PSs10Strideable", "IntegerLiteralType"]
+- !private ["SS", "init"]
+- !private ["PSs30StringInterpolationConvertible", "init"]
+- !private ["PSs24StringLiteralConvertible", "init"]
+- !private ["CSo13UIAlertAction", "init"]
+- !private ["OSC18UIAlertActionStyle", "Default"]
+- !private ["CSo17UIAlertController", "addAction"]
+- !private ["CSo17UIAlertController", "init"]
+- !private ["OSC22UIAlertControllerStyle", "Alert"]
+- !private ["PSo21UIAppearanceContainer", "addAction"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "presentViewController"]
+- !private ["PSo21UIApplicationDelegate", "caas"]
+- !private ["PSo18UIContentContainer", "addAction"]
+- !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "presentViewController"]
+- !private ["PSo18UIFocusEnvironment", "addAction"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "presentViewController"]
+- !private ["CSo11UIResponder", "addAction"]
+- !private ["CSo11UIResponder", "caas"]
+- !private ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "presentViewController"]
+- !private ["PSo16UIStateRestoring", "addAction"]
+- !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "presentViewController"]
+- !private ["PSo18UITraitEnvironment", "addAction"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "presentViewController"]
+- !private ["CSo16UIViewController", "addAction"]
+- !private ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "presentViewController"]
+- !private ["Su", "deinit"]
+- !private ["VSs6UInt16", "deinit"]
+- !private ["VSs6UInt32", "deinit"]
+- !private ["VSs6UInt64", "deinit"]
+- !private ["VSs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs10_ArrayType", "Element"]
+- !private ["PSs10_ArrayType", "Generator"]
+- !private ["PSs10_ArrayType", "Index"]
+- !private ["PSs10_ArrayType", "SubSequence"]
+- !private ["PSs10_ArrayType", "_Element"]
+- !private ["PSs10_ArrayType", "append"]
+- !private ["PSs10_ArrayType", "enumerate"]
+- ["PSs10_ArrayType", "init"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs16_CocoaStringType", "init"]
+- !private ["PSs24_DestructorSafeContainer", "Element"]
+- !private ["PSs24_DestructorSafeContainer", "Generator"]
+- !private ["PSs24_DestructorSafeContainer", "Index"]
+- !private ["PSs24_DestructorSafeContainer", "SubSequence"]
+- !private ["PSs24_DestructorSafeContainer", "_Element"]
+- !private ["PSs24_DestructorSafeContainer", "append"]
+- !private ["PSs24_DestructorSafeContainer", "enumerate"]
+- ["PSs24_DestructorSafeContainer", "init"]
+- !private ["PSs32_FileReferenceLiteralConvertible", "init"]
+- !private ["PSs14_Incrementable", "Distance"]
+- !private ["PSs14_Incrementable", "IntegerLiteralType"]
+- !private ["PSs14_Incrementable", "_DisabledRangeIndex"]
+- !private ["PSs22_IntegerArithmeticType", "Distance"]
+- !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs12_IntegerType", "Distance"]
+- !private ["PSs12_IntegerType", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "Distance"]
+- !private ["PSs21_ObjectiveCBridgeable", "Element"]
+- !private ["PSs21_ObjectiveCBridgeable", "Generator"]
+- !private ["PSs21_ObjectiveCBridgeable", "Index"]
+- !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "Key"]
+- !private ["PSs21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["PSs21_ObjectiveCBridgeable", "Value"]
+- !private ["PSs21_ObjectiveCBridgeable", "_Element"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "append"]
+- !private ["PSs21_ObjectiveCBridgeable", "enumerate"]
+- ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "subscript"]
+- !private ["PSs21_ObjectiveCBridgeable", "update"]
+- !private ["PSs21_ObjectiveCBridgeable", "updateValue"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs22_RandomAccessAmbiguity", "Distance"]
+- !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "Distance"]
+- !private ["PSs12_Reflectable", "Element"]
+- !private ["PSs12_Reflectable", "Generator"]
+- !private ["PSs12_Reflectable", "Index"]
+- !private ["PSs12_Reflectable", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "Key"]
+- !private ["PSs12_Reflectable", "Some"]
+- !private ["PSs12_Reflectable", "SubSequence"]
+- !private ["PSs12_Reflectable", "Value"]
+- !private ["PSs12_Reflectable", "_Element"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "append"]
+- !private ["PSs12_Reflectable", "enumerate"]
+- ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "subscript"]
+- !private ["PSs12_Reflectable", "update"]
+- !private ["PSs12_Reflectable", "updateValue"]
+- !private ["PSs18_SignedIntegerType", "Distance"]
+- !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs11_Strideable", "Distance"]
+- !private ["PSs11_Strideable", "IntegerLiteralType"]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "C9greenwell11AppDelegate"
+- "Sa"
+- "PSs23ArrayLiteralConvertible"
+- !private "VSs10ArraySlice"
+- !private "C9greenwell11ArticleItem"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- !private "CSo16CAASAssetRequest"
+- !private "CSo15CAASAssetResult"
+- !private "CSo15CAASContentItem"
+- !private "CSo22CAASContentItemRequest"
+- !private "CSo21CAASContentItemResult"
+- !private "CSo23CAASContentItemsRequest"
+- !private "CSo22CAASContentItemsResult"
+- !private "CSo11CAASRequest"
+- !private "CSo17CAASRequestResult"
+- !private "CSo11CAASService"
+- !private "PSs11CVarArgType"
+- "C9greenwell4Caas"
+- !private "VSs9Character"
+- "PSs14CollectionType"
+- !private "PSs10Comparable"
+- "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- "VSs10Dictionary"
+- !private "VSs19DictionaryGenerator"
+- !private "VSs15DictionaryIndex"
+- !private "PSs28DictionaryLiteralConvertible"
+- !private "Sd"
+- !private "VSs18EnumerateGenerator"
+- !private "VSs17EnumerateSequence"
+- !private "PSs9Equatable"
+- !private "PSs9ErrorType"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
+- !private "PSs16ForwardIndexType"
+- !private "PSs13GeneratorType"
+- !private "PSs8Hashable"
+- "PSs9Indexable"
+- !private "VSs17IndexingGenerator"
+- !private "Si"
+- !private "VSs5Int16"
+- !private "VSs5Int32"
+- !private "VSs5Int64"
+- !private "VSs4Int8"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- !private "PSs14MirrorPathType"
+- "PSs21MutableCollectionType"
+- "PSs16MutableIndexable"
+- "PSs16MutableSliceable"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo7NSError"
+- !private "PSo26NSExtensionRequestHandling"
+- !private "CSo17NSHTTPURLResponse"
+- !private "CSo11NSIndexPath"
+- !private "PSo16NSMutableCopying"
+- !private "CSo20NSNotificationCenter"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "CSo5NSURL"
+- !private "CSo13NSURLResponse"
+- !private "PSo20NSURLSessionDelegate"
+- !private "PSo24NSURLSessionTaskDelegate"
+- !private "PSs21NilLiteralConvertible"
+- !private "C9greenwell12OfferingItem"
+- !private "Sq"
+- !private "PSs16OutputStreamType"
+- !private "PSs21RandomAccessIndexType"
+- !private "VSs5Range"
+- "PSs30RangeReplaceableCollectionType"
+- !private "PSs16RawRepresentable"
+- "PSs12SequenceType"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- !private "VSs5Slice"
+- !private "PSs10Streamable"
+- !private "PSs10Strideable"
+- !private "SS"
+- !private "PSs30StringInterpolationConvertible"
+- !private "PSs24StringLiteralConvertible"
+- !private "CSo13UIAlertAction"
+- !private "OSC18UIAlertActionStyle"
+- !private "CSo17UIAlertController"
+- !private "OSC22UIAlertControllerStyle"
+- !private "PSo21UIAppearanceContainer"
+- !private "PSo21UIApplicationDelegate"
+- !private "PSo18UIContentContainer"
+- !private "PSo18UIFocusEnvironment"
+- !private "CSo11UIResponder"
+- !private "PSo16UIStateRestoring"
+- !private "PSo18UITraitEnvironment"
+- !private "CSo16UIViewController"
+- !private "Su"
+- !private "VSs6UInt16"
+- !private "VSs6UInt32"
+- !private "VSs6UInt64"
+- !private "VSs5UInt8"
+- !private "Sc"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- "PSs10_ArrayType"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- !private "PSs32_BuiltinStringLiteralConvertible"
+- !private "PSs37_BuiltinUTF16StringLiteralConvertible"
+- !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "PSs16_CocoaStringType"
+- "PSs24_DestructorSafeContainer"
+- !private "PSs32_FileReferenceLiteralConvertible"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
+- !private "PSs22_RandomAccessAmbiguity"
+- "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASUtils.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASSignInOperation.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASServicePrivate.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASServiceOperationPrivate.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASServiceOperationGet.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASServiceOperationDownload.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASServiceOperation.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASRequestResultPrivate.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASRequestPrivate.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASContentItemPrivate.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASAssetResultPrivate.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASNetworkActivityIndicatorManager.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASAssetResult.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASContentItemsResult.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASContentItemResult.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASContentItemsRequest.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASContentItemRequest.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASRequestResult.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASRequest.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASContentItem.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASService.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASObjC.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASAssetRequest.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/Pods-greenwell-CAASObjC-umbrella.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Modules/module.modulemap"
+interface-hash: "93cefff8388db8d31f9462fe4b0ccec1"

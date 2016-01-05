@@ -7,522 +7,432 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0033D66B0B420E5A9234890085613A46 /* CAASContentItemRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E71D633AA17DC5F9682BAC9AF5C610A /* CAASContentItemRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0DADB0EE3DB6A2354632E90A96AA0B8C /* CAASNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A081A89CB0A36D9954A944446F9BAF7 /* CAASNetworkActivityIndicatorManager.m */; };
-		134D55746F38ECC83B6A72206856AA82 /* CAASNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2584215FA2BEF8C87F396E782878B093 /* CAASNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		15157A1E53C5D6E89F0BADF32E0C4825 /* CAASServiceOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 143A6A8C341B8DF77427FCFB4FD98AB2 /* CAASServiceOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1B3076833848AD4CCC23337A743429A1 /* CAASObjC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A41CF9F228F9F15E6A938413F876126 /* CAASObjC-dummy.m */; };
-		24F205AFFEEBD2C8187F9E28EC0AC5D5 /* CAASContentItemResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B89710D676829E62060E3C0FD1615A2 /* CAASContentItemResult.m */; };
-		261F044842ACD1712D77EB758ED3FC71 /* CAASRequestResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 94F8D0EA10CA9E7E72900D8FDE7EF778 /* CAASRequestResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		290DDBEF12ED024DB4E5329D15F6E1D8 /* CAASServiceOperationDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C47CB0F8B788F46BDD9D2484FFFD51 /* CAASServiceOperationDownload.m */; };
-		37A00BB291F1595D9E5B3C61164F2D83 /* CAASObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = 700B81BE0DF704E64D6F2B48D15EEDF2 /* CAASObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3F9687B25250440ECCBD22A640435967 /* CAASRequestResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 707FA382AFAC6D2A1EC6CD985CE1A072 /* CAASRequestResult.m */; };
-		3FF5D5666731BDC05790A93349E64537 /* CAASServiceOperationGet.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D523F5F88D8AC8B656D5C39A0A1712 /* CAASServiceOperationGet.m */; };
-		41977664C68E6DFA56B9529267D20A77 /* Pods-greenwell-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4530A32919EFF20DB90136DB77330E8D /* Pods-greenwell-dummy.m */; };
-		45A6B19CFC837D61CF08E5E43A52D2C3 /* CAASContentItemsResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9E7880AD1ACD5EDC94E7B2E9841603 /* CAASContentItemsResult.m */; };
-		46D5008B3C24A33D8968C134C3F23CC0 /* CAASObjC-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 25CC79DF263802A5F3AF585C40C19DCC /* CAASObjC-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4BBC7C14943C65190914E21C4F4D8535 /* Pods-greenwell-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B667D514AEF55D1868F2480D44943ACA /* Pods-greenwell-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		51EC4C19934AAD85CC60611207614167 /* CAASUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A18FFF2D32786B7BEC804883CE6228F /* CAASUtils.m */; };
-		54F37B6400D5EBE5C156C09AC518F9DF /* CAASServiceOperationDownload.h in Headers */ = {isa = PBXBuildFile; fileRef = 951A4C0D3A05E2E3C3110F03359926B3 /* CAASServiceOperationDownload.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5ADEF7E7CBBFFFEA6383AD25188B1F0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		5AF0B173891AD3CEB8A0443730F284DD /* CAASService.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B098CDEE88FFBA63319BD38602952F /* CAASService.m */; };
-		5BA7628CC45B8A6E25753236A38ACE81 /* CAASContentItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFE6FF611CF0820B4C7C0477B1DEC81 /* CAASContentItem.m */; };
-		66CE937740BE67AD97759E80D722B929 /* CAASAssetRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 122C3894F01B576BC4F417F5E9A12A88 /* CAASAssetRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		743E474A1084ED355560B179CCEABFA6 /* CAASContentItemsResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CCE5938E1FD0A4B9070C5CD6062EA1A /* CAASContentItemsResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		746DA621D462F2EE536F29B420DD675F /* CAASRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9058E79CAEFDCAE26D57123D9AAD616C /* CAASRequest.m */; };
-		776733ED192C52179B53272A17E78147 /* CAASSignInOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4875C7E57A64167674ABA4DC6E69C9 /* CAASSignInOperation.m */; };
-		798073F3E7A32BDA877ACA0AF8DF08F3 /* CAASServiceOperationPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0056D2D407F931ACAA58DD41287961B6 /* CAASServiceOperationPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7DE3E4884EA54BC10129399AFDFA6AD0 /* CAASContentItemRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 35300ED88F41E3E541F59FC188122169 /* CAASContentItemRequest.m */; };
-		8508326D114FFB37C1AF8BA7B899FD97 /* CAASRequestResultPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A01E404AEC6FE22A0C60A68168125C9 /* CAASRequestResultPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8831A09CDF25B4718D40B93FD58A16E3 /* CAASRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B5102D2CDAE3A75A93EEC2938A045D6 /* CAASRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F6ACD7A2AB58BB8838815393C71D909 /* CAASContentItemsRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = BDF523B523E93B5AC058A1FAB43DF521 /* CAASContentItemsRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9B37F905E7582470DD2EC0621B390F49 /* CAASServiceOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F2D180E26C68AA54958C6BEE730919 /* CAASServiceOperation.m */; };
-		9D8A310C64C2DD4AC62FC1B00CE392B7 /* CAASAssetResult.h in Headers */ = {isa = PBXBuildFile; fileRef = E779EEC898B9BDF18EC4EB831B46A6FB /* CAASAssetResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A0B4FF81E2313753F70020EABF65E3F7 /* CAASAssetResult.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD59C152D25321C321B3ABD08081A9F /* CAASAssetResult.m */; };
-		A3B857BC572466083577B9F53596399C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		A633C30C3F736428D4A56D69495AC4CF /* CAASContentItemPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7187EF013DE8452E820D1C92CE9A8A7F /* CAASContentItemPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AF324FA7FED6910C27F16490B5B0A867 /* CAASAssetResultPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BF54B25386FB2605A7195BD303F024 /* CAASAssetResultPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B83FF2D0A7B514F465A2CB8609DDA2B0 /* CAASContentItemResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BEA26F9F20BA074FD773FC50C0CD6D6 /* CAASContentItemResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B8DC983B620578044EFBC347A8DE88E6 /* CAASContentItemsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C92DDC4C5D7C9B1AEB43584A506E765 /* CAASContentItemsRequest.m */; };
-		BED8FCF02FB2FB8A18C8AC9D2975A3A5 /* CAASRequestPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = DC77B521D731637799A809ADFCD3D3CB /* CAASRequestPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2576E882D87999239DEE5FCCDCABD74 /* CAASService.h in Headers */ = {isa = PBXBuildFile; fileRef = A9E664B6459EDB6EC1D9A7DF7EA8B469 /* CAASService.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C4A5A773CC6F47D2372BA46666DAA8A9 /* CAASUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CF32949D301FA3C9E8E2248DD403679 /* CAASUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C91CEB642A76F4B58832174AABE059A0 /* CAASSignInOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = F653F8AFB490257EFE099B3B7695822A /* CAASSignInOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3436263006515E232C0109B5285BDBB /* CAASAssetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CC82137A202AB7566F8BEC50423852CD /* CAASAssetRequest.m */; };
-		E621FBBB163910359E39471F230A8E08 /* CAASServiceOperationGet.h in Headers */ = {isa = PBXBuildFile; fileRef = 076AA42AB5458FF0748EE3E6D4DD53EB /* CAASServiceOperationGet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EAA40A545F52F8569D76C67AB5F9E2D0 /* CAASContentItem.h in Headers */ = {isa = PBXBuildFile; fileRef = A5C02B7FCCE4A443113D83B703DDE9D9 /* CAASContentItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F0558C2086242FCCDDE6136A94A9205D /* CAASServicePrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = C8122CBCE777616FA4E4DE44F70ED9BA /* CAASServicePrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00061778E41635CA50EA795B /* CAASRequestResultPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = B0E359178D0742E9229CAC99 /* CAASRequestResultPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0257CE483E8AFCB6A8074B88 /* CAASRequestResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FC507F247D44B27EE91F87 /* CAASRequestResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0506AABF8333C3DF9F13F58F /* CAASContentItemRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 460915D1DD9CC8AEB8A65FCA /* CAASContentItemRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		058FACAFBC7640A5A20E97C3 /* CAASContentItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FB213EA8EC9133D15B73886 /* CAASContentItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F852AF03C0508EFDE9C49C0 /* CAASRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E904A51F4B8522DFF79024 /* CAASRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2187A9AD7EE9A3F4FC14CE4D /* Pods-greenwell-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13DEB4709046EE918BD52524 /* Pods-greenwell-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		237E94B14131305D5333983F /* CAASAssetResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E782F01370F102E25A71F6 /* CAASAssetResult.m */; };
+		24F56E7B68376F70A8142A8F /* Pods-greenwell-CAASObjC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CA4937A9F09075151E47C1 /* Pods-greenwell-CAASObjC-dummy.m */; };
+		2CDD2E4403066CC4ECACEF01 /* CAASContentItemResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F9057D72605B8CAF88CFC0A /* CAASContentItemResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FF1ACE0B8CA22ABE8CBFC40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F95354051678EFB8D357A18 /* Foundation.framework */; };
+		40586630F63920E1C5411E5E /* CAASObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = 460D032ADBBAF1A6B436A368 /* CAASObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		421FA8D3F136219C384D3D80 /* CAASServiceOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D7EA87AA5B393930165CDD63 /* CAASServiceOperation.m */; };
+		435F733EB6EE10A838EF8592 /* CAASNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B6C7B4B3C3C054F8D7E60AA0 /* CAASNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46F51882CB14F91B873BA251 /* CAASAssetResultPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = ACDD8752FE9320B159AFB10D /* CAASAssetResultPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D1BF6AC52AA8B761CC02338 /* CAASServicePrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 91E9A56258B4DC146219BCFE /* CAASServicePrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		518FA0643FF4C29FF8A45E37 /* CAASSignInOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C1EFEB7C618AA4B667F7BF /* CAASSignInOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F1CFC9C164CA5038597EB6D /* CAASRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A11646E8B379B1D4E6D92B /* CAASRequest.m */; };
+		64A3B7E76A323C28ED8F66E2 /* CAASRequestResult.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0F1B411CE29A5AFC4FC4DF /* CAASRequestResult.m */; };
+		689A6ADF6FE8E8FB46B89EC9 /* CAASSignInOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA0D9C46A5BB5AE3488B8BC /* CAASSignInOperation.m */; };
+		69D3E5AE2EC260EAACA0032B /* CAASUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = C318212624A8A44CDC8A0705 /* CAASUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7095DCD06C53DB278F21FC2A /* CAASRequestPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = F68400D35D9FBE57E1F1E4DB /* CAASRequestPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71783B4535598CBD1EE71678 /* CAASService.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D9F0D7032DE9394C3388F1 /* CAASService.m */; };
+		72C1424880AEA9592D84E24C /* CAASContentItemRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2841AEA5C99C4C5C5FE8431D /* CAASContentItemRequest.m */; };
+		8006A6330E5640A6785A2F8D /* Pods-greenwell-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EF0F8520482C407F48A1D3 /* Pods-greenwell-dummy.m */; };
+		8017F78B7A5A8E56AC695465 /* CAASContentItemsResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 566C46880B7C0B7A9EAD3082 /* CAASContentItemsResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85845E6C1BB72B6E1D72FB9B /* CAASAssetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8682F347F106008CE5770 /* CAASAssetRequest.m */; };
+		8CBEBC72F76BD1DF00F8DE6F /* CAASServiceOperationPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = C0FBD503CD3635F874ADF784 /* CAASServiceOperationPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92B197FDD4E3AA0CB2C0C8B7 /* CAASContentItemsRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DEDC0470AD5E5BF7B31F8D7 /* CAASContentItemsRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9553BB7EA82ACD102A19A2A3 /* Pods-greenwell-CAASObjC-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F3A58F1ACF4A0E3056A1B4A /* Pods-greenwell-CAASObjC-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		957D7C76D8E33EE3835E1426 /* CAASContentItemPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 014891E089D96382E4363280 /* CAASContentItemPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1CDCE6AFA54386362F6B175 /* CAASServiceOperationDownload.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C00869375B5327C411F8536 /* CAASServiceOperationDownload.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A20B36B4749BBC4B79A12320 /* CAASContentItemsResult.m in Sources */ = {isa = PBXBuildFile; fileRef = B59C7464008A62DCC78A9BB3 /* CAASContentItemsResult.m */; };
+		A624CDB5EB05D5AB10D73745 /* CAASUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A02D1418658477C2A2671DAC /* CAASUtils.m */; };
+		AB632A85DFBCDCA269B413AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F95354051678EFB8D357A18 /* Foundation.framework */; };
+		AD99F6BE0CB5C5D4AE45D61F /* CAASAssetResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 652E4B91B02674D9E5AEBC74 /* CAASAssetResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B07E7EB5317B37E5850944FB /* CAASServiceOperationGet.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E43A0BCD64639717D08B2A2 /* CAASServiceOperationGet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4BAAE56CAF578EAA8659A72 /* CAASNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B2AD0EFB2AC5D2BB2D472E63 /* CAASNetworkActivityIndicatorManager.m */; };
+		B819EC506CCF4CD956CCF803 /* CAASService.h in Headers */ = {isa = PBXBuildFile; fileRef = 660386F570A524155E622E4E /* CAASService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C71B196BCC7171B50A92D7A1 /* CAASContentItemsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF072C4B359831FA2198F40 /* CAASContentItemsRequest.m */; };
+		CD5C9184413EC74156EEDC23 /* CAASServiceOperationDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D6B44D3C0BB0B9CA89DB3 /* CAASServiceOperationDownload.m */; };
+		E6E462EA85B54C7C790CC133 /* CAASAssetRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E1D33071E579D1B9A2FC9C19 /* CAASAssetRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EAD3083D0CC6B12B30439B99 /* CAASServiceOperationGet.m in Sources */ = {isa = PBXBuildFile; fileRef = D85D159B3F2BB92787473CD5 /* CAASServiceOperationGet.m */; };
+		EB534733C214CD7535C753D2 /* CAASContentItemResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2742E4594DF208BB8AAFAE /* CAASContentItemResult.m */; };
+		EEFB9F23751371A906D8155D /* CAASContentItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0148DE047608FCAAD222F257 /* CAASContentItem.m */; };
+		EF3287C26CD35A62E781DE96 /* CAASServiceOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C26F2C949AA95709F550629 /* CAASServiceOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B38AB596A6D9C98A1CA1182839E3779C /* PBXContainerItemProxy */ = {
+		9F608A9FC306B17C679C2832 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = AA851BE446CE38DC48F9A100 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 408B9B27EF52DFAF67034E8F789B7F4E;
-			remoteInfo = CAASObjC;
+			remoteGlobalIDString = 9DE5610FC2BF6CF34D83D458;
+			remoteInfo = "Pods-greenwell-CAASObjC";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0056D2D407F931ACAA58DD41287961B6 /* CAASServiceOperationPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASServiceOperationPrivate.h; path = CAASObjC/CAASServiceOperationPrivate.h; sourceTree = "<group>"; };
-		05D523F5F88D8AC8B656D5C39A0A1712 /* CAASServiceOperationGet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CAASServiceOperationGet.m; path = CAASObjC/CAASServiceOperationGet.m; sourceTree = "<group>"; };
-		076AA42AB5458FF0748EE3E6D4DD53EB /* CAASServiceOperationGet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASServiceOperationGet.h; path = CAASObjC/CAASServiceOperationGet.h; sourceTree = "<group>"; };
-		0A18FFF2D32786B7BEC804883CE6228F /* CAASUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CAASUtils.m; path = CAASObjC/CAASUtils.m; sourceTree = "<group>"; };
-		0D4875C7E57A64167674ABA4DC6E69C9 /* CAASSignInOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CAASSignInOperation.m; path = CAASObjC/CAASSignInOperation.m; sourceTree = "<group>"; };
-		0DFE6FF611CF0820B4C7C0477B1DEC81 /* CAASContentItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CAASContentItem.m; path = CAASObjC/CAASContentItem.m; sourceTree = "<group>"; };
-		122C3894F01B576BC4F417F5E9A12A88 /* CAASAssetRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASAssetRequest.h; path = CAASObjC/CAASAssetRequest.h; sourceTree = "<group>"; };
-		143A6A8C341B8DF77427FCFB4FD98AB2 /* CAASServiceOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASServiceOperation.h; path = CAASObjC/CAASServiceOperation.h; sourceTree = "<group>"; };
-		1A081A89CB0A36D9954A944446F9BAF7 /* CAASNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CAASNetworkActivityIndicatorManager.m; path = CAASObjC/CAASNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
-		1C92DDC4C5D7C9B1AEB43584A506E765 /* CAASContentItemsRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CAASContentItemsRequest.m; path = CAASObjC/CAASContentItemsRequest.m; sourceTree = "<group>"; };
-		1CF32949D301FA3C9E8E2248DD403679 /* CAASUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASUtils.h; path = CAASObjC/CAASUtils.h; sourceTree = "<group>"; };
-		21ECF20453EA8A9F895AA2CA4EF2E316 /* IMFCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IMFCore.framework; path = Frameworks/IMFCore.framework; sourceTree = "<group>"; };
-		2584215FA2BEF8C87F396E782878B093 /* CAASNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASNetworkActivityIndicatorManager.h; path = CAASObjC/CAASNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
-		25CC79DF263802A5F3AF585C40C19DCC /* CAASObjC-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CAASObjC-umbrella.h"; sourceTree = "<group>"; };
-		26ADCDDED38E5B4C58796D36EBDD058F /* Pods-greenwell.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-greenwell.modulemap"; sourceTree = "<group>"; };
-		27A2369C2DE368E7968CC328D4DAAA33 /* Pods-greenwell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-greenwell.debug.xcconfig"; sourceTree = "<group>"; };
-		2CCE5938E1FD0A4B9070C5CD6062EA1A /* CAASContentItemsResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASContentItemsResult.h; path = CAASObjC/CAASContentItemsResult.h; sourceTree = "<group>"; };
-		35300ED88F41E3E541F59FC188122169 /* CAASContentItemRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CAASContentItemRequest.m; path = CAASObjC/CAASContentItemRequest.m; sourceTree = "<group>"; };
-		3AE3A2C12D1973A3E1DF86D22C5B0868 /* Pods-greenwell-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-greenwell-frameworks.sh"; sourceTree = "<group>"; };
-		3B64C5C0B3219E32E4901C2041F0EE1C /* Pods_greenwell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_greenwell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		41F2D180E26C68AA54958C6BEE730919 /* CAASServiceOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CAASServiceOperation.m; path = CAASObjC/CAASServiceOperation.m; sourceTree = "<group>"; };
-		4530A32919EFF20DB90136DB77330E8D /* Pods-greenwell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-greenwell-dummy.m"; sourceTree = "<group>"; };
-		4A01E404AEC6FE22A0C60A68168125C9 /* CAASRequestResultPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASRequestResultPrivate.h; path = CAASObjC/CAASRequestResultPrivate.h; sourceTree = "<group>"; };
-		4A41CF9F228F9F15E6A938413F876126 /* CAASObjC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CAASObjC-dummy.m"; sourceTree = "<group>"; };
-		5147FBC60D04A333647B8F07C8FEE733 /* IMFPush.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IMFPush.framework; path = Frameworks/IMFPush.framework; sourceTree = "<group>"; };
-		6041A939F736E86886C51B5098FD6E9E /* Pods-greenwell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-greenwell.release.xcconfig"; sourceTree = "<group>"; };
-		6B5102D2CDAE3A75A93EEC2938A045D6 /* CAASRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASRequest.h; path = CAASObjC/CAASRequest.h; sourceTree = "<group>"; };
-		6BEA26F9F20BA074FD773FC50C0CD6D6 /* CAASContentItemResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASContentItemResult.h; path = CAASObjC/CAASContentItemResult.h; sourceTree = "<group>"; };
-		6E71D633AA17DC5F9682BAC9AF5C610A /* CAASContentItemRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASContentItemRequest.h; path = CAASObjC/CAASContentItemRequest.h; sourceTree = "<group>"; };
-		6EC1CD1BF8D3341F8F116A6ED99DD5E8 /* Pods-greenwell-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-greenwell-resources.sh"; sourceTree = "<group>"; };
-		700B81BE0DF704E64D6F2B48D15EEDF2 /* CAASObjC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASObjC.h; path = CAASObjC/CAASObjC.h; sourceTree = "<group>"; };
-		707FA382AFAC6D2A1EC6CD985CE1A072 /* CAASRequestResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CAASRequestResult.m; path = CAASObjC/CAASRequestResult.m; sourceTree = "<group>"; };
-		7187EF013DE8452E820D1C92CE9A8A7F /* CAASContentItemPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASContentItemPrivate.h; path = CAASObjC/CAASContentItemPrivate.h; sourceTree = "<group>"; };
-		71B098CDEE88FFBA63319BD38602952F /* CAASService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CAASService.m; path = CAASObjC/CAASService.m; sourceTree = "<group>"; };
-		78C47CB0F8B788F46BDD9D2484FFFD51 /* CAASServiceOperationDownload.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CAASServiceOperationDownload.m; path = CAASObjC/CAASServiceOperationDownload.m; sourceTree = "<group>"; };
-		78F239A23AF557A9863204225469C1AE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7E9E7880AD1ACD5EDC94E7B2E9841603 /* CAASContentItemsResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CAASContentItemsResult.m; path = CAASObjC/CAASContentItemsResult.m; sourceTree = "<group>"; };
-		88D2BE2B4C6DB234BF500AC942A039BD /* CAASObjC.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CAASObjC.modulemap; sourceTree = "<group>"; };
-		9058E79CAEFDCAE26D57123D9AAD616C /* CAASRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CAASRequest.m; path = CAASObjC/CAASRequest.m; sourceTree = "<group>"; };
-		94BB3BA5C6F018518DADBCD367E26A09 /* CAASObjC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CAASObjC-prefix.pch"; sourceTree = "<group>"; };
-		94F8D0EA10CA9E7E72900D8FDE7EF778 /* CAASRequestResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASRequestResult.h; path = CAASObjC/CAASRequestResult.h; sourceTree = "<group>"; };
-		951A4C0D3A05E2E3C3110F03359926B3 /* CAASServiceOperationDownload.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASServiceOperationDownload.h; path = CAASObjC/CAASServiceOperationDownload.h; sourceTree = "<group>"; };
-		9B89710D676829E62060E3C0FD1615A2 /* CAASContentItemResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CAASContentItemResult.m; path = CAASObjC/CAASContentItemResult.m; sourceTree = "<group>"; };
-		A5C02B7FCCE4A443113D83B703DDE9D9 /* CAASContentItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASContentItem.h; path = CAASObjC/CAASContentItem.h; sourceTree = "<group>"; };
-		A6BF54B25386FB2605A7195BD303F024 /* CAASAssetResultPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASAssetResultPrivate.h; path = CAASObjC/CAASAssetResultPrivate.h; sourceTree = "<group>"; };
-		A76003CA87463C62281888C9A54012EF /* CAASObjC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CAASObjC.xcconfig; sourceTree = "<group>"; };
-		A9E664B6459EDB6EC1D9A7DF7EA8B469 /* CAASService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASService.h; path = CAASObjC/CAASService.h; sourceTree = "<group>"; };
-		B667D514AEF55D1868F2480D44943ACA /* Pods-greenwell-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-greenwell-umbrella.h"; sourceTree = "<group>"; };
-		B921BA36FC2C28A54D7C381DF599CEF2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BDF523B523E93B5AC058A1FAB43DF521 /* CAASContentItemsRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASContentItemsRequest.h; path = CAASObjC/CAASContentItemsRequest.h; sourceTree = "<group>"; };
-		C8122CBCE777616FA4E4DE44F70ED9BA /* CAASServicePrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASServicePrivate.h; path = CAASObjC/CAASServicePrivate.h; sourceTree = "<group>"; };
-		CC82137A202AB7566F8BEC50423852CD /* CAASAssetRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CAASAssetRequest.m; path = CAASObjC/CAASAssetRequest.m; sourceTree = "<group>"; };
-		DC77B521D731637799A809ADFCD3D3CB /* CAASRequestPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASRequestPrivate.h; path = CAASObjC/CAASRequestPrivate.h; sourceTree = "<group>"; };
-		DD78F20ADB823CA811E8BDCDDC659594 /* CAASObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CAASObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEBD81675AB5F6AEA597F890E744208A /* Pods-greenwell-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-greenwell-acknowledgements.plist"; sourceTree = "<group>"; };
-		DFD59C152D25321C321B3ABD08081A9F /* CAASAssetResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CAASAssetResult.m; path = CAASObjC/CAASAssetResult.m; sourceTree = "<group>"; };
-		E779EEC898B9BDF18EC4EB831B46A6FB /* CAASAssetResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASAssetResult.h; path = CAASObjC/CAASAssetResult.h; sourceTree = "<group>"; };
-		ECB1CDE87FB0F725ABA52F85DCA3E037 /* Pods-greenwell-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-greenwell-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F653F8AFB490257EFE099B3B7695822A /* CAASSignInOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASSignInOperation.h; path = CAASObjC/CAASSignInOperation.h; sourceTree = "<group>"; };
+		014891E089D96382E4363280 /* CAASContentItemPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASContentItemPrivate.h; path = CAASObjC/CAASContentItemPrivate.h; sourceTree = "<group>"; };
+		0148DE047608FCAAD222F257 /* CAASContentItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CAASContentItem.m; path = CAASObjC/CAASContentItem.m; sourceTree = "<group>"; };
+		07D9F0D7032DE9394C3388F1 /* CAASService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CAASService.m; path = CAASObjC/CAASService.m; sourceTree = "<group>"; };
+		0A22CE247171BDBB8A6F82AE /* Pods-greenwell-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-greenwell-environment.h"; sourceTree = "<group>"; };
+		0AA8682F347F106008CE5770 /* CAASAssetRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CAASAssetRequest.m; path = CAASObjC/CAASAssetRequest.m; sourceTree = "<group>"; };
+		1099CEE2D42A87D0396DF15F /* Pods_greenwell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_greenwell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13DEB4709046EE918BD52524 /* Pods-greenwell-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-greenwell-umbrella.h"; sourceTree = "<group>"; };
+		151A2F6625CE80997ED0B25F /* Pods-greenwell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-greenwell.debug.xcconfig"; sourceTree = "<group>"; };
+		2841AEA5C99C4C5C5FE8431D /* CAASContentItemRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CAASContentItemRequest.m; path = CAASObjC/CAASContentItemRequest.m; sourceTree = "<group>"; };
+		2B3D6B44D3C0BB0B9CA89DB3 /* CAASServiceOperationDownload.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CAASServiceOperationDownload.m; path = CAASObjC/CAASServiceOperationDownload.m; sourceTree = "<group>"; };
+		2E43A0BCD64639717D08B2A2 /* CAASServiceOperationGet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASServiceOperationGet.h; path = CAASObjC/CAASServiceOperationGet.h; sourceTree = "<group>"; };
+		2F2742E4594DF208BB8AAFAE /* CAASContentItemResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CAASContentItemResult.m; path = CAASObjC/CAASContentItemResult.m; sourceTree = "<group>"; };
+		32A11646E8B379B1D4E6D92B /* CAASRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CAASRequest.m; path = CAASObjC/CAASRequest.m; sourceTree = "<group>"; };
+		35FC507F247D44B27EE91F87 /* CAASRequestResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASRequestResult.h; path = CAASObjC/CAASRequestResult.h; sourceTree = "<group>"; };
+		460915D1DD9CC8AEB8A65FCA /* CAASContentItemRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASContentItemRequest.h; path = CAASObjC/CAASContentItemRequest.h; sourceTree = "<group>"; };
+		460D032ADBBAF1A6B436A368 /* CAASObjC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASObjC.h; path = CAASObjC/CAASObjC.h; sourceTree = "<group>"; };
+		4F3A58F1ACF4A0E3056A1B4A /* Pods-greenwell-CAASObjC-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-greenwell-CAASObjC-umbrella.h"; sourceTree = "<group>"; };
+		4F9057D72605B8CAF88CFC0A /* CAASContentItemResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASContentItemResult.h; path = CAASObjC/CAASContentItemResult.h; sourceTree = "<group>"; };
+		566C46880B7C0B7A9EAD3082 /* CAASContentItemsResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASContentItemsResult.h; path = CAASObjC/CAASContentItemsResult.h; sourceTree = "<group>"; };
+		5DEDC0470AD5E5BF7B31F8D7 /* CAASContentItemsRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASContentItemsRequest.h; path = CAASObjC/CAASContentItemsRequest.h; sourceTree = "<group>"; };
+		62C1EFEB7C618AA4B667F7BF /* CAASSignInOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASSignInOperation.h; path = CAASObjC/CAASSignInOperation.h; sourceTree = "<group>"; };
+		652E4B91B02674D9E5AEBC74 /* CAASAssetResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASAssetResult.h; path = CAASObjC/CAASAssetResult.h; sourceTree = "<group>"; };
+		660386F570A524155E622E4E /* CAASService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASService.h; path = CAASObjC/CAASService.h; sourceTree = "<group>"; };
+		6C00869375B5327C411F8536 /* CAASServiceOperationDownload.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASServiceOperationDownload.h; path = CAASObjC/CAASServiceOperationDownload.h; sourceTree = "<group>"; };
+		72EF0F8520482C407F48A1D3 /* Pods-greenwell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-greenwell-dummy.m"; sourceTree = "<group>"; };
+		7A00F93691D58D71DD62B8E4 /* Pods-greenwell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-greenwell.release.xcconfig"; sourceTree = "<group>"; };
+		7AA0D9C46A5BB5AE3488B8BC /* CAASSignInOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CAASSignInOperation.m; path = CAASObjC/CAASSignInOperation.m; sourceTree = "<group>"; };
+		7AF072C4B359831FA2198F40 /* CAASContentItemsRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CAASContentItemsRequest.m; path = CAASObjC/CAASContentItemsRequest.m; sourceTree = "<group>"; };
+		7B4F9EE8FBD77EA0D6C78ECB /* CAASObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CAASObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F95354051678EFB8D357A18 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		87CA4937A9F09075151E47C1 /* Pods-greenwell-CAASObjC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-greenwell-CAASObjC-dummy.m"; sourceTree = "<group>"; };
+		89DB0A1BF925A596626CB2AD /* Pods-greenwell.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-greenwell.modulemap"; sourceTree = "<group>"; };
+		8C26F2C949AA95709F550629 /* CAASServiceOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASServiceOperation.h; path = CAASObjC/CAASServiceOperation.h; sourceTree = "<group>"; };
+		8F2708C31B74E20C02F8CF9E /* Pods-greenwell-CAASObjC-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-greenwell-CAASObjC-Private.xcconfig"; sourceTree = "<group>"; };
+		91E9A56258B4DC146219BCFE /* CAASServicePrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASServicePrivate.h; path = CAASObjC/CAASServicePrivate.h; sourceTree = "<group>"; };
+		9275585E12B810105270D471 /* Pods-greenwell-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-greenwell-frameworks.sh"; sourceTree = "<group>"; };
+		96928CD340943E58EDF79E57 /* Pods-greenwell-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-greenwell-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9FB213EA8EC9133D15B73886 /* CAASContentItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASContentItem.h; path = CAASObjC/CAASContentItem.h; sourceTree = "<group>"; };
+		A02D1418658477C2A2671DAC /* CAASUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CAASUtils.m; path = CAASObjC/CAASUtils.m; sourceTree = "<group>"; };
+		ACDD8752FE9320B159AFB10D /* CAASAssetResultPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASAssetResultPrivate.h; path = CAASObjC/CAASAssetResultPrivate.h; sourceTree = "<group>"; };
+		AD0F1B411CE29A5AFC4FC4DF /* CAASRequestResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CAASRequestResult.m; path = CAASObjC/CAASRequestResult.m; sourceTree = "<group>"; };
+		B0E359178D0742E9229CAC99 /* CAASRequestResultPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASRequestResultPrivate.h; path = CAASObjC/CAASRequestResultPrivate.h; sourceTree = "<group>"; };
+		B2AD0EFB2AC5D2BB2D472E63 /* CAASNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CAASNetworkActivityIndicatorManager.m; path = CAASObjC/CAASNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		B59C7464008A62DCC78A9BB3 /* CAASContentItemsResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CAASContentItemsResult.m; path = CAASObjC/CAASContentItemsResult.m; sourceTree = "<group>"; };
+		B66566A53E6284F260F67899 /* Pods-greenwell-CAASObjC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-greenwell-CAASObjC-prefix.pch"; sourceTree = "<group>"; };
+		B6C7B4B3C3C054F8D7E60AA0 /* CAASNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASNetworkActivityIndicatorManager.h; path = CAASObjC/CAASNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		B95074D145672399FBB3F12E /* Pods-greenwell-CAASObjC.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-greenwell-CAASObjC.modulemap"; sourceTree = "<group>"; };
+		C0FBD503CD3635F874ADF784 /* CAASServiceOperationPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASServiceOperationPrivate.h; path = CAASObjC/CAASServiceOperationPrivate.h; sourceTree = "<group>"; };
+		C318212624A8A44CDC8A0705 /* CAASUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASUtils.h; path = CAASObjC/CAASUtils.h; sourceTree = "<group>"; };
+		C7E904A51F4B8522DFF79024 /* CAASRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASRequest.h; path = CAASObjC/CAASRequest.h; sourceTree = "<group>"; };
+		CB7518928D245D4A545DBD45 /* Pods-greenwell-CAASObjC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-greenwell-CAASObjC.xcconfig"; sourceTree = "<group>"; };
+		D4E45956AE1EB19922EDE4C6 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D7EA87AA5B393930165CDD63 /* CAASServiceOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CAASServiceOperation.m; path = CAASObjC/CAASServiceOperation.m; sourceTree = "<group>"; };
+		D817B98372D71FFD4065F8C1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D85D159B3F2BB92787473CD5 /* CAASServiceOperationGet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CAASServiceOperationGet.m; path = CAASObjC/CAASServiceOperationGet.m; sourceTree = "<group>"; };
+		DFD3932B1A32F2D26C501BE8 /* Pods-greenwell-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-greenwell-resources.sh"; sourceTree = "<group>"; };
+		E1D33071E579D1B9A2FC9C19 /* CAASAssetRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASAssetRequest.h; path = CAASObjC/CAASAssetRequest.h; sourceTree = "<group>"; };
+		E4E782F01370F102E25A71F6 /* CAASAssetResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CAASAssetResult.m; path = CAASObjC/CAASAssetResult.m; sourceTree = "<group>"; };
+		F47FE03BD3D5A8D7DFEFB252 /* Pods-greenwell-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-greenwell-acknowledgements.plist"; sourceTree = "<group>"; };
+		F68400D35D9FBE57E1F1E4DB /* CAASRequestPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAASRequestPrivate.h; path = CAASObjC/CAASRequestPrivate.h; sourceTree = "<group>"; };
+		FDCE41A47FA86E0C8F7DA0CE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CBAC7FD8DF74AACF7240D09013358985 /* Frameworks */ = {
+		768989E8B962C80AAF440C1F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3B857BC572466083577B9F53596399C /* Foundation.framework in Frameworks */,
+				3FF1ACE0B8CA22ABE8CBFC40 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D31CC86208326D3AF254FEBA34B61AA4 /* Frameworks */ = {
+		BB589A5DB62845639F497CAC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5ADEF7E7CBBFFFEA6383AD25188B1F0C /* Foundation.framework in Frameworks */,
+				AB632A85DFBCDCA269B413AC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		16B829B2762FE82E110EA0A6B1240370 /* Frameworks */ = {
+		0128AF9B9083E2BB7E7A4E08 = {
 			isa = PBXGroup;
 			children = (
-				21ECF20453EA8A9F895AA2CA4EF2E316 /* IMFCore.framework */,
+				D4E45956AE1EB19922EDE4C6 /* Podfile */,
+				24269A70EC7CDE700446C9B3 /* Frameworks */,
+				1F5E2C175501527CD478C8D6 /* Pods */,
+				D8A6D7E051B4B1A44D520364 /* Products */,
+				AF6EA1E60110F8591BA70529 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		1F5E2C175501527CD478C8D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B119D9A1901D5736381415A3 /* CAASObjC */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		24269A70EC7CDE700446C9B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC5A118457E95D453D8CDD17 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		17DA62EE38EF5B26DE93709232D1B528 /* Targets Support Files */ = {
+		5FD51704A6E93C1703080FEF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2DB45A6A0624245555E7E6C1B80187FA /* Pods-greenwell */,
+				D817B98372D71FFD4065F8C1 /* Info.plist */,
+				B95074D145672399FBB3F12E /* Pods-greenwell-CAASObjC.modulemap */,
+				CB7518928D245D4A545DBD45 /* Pods-greenwell-CAASObjC.xcconfig */,
+				8F2708C31B74E20C02F8CF9E /* Pods-greenwell-CAASObjC-Private.xcconfig */,
+				87CA4937A9F09075151E47C1 /* Pods-greenwell-CAASObjC-dummy.m */,
+				B66566A53E6284F260F67899 /* Pods-greenwell-CAASObjC-prefix.pch */,
+				4F3A58F1ACF4A0E3056A1B4A /* Pods-greenwell-CAASObjC-umbrella.h */,
 			);
-			name = "Targets Support Files";
+			name = "Support Files";
+			path = "../Target Support Files/Pods-greenwell-CAASObjC";
 			sourceTree = "<group>";
 		};
-		2DB45A6A0624245555E7E6C1B80187FA /* Pods-greenwell */ = {
+		92DECE22C16A1DFFBFA3FCC1 /* Pods-greenwell */ = {
 			isa = PBXGroup;
 			children = (
-				78F239A23AF557A9863204225469C1AE /* Info.plist */,
-				26ADCDDED38E5B4C58796D36EBDD058F /* Pods-greenwell.modulemap */,
-				ECB1CDE87FB0F725ABA52F85DCA3E037 /* Pods-greenwell-acknowledgements.markdown */,
-				DEBD81675AB5F6AEA597F890E744208A /* Pods-greenwell-acknowledgements.plist */,
-				4530A32919EFF20DB90136DB77330E8D /* Pods-greenwell-dummy.m */,
-				3AE3A2C12D1973A3E1DF86D22C5B0868 /* Pods-greenwell-frameworks.sh */,
-				6EC1CD1BF8D3341F8F116A6ED99DD5E8 /* Pods-greenwell-resources.sh */,
-				B667D514AEF55D1868F2480D44943ACA /* Pods-greenwell-umbrella.h */,
-				27A2369C2DE368E7968CC328D4DAAA33 /* Pods-greenwell.debug.xcconfig */,
-				6041A939F736E86886C51B5098FD6E9E /* Pods-greenwell.release.xcconfig */,
+				FDCE41A47FA86E0C8F7DA0CE /* Info.plist */,
+				89DB0A1BF925A596626CB2AD /* Pods-greenwell.modulemap */,
+				96928CD340943E58EDF79E57 /* Pods-greenwell-acknowledgements.markdown */,
+				F47FE03BD3D5A8D7DFEFB252 /* Pods-greenwell-acknowledgements.plist */,
+				72EF0F8520482C407F48A1D3 /* Pods-greenwell-dummy.m */,
+				0A22CE247171BDBB8A6F82AE /* Pods-greenwell-environment.h */,
+				9275585E12B810105270D471 /* Pods-greenwell-frameworks.sh */,
+				DFD3932B1A32F2D26C501BE8 /* Pods-greenwell-resources.sh */,
+				13DEB4709046EE918BD52524 /* Pods-greenwell-umbrella.h */,
+				151A2F6625CE80997ED0B25F /* Pods-greenwell.debug.xcconfig */,
+				7A00F93691D58D71DD62B8E4 /* Pods-greenwell.release.xcconfig */,
 			);
 			name = "Pods-greenwell";
 			path = "Target Support Files/Pods-greenwell";
 			sourceTree = "<group>";
 		};
-		327CE5C6E9718BD2515D839F48E66BDC /* Pods */ = {
+		AF6EA1E60110F8591BA70529 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				EFB063A8E741EBD7A709BAE7B9EC1D60 /* CAASObjC */,
-				FCE33A05E24EA24521E7D9E917B3DF5F /* IMFCore */,
-				F6818B210E9369090867066B9386E345 /* IMFPush */,
+				92DECE22C16A1DFFBFA3FCC1 /* Pods-greenwell */,
 			);
-			name = Pods;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		35849EFFAC9831CEEAE2B7D18BCBC340 /* Support Files */ = {
+		B119D9A1901D5736381415A3 /* CAASObjC */ = {
 			isa = PBXGroup;
 			children = (
-				88D2BE2B4C6DB234BF500AC942A039BD /* CAASObjC.modulemap */,
-				A76003CA87463C62281888C9A54012EF /* CAASObjC.xcconfig */,
-				4A41CF9F228F9F15E6A938413F876126 /* CAASObjC-dummy.m */,
-				94BB3BA5C6F018518DADBCD367E26A09 /* CAASObjC-prefix.pch */,
-				25CC79DF263802A5F3AF585C40C19DCC /* CAASObjC-umbrella.h */,
-				B921BA36FC2C28A54D7C381DF599CEF2 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/CAASObjC";
-			sourceTree = "<group>";
-		};
-		4C729359BBFDD6DD10F88CE78E3B9BDD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5147FBC60D04A333647B8F07C8FEE733 /* IMFPush.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		59C6BF5572163E68E7A245298EA8D943 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DD78F20ADB823CA811E8BDCDDC659594 /* CAASObjC.framework */,
-				3B64C5C0B3219E32E4901C2041F0EE1C /* Pods_greenwell.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				327CE5C6E9718BD2515D839F48E66BDC /* Pods */,
-				59C6BF5572163E68E7A245298EA8D943 /* Products */,
-				17DA62EE38EF5B26DE93709232D1B528 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		EFB063A8E741EBD7A709BAE7B9EC1D60 /* CAASObjC */ = {
-			isa = PBXGroup;
-			children = (
-				122C3894F01B576BC4F417F5E9A12A88 /* CAASAssetRequest.h */,
-				CC82137A202AB7566F8BEC50423852CD /* CAASAssetRequest.m */,
-				E779EEC898B9BDF18EC4EB831B46A6FB /* CAASAssetResult.h */,
-				DFD59C152D25321C321B3ABD08081A9F /* CAASAssetResult.m */,
-				A6BF54B25386FB2605A7195BD303F024 /* CAASAssetResultPrivate.h */,
-				A5C02B7FCCE4A443113D83B703DDE9D9 /* CAASContentItem.h */,
-				0DFE6FF611CF0820B4C7C0477B1DEC81 /* CAASContentItem.m */,
-				7187EF013DE8452E820D1C92CE9A8A7F /* CAASContentItemPrivate.h */,
-				6E71D633AA17DC5F9682BAC9AF5C610A /* CAASContentItemRequest.h */,
-				35300ED88F41E3E541F59FC188122169 /* CAASContentItemRequest.m */,
-				6BEA26F9F20BA074FD773FC50C0CD6D6 /* CAASContentItemResult.h */,
-				9B89710D676829E62060E3C0FD1615A2 /* CAASContentItemResult.m */,
-				BDF523B523E93B5AC058A1FAB43DF521 /* CAASContentItemsRequest.h */,
-				1C92DDC4C5D7C9B1AEB43584A506E765 /* CAASContentItemsRequest.m */,
-				2CCE5938E1FD0A4B9070C5CD6062EA1A /* CAASContentItemsResult.h */,
-				7E9E7880AD1ACD5EDC94E7B2E9841603 /* CAASContentItemsResult.m */,
-				2584215FA2BEF8C87F396E782878B093 /* CAASNetworkActivityIndicatorManager.h */,
-				1A081A89CB0A36D9954A944446F9BAF7 /* CAASNetworkActivityIndicatorManager.m */,
-				700B81BE0DF704E64D6F2B48D15EEDF2 /* CAASObjC.h */,
-				6B5102D2CDAE3A75A93EEC2938A045D6 /* CAASRequest.h */,
-				9058E79CAEFDCAE26D57123D9AAD616C /* CAASRequest.m */,
-				DC77B521D731637799A809ADFCD3D3CB /* CAASRequestPrivate.h */,
-				94F8D0EA10CA9E7E72900D8FDE7EF778 /* CAASRequestResult.h */,
-				707FA382AFAC6D2A1EC6CD985CE1A072 /* CAASRequestResult.m */,
-				4A01E404AEC6FE22A0C60A68168125C9 /* CAASRequestResultPrivate.h */,
-				A9E664B6459EDB6EC1D9A7DF7EA8B469 /* CAASService.h */,
-				71B098CDEE88FFBA63319BD38602952F /* CAASService.m */,
-				143A6A8C341B8DF77427FCFB4FD98AB2 /* CAASServiceOperation.h */,
-				41F2D180E26C68AA54958C6BEE730919 /* CAASServiceOperation.m */,
-				951A4C0D3A05E2E3C3110F03359926B3 /* CAASServiceOperationDownload.h */,
-				78C47CB0F8B788F46BDD9D2484FFFD51 /* CAASServiceOperationDownload.m */,
-				076AA42AB5458FF0748EE3E6D4DD53EB /* CAASServiceOperationGet.h */,
-				05D523F5F88D8AC8B656D5C39A0A1712 /* CAASServiceOperationGet.m */,
-				0056D2D407F931ACAA58DD41287961B6 /* CAASServiceOperationPrivate.h */,
-				C8122CBCE777616FA4E4DE44F70ED9BA /* CAASServicePrivate.h */,
-				F653F8AFB490257EFE099B3B7695822A /* CAASSignInOperation.h */,
-				0D4875C7E57A64167674ABA4DC6E69C9 /* CAASSignInOperation.m */,
-				1CF32949D301FA3C9E8E2248DD403679 /* CAASUtils.h */,
-				0A18FFF2D32786B7BEC804883CE6228F /* CAASUtils.m */,
-				35849EFFAC9831CEEAE2B7D18BCBC340 /* Support Files */,
+				E1D33071E579D1B9A2FC9C19 /* CAASAssetRequest.h */,
+				0AA8682F347F106008CE5770 /* CAASAssetRequest.m */,
+				652E4B91B02674D9E5AEBC74 /* CAASAssetResult.h */,
+				E4E782F01370F102E25A71F6 /* CAASAssetResult.m */,
+				ACDD8752FE9320B159AFB10D /* CAASAssetResultPrivate.h */,
+				9FB213EA8EC9133D15B73886 /* CAASContentItem.h */,
+				0148DE047608FCAAD222F257 /* CAASContentItem.m */,
+				014891E089D96382E4363280 /* CAASContentItemPrivate.h */,
+				460915D1DD9CC8AEB8A65FCA /* CAASContentItemRequest.h */,
+				2841AEA5C99C4C5C5FE8431D /* CAASContentItemRequest.m */,
+				4F9057D72605B8CAF88CFC0A /* CAASContentItemResult.h */,
+				2F2742E4594DF208BB8AAFAE /* CAASContentItemResult.m */,
+				5DEDC0470AD5E5BF7B31F8D7 /* CAASContentItemsRequest.h */,
+				7AF072C4B359831FA2198F40 /* CAASContentItemsRequest.m */,
+				566C46880B7C0B7A9EAD3082 /* CAASContentItemsResult.h */,
+				B59C7464008A62DCC78A9BB3 /* CAASContentItemsResult.m */,
+				B6C7B4B3C3C054F8D7E60AA0 /* CAASNetworkActivityIndicatorManager.h */,
+				B2AD0EFB2AC5D2BB2D472E63 /* CAASNetworkActivityIndicatorManager.m */,
+				460D032ADBBAF1A6B436A368 /* CAASObjC.h */,
+				C7E904A51F4B8522DFF79024 /* CAASRequest.h */,
+				32A11646E8B379B1D4E6D92B /* CAASRequest.m */,
+				F68400D35D9FBE57E1F1E4DB /* CAASRequestPrivate.h */,
+				35FC507F247D44B27EE91F87 /* CAASRequestResult.h */,
+				AD0F1B411CE29A5AFC4FC4DF /* CAASRequestResult.m */,
+				B0E359178D0742E9229CAC99 /* CAASRequestResultPrivate.h */,
+				660386F570A524155E622E4E /* CAASService.h */,
+				07D9F0D7032DE9394C3388F1 /* CAASService.m */,
+				8C26F2C949AA95709F550629 /* CAASServiceOperation.h */,
+				D7EA87AA5B393930165CDD63 /* CAASServiceOperation.m */,
+				6C00869375B5327C411F8536 /* CAASServiceOperationDownload.h */,
+				2B3D6B44D3C0BB0B9CA89DB3 /* CAASServiceOperationDownload.m */,
+				2E43A0BCD64639717D08B2A2 /* CAASServiceOperationGet.h */,
+				D85D159B3F2BB92787473CD5 /* CAASServiceOperationGet.m */,
+				C0FBD503CD3635F874ADF784 /* CAASServiceOperationPrivate.h */,
+				91E9A56258B4DC146219BCFE /* CAASServicePrivate.h */,
+				62C1EFEB7C618AA4B667F7BF /* CAASSignInOperation.h */,
+				7AA0D9C46A5BB5AE3488B8BC /* CAASSignInOperation.m */,
+				C318212624A8A44CDC8A0705 /* CAASUtils.h */,
+				A02D1418658477C2A2671DAC /* CAASUtils.m */,
+				5FD51704A6E93C1703080FEF /* Support Files */,
 			);
 			path = CAASObjC;
 			sourceTree = "<group>";
 		};
-		F6818B210E9369090867066B9386E345 /* IMFPush */ = {
+		D8A6D7E051B4B1A44D520364 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4C729359BBFDD6DD10F88CE78E3B9BDD /* Frameworks */,
+				7B4F9EE8FBD77EA0D6C78ECB /* CAASObjC.framework */,
+				1099CEE2D42A87D0396DF15F /* Pods_greenwell.framework */,
 			);
-			path = IMFPush;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		FCE33A05E24EA24521E7D9E917B3DF5F /* IMFCore */ = {
+		FC5A118457E95D453D8CDD17 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				16B829B2762FE82E110EA0A6B1240370 /* Frameworks */,
+				7F95354051678EFB8D357A18 /* Foundation.framework */,
 			);
-			path = IMFCore;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		906653854CD2365FC494672DE39222D0 /* Headers */ = {
+		A03331D2DB0B4E228C857139 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BBC7C14943C65190914E21C4F4D8535 /* Pods-greenwell-umbrella.h in Headers */,
+				2187A9AD7EE9A3F4FC14CE4D /* Pods-greenwell-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BEC1D8DBB06B73040A7CA9AB5A7D911E /* Headers */ = {
+		CC1818ED21C0517113AD42C0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66CE937740BE67AD97759E80D722B929 /* CAASAssetRequest.h in Headers */,
-				9D8A310C64C2DD4AC62FC1B00CE392B7 /* CAASAssetResult.h in Headers */,
-				AF324FA7FED6910C27F16490B5B0A867 /* CAASAssetResultPrivate.h in Headers */,
-				EAA40A545F52F8569D76C67AB5F9E2D0 /* CAASContentItem.h in Headers */,
-				A633C30C3F736428D4A56D69495AC4CF /* CAASContentItemPrivate.h in Headers */,
-				0033D66B0B420E5A9234890085613A46 /* CAASContentItemRequest.h in Headers */,
-				B83FF2D0A7B514F465A2CB8609DDA2B0 /* CAASContentItemResult.h in Headers */,
-				8F6ACD7A2AB58BB8838815393C71D909 /* CAASContentItemsRequest.h in Headers */,
-				743E474A1084ED355560B179CCEABFA6 /* CAASContentItemsResult.h in Headers */,
-				134D55746F38ECC83B6A72206856AA82 /* CAASNetworkActivityIndicatorManager.h in Headers */,
-				46D5008B3C24A33D8968C134C3F23CC0 /* CAASObjC-umbrella.h in Headers */,
-				37A00BB291F1595D9E5B3C61164F2D83 /* CAASObjC.h in Headers */,
-				8831A09CDF25B4718D40B93FD58A16E3 /* CAASRequest.h in Headers */,
-				BED8FCF02FB2FB8A18C8AC9D2975A3A5 /* CAASRequestPrivate.h in Headers */,
-				261F044842ACD1712D77EB758ED3FC71 /* CAASRequestResult.h in Headers */,
-				8508326D114FFB37C1AF8BA7B899FD97 /* CAASRequestResultPrivate.h in Headers */,
-				C2576E882D87999239DEE5FCCDCABD74 /* CAASService.h in Headers */,
-				15157A1E53C5D6E89F0BADF32E0C4825 /* CAASServiceOperation.h in Headers */,
-				54F37B6400D5EBE5C156C09AC518F9DF /* CAASServiceOperationDownload.h in Headers */,
-				E621FBBB163910359E39471F230A8E08 /* CAASServiceOperationGet.h in Headers */,
-				798073F3E7A32BDA877ACA0AF8DF08F3 /* CAASServiceOperationPrivate.h in Headers */,
-				F0558C2086242FCCDDE6136A94A9205D /* CAASServicePrivate.h in Headers */,
-				C91CEB642A76F4B58832174AABE059A0 /* CAASSignInOperation.h in Headers */,
-				C4A5A773CC6F47D2372BA46666DAA8A9 /* CAASUtils.h in Headers */,
+				E6E462EA85B54C7C790CC133 /* CAASAssetRequest.h in Headers */,
+				AD99F6BE0CB5C5D4AE45D61F /* CAASAssetResult.h in Headers */,
+				46F51882CB14F91B873BA251 /* CAASAssetResultPrivate.h in Headers */,
+				058FACAFBC7640A5A20E97C3 /* CAASContentItem.h in Headers */,
+				957D7C76D8E33EE3835E1426 /* CAASContentItemPrivate.h in Headers */,
+				0506AABF8333C3DF9F13F58F /* CAASContentItemRequest.h in Headers */,
+				2CDD2E4403066CC4ECACEF01 /* CAASContentItemResult.h in Headers */,
+				92B197FDD4E3AA0CB2C0C8B7 /* CAASContentItemsRequest.h in Headers */,
+				8017F78B7A5A8E56AC695465 /* CAASContentItemsResult.h in Headers */,
+				435F733EB6EE10A838EF8592 /* CAASNetworkActivityIndicatorManager.h in Headers */,
+				40586630F63920E1C5411E5E /* CAASObjC.h in Headers */,
+				0F852AF03C0508EFDE9C49C0 /* CAASRequest.h in Headers */,
+				7095DCD06C53DB278F21FC2A /* CAASRequestPrivate.h in Headers */,
+				0257CE483E8AFCB6A8074B88 /* CAASRequestResult.h in Headers */,
+				00061778E41635CA50EA795B /* CAASRequestResultPrivate.h in Headers */,
+				B819EC506CCF4CD956CCF803 /* CAASService.h in Headers */,
+				EF3287C26CD35A62E781DE96 /* CAASServiceOperation.h in Headers */,
+				A1CDCE6AFA54386362F6B175 /* CAASServiceOperationDownload.h in Headers */,
+				B07E7EB5317B37E5850944FB /* CAASServiceOperationGet.h in Headers */,
+				8CBEBC72F76BD1DF00F8DE6F /* CAASServiceOperationPrivate.h in Headers */,
+				4D1BF6AC52AA8B761CC02338 /* CAASServicePrivate.h in Headers */,
+				518FA0643FF4C29FF8A45E37 /* CAASSignInOperation.h in Headers */,
+				69D3E5AE2EC260EAACA0032B /* CAASUtils.h in Headers */,
+				9553BB7EA82ACD102A19A2A3 /* Pods-greenwell-CAASObjC-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		408B9B27EF52DFAF67034E8F789B7F4E /* CAASObjC */ = {
+		8622D923CB1A6532BD6607F8 /* Pods-greenwell */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0E4B145580B2E6E0C10E2C2A6919178C /* Build configuration list for PBXNativeTarget "CAASObjC" */;
+			buildConfigurationList = D0A327E50745608AC57D87E8 /* Build configuration list for PBXNativeTarget "Pods-greenwell" */;
 			buildPhases = (
-				E4D9A5066C3935C424F02906B89B19FD /* Sources */,
-				D31CC86208326D3AF254FEBA34B61AA4 /* Frameworks */,
-				BEC1D8DBB06B73040A7CA9AB5A7D911E /* Headers */,
+				1CD41F013194F778BF5C9348 /* Sources */,
+				BB589A5DB62845639F497CAC /* Frameworks */,
+				A03331D2DB0B4E228C857139 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = CAASObjC;
-			productName = CAASObjC;
-			productReference = DD78F20ADB823CA811E8BDCDDC659594 /* CAASObjC.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		69B4F314F715521CFE5AA1DD3C949924 /* Pods-greenwell */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B36426791F3B1A1507EC92CE18FAD3DF /* Build configuration list for PBXNativeTarget "Pods-greenwell" */;
-			buildPhases = (
-				4E142C8BAFA36D0159626A696D27CF3E /* Sources */,
-				CBAC7FD8DF74AACF7240D09013358985 /* Frameworks */,
-				906653854CD2365FC494672DE39222D0 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				86405B2A993ED50D425750787118BB28 /* PBXTargetDependency */,
+				5479F8CA4FC912C92AA3A817 /* PBXTargetDependency */,
 			);
 			name = "Pods-greenwell";
 			productName = "Pods-greenwell";
-			productReference = 3B64C5C0B3219E32E4901C2041F0EE1C /* Pods_greenwell.framework */;
+			productReference = 1099CEE2D42A87D0396DF15F /* Pods_greenwell.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9DE5610FC2BF6CF34D83D458 /* Pods-greenwell-CAASObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5A2CFF28D30CA288257431A /* Build configuration list for PBXNativeTarget "Pods-greenwell-CAASObjC" */;
+			buildPhases = (
+				E7C023FDDDAC5D875E998F15 /* Sources */,
+				768989E8B962C80AAF440C1F /* Frameworks */,
+				CC1818ED21C0517113AD42C0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-greenwell-CAASObjC";
+			productName = "Pods-greenwell-CAASObjC";
+			productReference = 7B4F9EE8FBD77EA0D6C78ECB /* CAASObjC.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		AA851BE446CE38DC48F9A100 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 181B634E6CB9A623C102DF9C /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 59C6BF5572163E68E7A245298EA8D943 /* Products */;
+			mainGroup = 0128AF9B9083E2BB7E7A4E08;
+			productRefGroup = D8A6D7E051B4B1A44D520364 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				408B9B27EF52DFAF67034E8F789B7F4E /* CAASObjC */,
-				69B4F314F715521CFE5AA1DD3C949924 /* Pods-greenwell */,
+				8622D923CB1A6532BD6607F8 /* Pods-greenwell */,
+				9DE5610FC2BF6CF34D83D458 /* Pods-greenwell-CAASObjC */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4E142C8BAFA36D0159626A696D27CF3E /* Sources */ = {
+		1CD41F013194F778BF5C9348 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41977664C68E6DFA56B9529267D20A77 /* Pods-greenwell-dummy.m in Sources */,
+				8006A6330E5640A6785A2F8D /* Pods-greenwell-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E4D9A5066C3935C424F02906B89B19FD /* Sources */ = {
+		E7C023FDDDAC5D875E998F15 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3436263006515E232C0109B5285BDBB /* CAASAssetRequest.m in Sources */,
-				A0B4FF81E2313753F70020EABF65E3F7 /* CAASAssetResult.m in Sources */,
-				5BA7628CC45B8A6E25753236A38ACE81 /* CAASContentItem.m in Sources */,
-				7DE3E4884EA54BC10129399AFDFA6AD0 /* CAASContentItemRequest.m in Sources */,
-				24F205AFFEEBD2C8187F9E28EC0AC5D5 /* CAASContentItemResult.m in Sources */,
-				B8DC983B620578044EFBC347A8DE88E6 /* CAASContentItemsRequest.m in Sources */,
-				45A6B19CFC837D61CF08E5E43A52D2C3 /* CAASContentItemsResult.m in Sources */,
-				0DADB0EE3DB6A2354632E90A96AA0B8C /* CAASNetworkActivityIndicatorManager.m in Sources */,
-				1B3076833848AD4CCC23337A743429A1 /* CAASObjC-dummy.m in Sources */,
-				746DA621D462F2EE536F29B420DD675F /* CAASRequest.m in Sources */,
-				3F9687B25250440ECCBD22A640435967 /* CAASRequestResult.m in Sources */,
-				5AF0B173891AD3CEB8A0443730F284DD /* CAASService.m in Sources */,
-				9B37F905E7582470DD2EC0621B390F49 /* CAASServiceOperation.m in Sources */,
-				290DDBEF12ED024DB4E5329D15F6E1D8 /* CAASServiceOperationDownload.m in Sources */,
-				3FF5D5666731BDC05790A93349E64537 /* CAASServiceOperationGet.m in Sources */,
-				776733ED192C52179B53272A17E78147 /* CAASSignInOperation.m in Sources */,
-				51EC4C19934AAD85CC60611207614167 /* CAASUtils.m in Sources */,
+				85845E6C1BB72B6E1D72FB9B /* CAASAssetRequest.m in Sources */,
+				237E94B14131305D5333983F /* CAASAssetResult.m in Sources */,
+				EEFB9F23751371A906D8155D /* CAASContentItem.m in Sources */,
+				72C1424880AEA9592D84E24C /* CAASContentItemRequest.m in Sources */,
+				EB534733C214CD7535C753D2 /* CAASContentItemResult.m in Sources */,
+				C71B196BCC7171B50A92D7A1 /* CAASContentItemsRequest.m in Sources */,
+				A20B36B4749BBC4B79A12320 /* CAASContentItemsResult.m in Sources */,
+				B4BAAE56CAF578EAA8659A72 /* CAASNetworkActivityIndicatorManager.m in Sources */,
+				5F1CFC9C164CA5038597EB6D /* CAASRequest.m in Sources */,
+				64A3B7E76A323C28ED8F66E2 /* CAASRequestResult.m in Sources */,
+				71783B4535598CBD1EE71678 /* CAASService.m in Sources */,
+				421FA8D3F136219C384D3D80 /* CAASServiceOperation.m in Sources */,
+				CD5C9184413EC74156EEDC23 /* CAASServiceOperationDownload.m in Sources */,
+				EAD3083D0CC6B12B30439B99 /* CAASServiceOperationGet.m in Sources */,
+				689A6ADF6FE8E8FB46B89EC9 /* CAASSignInOperation.m in Sources */,
+				A624CDB5EB05D5AB10D73745 /* CAASUtils.m in Sources */,
+				24F56E7B68376F70A8142A8F /* Pods-greenwell-CAASObjC-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		86405B2A993ED50D425750787118BB28 /* PBXTargetDependency */ = {
+		5479F8CA4FC912C92AA3A817 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = CAASObjC;
-			target = 408B9B27EF52DFAF67034E8F789B7F4E /* CAASObjC */;
-			targetProxy = B38AB596A6D9C98A1CA1182839E3779C /* PBXContainerItemProxy */;
+			name = "Pods-greenwell-CAASObjC";
+			target = 9DE5610FC2BF6CF34D83D458 /* Pods-greenwell-CAASObjC */;
+			targetProxy = 9F608A9FC306B17C679C2832 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1A0D81C0090214DA2EF290CB6EBD66F3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6041A939F736E86886C51B5098FD6E9E /* Pods-greenwell.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-greenwell/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-greenwell/Pods-greenwell.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_greenwell;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		352F887CEDB3292F9ADDCA2C62D0BBA3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A76003CA87463C62281888C9A54012EF /* CAASObjC.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CAASObjC/CAASObjC-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CAASObjC/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CAASObjC/CAASObjC.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = CAASObjC;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */ = {
+		04B25B69B34D1CD678ECA480 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -554,16 +464,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		5D875B5F2FBC12A7013D2136E04E36A4 /* Release */ = {
+		24275F2CBC66BCF953FE4186 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A76003CA87463C62281888C9A54012EF /* CAASObjC.xcconfig */;
+			baseConfigurationReference = 151A2F6625CE80997ED0B25F /* Pods-greenwell.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -572,12 +482,41 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CAASObjC/CAASObjC-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CAASObjC/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-greenwell/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CAASObjC/CAASObjC.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-greenwell/Pods-greenwell.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_greenwell;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3F7F6CB29E95C47E0DA7D734 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F2708C31B74E20C02F8CF9E /* Pods-greenwell-CAASObjC-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-greenwell-CAASObjC/Pods-greenwell-CAASObjC-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-greenwell-CAASObjC/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-greenwell-CAASObjC/Pods-greenwell-CAASObjC.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = CAASObjC;
 				SDKROOT = iphoneos;
@@ -588,7 +527,7 @@
 			};
 			name = Release;
 		};
-		74857149DC1E0D599B8A01A78349A926 /* Release */ = {
+		59937199390BBA5EF522B7AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -615,16 +554,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		7E30287968083A366AE7ED2D084962F9 /* Debug */ = {
+		6AB672D26869CB65C84030CA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27A2369C2DE368E7968CC328D4DAAA33 /* Pods-greenwell.debug.xcconfig */;
+			baseConfigurationReference = 7A00F93691D58D71DD62B8E4 /* Pods-greenwell.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -635,15 +574,41 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-greenwell/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-greenwell/Pods-greenwell.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = Pods_greenwell;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AA1E0CE80F8CA7259F1DAD28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F2708C31B74E20C02F8CF9E /* Pods-greenwell-CAASObjC-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-greenwell-CAASObjC/Pods-greenwell-CAASObjC-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-greenwell-CAASObjC/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-greenwell-CAASObjC/Pods-greenwell-CAASObjC.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = CAASObjC;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -655,34 +620,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0E4B145580B2E6E0C10E2C2A6919178C /* Build configuration list for PBXNativeTarget "CAASObjC" */ = {
+		181B634E6CB9A623C102DF9C /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				352F887CEDB3292F9ADDCA2C62D0BBA3 /* Debug */,
-				5D875B5F2FBC12A7013D2136E04E36A4 /* Release */,
+				04B25B69B34D1CD678ECA480 /* Debug */,
+				59937199390BBA5EF522B7AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		A5A2CFF28D30CA288257431A /* Build configuration list for PBXNativeTarget "Pods-greenwell-CAASObjC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */,
-				74857149DC1E0D599B8A01A78349A926 /* Release */,
+				AA1E0CE80F8CA7259F1DAD28 /* Debug */,
+				3F7F6CB29E95C47E0DA7D734 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B36426791F3B1A1507EC92CE18FAD3DF /* Build configuration list for PBXNativeTarget "Pods-greenwell" */ = {
+		D0A327E50745608AC57D87E8 /* Build configuration list for PBXNativeTarget "Pods-greenwell" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7E30287968083A366AE7ED2D084962F9 /* Debug */,
-				1A0D81C0090214DA2EF290CB6EBD66F3 /* Release */,
+				24275F2CBC66BCF953FE4186 /* Debug */,
+				6AB672D26869CB65C84030CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = AA851BE446CE38DC48F9A100 /* Project object */;
 }

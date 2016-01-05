@@ -25,23 +25,40 @@ class Caas {
     
     /** URL of the MACM instance */
     //http://macm.rtp.raleigh.ibm.com:10039/wps/portal/macm1
-    var macminstance = "http://macm.rtp.raleigh.ibm.com:10039"  //"https://macmbeta.com"
+   // var macminstance = "http://macm.rtp.raleigh.ibm.com:10039"  //"https://macmbeta.com"
+    //var macminstance = "http://macm-daily-est.rtp.raleigh.ibm.com:10039"  //"https://macmbeta.com"
+    var macminstance = "http://caas01.rtp.raleigh.ibm.com:10039/"  //"https://macmbeta.com"
+    //var macminstance = "https://macm-rendering.saas.ibmcloud.com/wps/myportal/vp3073/"
     
     /** library of content items */
-    var library = "MACM Default Application"
+    var library = "greenwell"
+    //var library = "Samples"
     
     /** Tenant */
     var tenant = "macm1" //"vp3001"
+   // var tenant = "vp3073"
     
     /** Anonymous username for connection to MACM instance */
     var username = "wpsadmin" //"user3001"
+   
+   
+    var password = "wpsadmin"
+    //var username = "user3073"
+    //var password = "TPVxv%-832"
+   
     
-    /** Anonymous password for connection to MACM instance */
-    var password = "wpsadmin" //"BZRWx(_665"
+    //var offerLibrary = "MACM Default Application/Content Types/Offer"
+    //var articleLibrary = "MACM Default Application/Content Types/Article"
+    //var iBeaconLibrary = "MACM Default Application/Content Types/iBeacon Notification"
     
-    var offerLibrary = "MACM Default Application/Content Types/Offer"
-    var articleLibrary = "MACM Default Application/Content Types/Article"
-    var iBeaconLibrary = "MACM Default Application/Content Types/iBeacon Notification"
+   var offerLibrary = "Greenwell/Content Types/Offer"
+    var articleLibrary = "Greenwell/Content Types/Article"
+    var iBeaconLibrary = "Greenwell/Content Types/iBeacon Notification"
+   // var offerLibrary = "samples/Content Types/Offer"
+   // var articleLibrary = "samples/Content Types/Article"
+    //var iBeaconLibrary = "samples/Content Types/iBeacon Notification"
+
+    
     
     var caasService:CAASService!
     
@@ -71,6 +88,7 @@ class Caas {
                     }
                 } else {
                     self.presentSignInError(vc)
+                    
                 }
             }
         }

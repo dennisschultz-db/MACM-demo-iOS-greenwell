@@ -1,0 +1,611 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "BeaconManager"
+provides-nominal:
+- "C9greenwell13BeaconManager"
+provides-member:
+- ["C9greenwell13BeaconManager", ""]
+provides-dynamic-lookup:
+- "locationManager"
+- "locationManager"
+- "locationManager"
+- "locationManager"
+- "locationManager"
+- "removeBeaconRegionAtIndex"
+- "addBeaconRegionWithUUID"
+depends-top-level:
+- "CLLocationManagerDelegate"
+- "CLBeaconRegion"
+- "BeaconManager"
+- !private "Dictionary"
+- !private "=="
+- "CLRegion"
+- !private "StringLiteralType"
+- "NSObject"
+- "String"
+- "CLAuthorizationStatus"
+- "CLRegionState"
+- !private "NSNotificationCenter"
+- !private "Util"
+- "NSUUID"
+- !private "EnteredIBeaconRegionNotification"
+- "Int"
+- !private "Array"
+- "CLLocationManager"
+- !private "BooleanLiteralType"
+depends-member:
+- ["PSs9AnyObject", "CLBeaconRegion"]
+- !private ["PSs9AnyObject", "CLLocationManager"]
+- !private ["PSs9AnyObject", "EnteredIBeaconRegionNotification"]
+- !private ["PSs9AnyObject", "NSNotificationCenter"]
+- !private ["PSs9AnyObject", "NSUUID"]
+- ["PSs9AnyObject", "String"]
+- !private ["PSs9AnyObject", "Util"]
+- ["PSs9AnyObject", "addBeaconRegionWithUUID"]
+- ["PSs9AnyObject", "beaconRegions"]
+- !private ["PSs9AnyObject", "categoryNames"]
+- !private ["PSs9AnyObject", "defaultCenter"]
+- !private ["PSs9AnyObject", "delegate"]
+- !private ["PSs9AnyObject", "iBeaconCategories"]
+- !private ["PSs9AnyObject", "iBeaconKeywords"]
+- !private ["PSs9AnyObject", "identifier"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "locationManager"]
+- ["PSs9AnyObject", "locationManagerDidPauseLocationUpdates"]
+- ["PSs9AnyObject", "locationManagerDidResumeLocationUpdates"]
+- ["PSs9AnyObject", "locationManagerShouldDisplayHeadingCalibration"]
+- !private ["PSs9AnyObject", "postNotificationName"]
+- ["PSs9AnyObject", "removeBeaconRegionAtIndex"]
+- !private ["PSs9AnyObject", "requestAlwaysAuthorization"]
+- !private ["PSs9AnyObject", "requestStateForRegion"]
+- !private ["PSs9AnyObject", "startMonitoringForRegion"]
+- !private ["PSs9AnyObject", "stopMonitoringForRegion"]
+- ["PSs9AnyObject", ""]
+- !private ["Sa", "Element"]
+- !private ["Sa", "Generator"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "_Element"]
+- !private ["Sa", "append"]
+- !private ["Sa", "deinit"]
+- ["Sa", "init"]
+- !private ["Sa", "removeAll"]
+- !private ["Sa", "removeAtIndex"]
+- !private ["Sa", "subscript"]
+- !private ["PSs23ArrayLiteralConvertible", "Element"]
+- !private ["PSs23ArrayLiteralConvertible", "Generator"]
+- !private ["PSs23ArrayLiteralConvertible", "Index"]
+- !private ["PSs23ArrayLiteralConvertible", "SubSequence"]
+- !private ["PSs23ArrayLiteralConvertible", "_Element"]
+- !private ["PSs23ArrayLiteralConvertible", "append"]
+- ["PSs23ArrayLiteralConvertible", "init"]
+- !private ["PSs23ArrayLiteralConvertible", "removeAll"]
+- !private ["PSs23ArrayLiteralConvertible", "removeAtIndex"]
+- !private ["PSs23ArrayLiteralConvertible", "subscript"]
+- !private ["VSs10ArraySlice", "Generator"]
+- !private ["VSs10ArraySlice", "Index"]
+- ["C9greenwell13BeaconManager", "CLAuthorizationStatus"]
+- ["C9greenwell13BeaconManager", "CLBeaconRegion"]
+- ["C9greenwell13BeaconManager", "CLLocationManager"]
+- ["C9greenwell13BeaconManager", "CLRegion"]
+- ["C9greenwell13BeaconManager", "CLRegionState"]
+- !private ["C9greenwell13BeaconManager", "EnteredIBeaconRegionNotification"]
+- ["C9greenwell13BeaconManager", "Int"]
+- !private ["C9greenwell13BeaconManager", "NSNotificationCenter"]
+- ["C9greenwell13BeaconManager", "NSUUID"]
+- ["C9greenwell13BeaconManager", "String"]
+- !private ["C9greenwell13BeaconManager", "Util"]
+- ["C9greenwell13BeaconManager", "addBeaconRegionWithUUID"]
+- ["C9greenwell13BeaconManager", "beaconRegions"]
+- ["C9greenwell13BeaconManager", "deinit"]
+- ["C9greenwell13BeaconManager", "init"]
+- ["C9greenwell13BeaconManager", "locationManager"]
+- ["C9greenwell13BeaconManager", "locationManagerDidPauseLocationUpdates"]
+- ["C9greenwell13BeaconManager", "locationManagerDidResumeLocationUpdates"]
+- ["C9greenwell13BeaconManager", "locationManagerShouldDisplayHeadingCalibration"]
+- ["C9greenwell13BeaconManager", "removeBeaconRegionAtIndex"]
+- !private ["PSs22BidirectionalIndexType", "Distance"]
+- !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["PSs21BitwiseOperationsType", "Distance"]
+- !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["CSo14CLBeaconRegion", "identifier"]
+- !private ["CSo14CLBeaconRegion", "init"]
+- !private ["CSo17CLLocationManager", "delegate"]
+- !private ["CSo17CLLocationManager", "init"]
+- !private ["CSo17CLLocationManager", "requestAlwaysAuthorization"]
+- !private ["CSo17CLLocationManager", "requestStateForRegion"]
+- !private ["CSo17CLLocationManager", "startMonitoringForRegion"]
+- !private ["CSo17CLLocationManager", "stopMonitoringForRegion"]
+- ["PSo25CLLocationManagerDelegate", "CLBeaconRegion"]
+- !private ["PSo25CLLocationManagerDelegate", "CLLocationManager"]
+- !private ["PSo25CLLocationManagerDelegate", "EnteredIBeaconRegionNotification"]
+- !private ["PSo25CLLocationManagerDelegate", "NSNotificationCenter"]
+- !private ["PSo25CLLocationManagerDelegate", "NSUUID"]
+- ["PSo25CLLocationManagerDelegate", "String"]
+- !private ["PSo25CLLocationManagerDelegate", "Util"]
+- !private ["PSo25CLLocationManagerDelegate", "addBeaconRegionWithUUID"]
+- !private ["PSo25CLLocationManagerDelegate", "beaconRegions"]
+- ["PSo25CLLocationManagerDelegate", "locationManager"]
+- ["PSo25CLLocationManagerDelegate", "locationManagerDidPauseLocationUpdates"]
+- ["PSo25CLLocationManagerDelegate", "locationManagerDidResumeLocationUpdates"]
+- ["PSo25CLLocationManagerDelegate", "locationManagerShouldDisplayHeadingCalibration"]
+- ["PSo25CLLocationManagerDelegate", ""]
+- !private ["CSo8CLRegion", "identifier"]
+- !private ["CSo8CLRegion", "init"]
+- ["PSs11CVarArgType", "CLBeaconRegion"]
+- !private ["PSs11CVarArgType", "CLLocationManager"]
+- !private ["PSs11CVarArgType", "Distance"]
+- !private ["PSs11CVarArgType", "EnteredIBeaconRegionNotification"]
+- !private ["PSs11CVarArgType", "IntegerLiteralType"]
+- !private ["PSs11CVarArgType", "NSNotificationCenter"]
+- !private ["PSs11CVarArgType", "NSUUID"]
+- ["PSs11CVarArgType", "String"]
+- !private ["PSs11CVarArgType", "Util"]
+- ["PSs11CVarArgType", "addBeaconRegionWithUUID"]
+- ["PSs11CVarArgType", "beaconRegions"]
+- !private ["PSs11CVarArgType", "defaultCenter"]
+- !private ["PSs11CVarArgType", "delegate"]
+- !private ["PSs11CVarArgType", "identifier"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "locationManager"]
+- ["PSs11CVarArgType", "locationManagerDidPauseLocationUpdates"]
+- ["PSs11CVarArgType", "locationManagerDidResumeLocationUpdates"]
+- ["PSs11CVarArgType", "locationManagerShouldDisplayHeadingCalibration"]
+- !private ["PSs11CVarArgType", "postNotificationName"]
+- ["PSs11CVarArgType", "removeBeaconRegionAtIndex"]
+- !private ["PSs11CVarArgType", "requestAlwaysAuthorization"]
+- !private ["PSs11CVarArgType", "requestStateForRegion"]
+- !private ["PSs11CVarArgType", "startMonitoringForRegion"]
+- !private ["PSs11CVarArgType", "stopMonitoringForRegion"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs14CollectionType", "Element"]
+- !private ["PSs14CollectionType", "Generator"]
+- !private ["PSs14CollectionType", "Index"]
+- !private ["PSs14CollectionType", "Key"]
+- !private ["PSs14CollectionType", "SubSequence"]
+- !private ["PSs14CollectionType", "Value"]
+- !private ["PSs14CollectionType", "_Element"]
+- !private ["PSs14CollectionType", "append"]
+- ["PSs14CollectionType", "init"]
+- !private ["PSs14CollectionType", "removeAll"]
+- !private ["PSs14CollectionType", "removeAtIndex"]
+- !private ["PSs14CollectionType", "subscript"]
+- !private ["PSs10Comparable", "Distance"]
+- !private ["PSs10Comparable", "IntegerLiteralType"]
+- !private ["PSs28CustomDebugStringConvertible", "Element"]
+- !private ["PSs28CustomDebugStringConvertible", "Generator"]
+- !private ["PSs28CustomDebugStringConvertible", "Index"]
+- !private ["PSs28CustomDebugStringConvertible", "Key"]
+- !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
+- !private ["PSs28CustomDebugStringConvertible", "Value"]
+- !private ["PSs28CustomDebugStringConvertible", "_Element"]
+- !private ["PSs28CustomDebugStringConvertible", "append"]
+- ["PSs28CustomDebugStringConvertible", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "removeAll"]
+- !private ["PSs28CustomDebugStringConvertible", "removeAtIndex"]
+- !private ["PSs28CustomDebugStringConvertible", "subscript"]
+- ["PSs23CustomStringConvertible", "CLBeaconRegion"]
+- !private ["PSs23CustomStringConvertible", "CLLocationManager"]
+- !private ["PSs23CustomStringConvertible", "Distance"]
+- !private ["PSs23CustomStringConvertible", "Element"]
+- !private ["PSs23CustomStringConvertible", "EnteredIBeaconRegionNotification"]
+- !private ["PSs23CustomStringConvertible", "Generator"]
+- !private ["PSs23CustomStringConvertible", "Index"]
+- !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["PSs23CustomStringConvertible", "Key"]
+- !private ["PSs23CustomStringConvertible", "NSNotificationCenter"]
+- !private ["PSs23CustomStringConvertible", "NSUUID"]
+- ["PSs23CustomStringConvertible", "String"]
+- !private ["PSs23CustomStringConvertible", "SubSequence"]
+- !private ["PSs23CustomStringConvertible", "Util"]
+- !private ["PSs23CustomStringConvertible", "Value"]
+- !private ["PSs23CustomStringConvertible", "_Element"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["PSs23CustomStringConvertible", "addBeaconRegionWithUUID"]
+- !private ["PSs23CustomStringConvertible", "append"]
+- ["PSs23CustomStringConvertible", "beaconRegions"]
+- !private ["PSs23CustomStringConvertible", "defaultCenter"]
+- !private ["PSs23CustomStringConvertible", "delegate"]
+- !private ["PSs23CustomStringConvertible", "identifier"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "locationManager"]
+- ["PSs23CustomStringConvertible", "locationManagerDidPauseLocationUpdates"]
+- ["PSs23CustomStringConvertible", "locationManagerDidResumeLocationUpdates"]
+- ["PSs23CustomStringConvertible", "locationManagerShouldDisplayHeadingCalibration"]
+- !private ["PSs23CustomStringConvertible", "postNotificationName"]
+- !private ["PSs23CustomStringConvertible", "removeAll"]
+- !private ["PSs23CustomStringConvertible", "removeAtIndex"]
+- ["PSs23CustomStringConvertible", "removeBeaconRegionAtIndex"]
+- !private ["PSs23CustomStringConvertible", "requestAlwaysAuthorization"]
+- !private ["PSs23CustomStringConvertible", "requestStateForRegion"]
+- !private ["PSs23CustomStringConvertible", "startMonitoringForRegion"]
+- !private ["PSs23CustomStringConvertible", "stopMonitoringForRegion"]
+- !private ["PSs23CustomStringConvertible", "subscript"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["VSs10Dictionary", "Key"]
+- !private ["VSs10Dictionary", "Value"]
+- !private ["VSs10Dictionary", "subscript"]
+- !private ["PSs28DictionaryLiteralConvertible", "Key"]
+- !private ["PSs28DictionaryLiteralConvertible", "Value"]
+- !private ["PSs28DictionaryLiteralConvertible", "subscript"]
+- ["PSs9Equatable", "CLBeaconRegion"]
+- !private ["PSs9Equatable", "CLLocationManager"]
+- !private ["PSs9Equatable", "Distance"]
+- !private ["PSs9Equatable", "EnteredIBeaconRegionNotification"]
+- !private ["PSs9Equatable", "IntegerLiteralType"]
+- !private ["PSs9Equatable", "NSNotificationCenter"]
+- !private ["PSs9Equatable", "NSUUID"]
+- ["PSs9Equatable", "String"]
+- !private ["PSs9Equatable", "Util"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- ["PSs9Equatable", "addBeaconRegionWithUUID"]
+- ["PSs9Equatable", "beaconRegions"]
+- !private ["PSs9Equatable", "defaultCenter"]
+- !private ["PSs9Equatable", "delegate"]
+- !private ["PSs9Equatable", "identifier"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "locationManager"]
+- ["PSs9Equatable", "locationManagerDidPauseLocationUpdates"]
+- ["PSs9Equatable", "locationManagerDidResumeLocationUpdates"]
+- ["PSs9Equatable", "locationManagerShouldDisplayHeadingCalibration"]
+- !private ["PSs9Equatable", "postNotificationName"]
+- ["PSs9Equatable", "removeBeaconRegionAtIndex"]
+- !private ["PSs9Equatable", "requestAlwaysAuthorization"]
+- !private ["PSs9Equatable", "requestStateForRegion"]
+- !private ["PSs9Equatable", "startMonitoringForRegion"]
+- !private ["PSs9Equatable", "stopMonitoringForRegion"]
+- ["PSs9Equatable", ""]
+- !private ["PSs16ForwardIndexType", "Distance"]
+- !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
+- !private ["PSs13GeneratorType", "Element"]
+- ["PSs8Hashable", "CLBeaconRegion"]
+- !private ["PSs8Hashable", "CLLocationManager"]
+- !private ["PSs8Hashable", "Distance"]
+- !private ["PSs8Hashable", "EnteredIBeaconRegionNotification"]
+- !private ["PSs8Hashable", "IntegerLiteralType"]
+- !private ["PSs8Hashable", "NSNotificationCenter"]
+- !private ["PSs8Hashable", "NSUUID"]
+- ["PSs8Hashable", "String"]
+- !private ["PSs8Hashable", "Util"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- ["PSs8Hashable", "addBeaconRegionWithUUID"]
+- ["PSs8Hashable", "beaconRegions"]
+- !private ["PSs8Hashable", "defaultCenter"]
+- !private ["PSs8Hashable", "delegate"]
+- !private ["PSs8Hashable", "identifier"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "locationManager"]
+- ["PSs8Hashable", "locationManagerDidPauseLocationUpdates"]
+- ["PSs8Hashable", "locationManagerDidResumeLocationUpdates"]
+- ["PSs8Hashable", "locationManagerShouldDisplayHeadingCalibration"]
+- !private ["PSs8Hashable", "postNotificationName"]
+- ["PSs8Hashable", "removeBeaconRegionAtIndex"]
+- !private ["PSs8Hashable", "requestAlwaysAuthorization"]
+- !private ["PSs8Hashable", "requestStateForRegion"]
+- !private ["PSs8Hashable", "startMonitoringForRegion"]
+- !private ["PSs8Hashable", "stopMonitoringForRegion"]
+- ["PSs8Hashable", ""]
+- !private ["PSs9Indexable", "Element"]
+- !private ["PSs9Indexable", "Generator"]
+- !private ["PSs9Indexable", "Index"]
+- !private ["PSs9Indexable", "Key"]
+- !private ["PSs9Indexable", "SubSequence"]
+- !private ["PSs9Indexable", "Value"]
+- !private ["PSs9Indexable", "_Element"]
+- !private ["PSs9Indexable", "append"]
+- ["PSs9Indexable", "init"]
+- !private ["PSs9Indexable", "removeAll"]
+- !private ["PSs9Indexable", "removeAtIndex"]
+- !private ["PSs9Indexable", "subscript"]
+- !private ["VSs17IndexingGenerator", "Element"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["PSs21IntegerArithmeticType", "Distance"]
+- !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs25IntegerLiteralConvertible", "Distance"]
+- !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs11IntegerType", "Distance"]
+- !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "Distance"]
+- !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- !private ["PSs21MutableCollectionType", "Element"]
+- !private ["PSs21MutableCollectionType", "Generator"]
+- !private ["PSs21MutableCollectionType", "Index"]
+- !private ["PSs21MutableCollectionType", "SubSequence"]
+- !private ["PSs21MutableCollectionType", "_Element"]
+- !private ["PSs21MutableCollectionType", "append"]
+- ["PSs21MutableCollectionType", "init"]
+- !private ["PSs21MutableCollectionType", "removeAll"]
+- !private ["PSs21MutableCollectionType", "removeAtIndex"]
+- !private ["PSs21MutableCollectionType", "subscript"]
+- !private ["PSs16MutableIndexable", "Element"]
+- !private ["PSs16MutableIndexable", "Generator"]
+- !private ["PSs16MutableIndexable", "Index"]
+- !private ["PSs16MutableIndexable", "SubSequence"]
+- !private ["PSs16MutableIndexable", "_Element"]
+- !private ["PSs16MutableIndexable", "append"]
+- ["PSs16MutableIndexable", "init"]
+- !private ["PSs16MutableIndexable", "removeAll"]
+- !private ["PSs16MutableIndexable", "removeAtIndex"]
+- !private ["PSs16MutableIndexable", "subscript"]
+- !private ["PSs16MutableSliceable", "Element"]
+- !private ["PSs16MutableSliceable", "Generator"]
+- !private ["PSs16MutableSliceable", "Index"]
+- !private ["PSs16MutableSliceable", "SubSequence"]
+- !private ["PSs16MutableSliceable", "_Element"]
+- !private ["PSs16MutableSliceable", "append"]
+- ["PSs16MutableSliceable", "init"]
+- !private ["PSs16MutableSliceable", "removeAll"]
+- !private ["PSs16MutableSliceable", "removeAtIndex"]
+- !private ["PSs16MutableSliceable", "subscript"]
+- !private ["PSo8NSCoding", "identifier"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "identifier"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["CSo20NSNotificationCenter", "defaultCenter"]
+- !private ["CSo20NSNotificationCenter", "postNotificationName"]
+- ["CSo8NSObject", "CLAuthorizationStatus"]
+- ["CSo8NSObject", "CLBeaconRegion"]
+- ["CSo8NSObject", "CLLocationManager"]
+- ["CSo8NSObject", "CLRegion"]
+- ["CSo8NSObject", "CLRegionState"]
+- !private ["CSo8NSObject", "EnteredIBeaconRegionNotification"]
+- ["CSo8NSObject", "Int"]
+- !private ["CSo8NSObject", "NSNotificationCenter"]
+- ["CSo8NSObject", "NSUUID"]
+- ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "Util"]
+- ["CSo8NSObject", "addBeaconRegionWithUUID"]
+- ["CSo8NSObject", "beaconRegions"]
+- !private ["CSo8NSObject", "defaultCenter"]
+- !private ["CSo8NSObject", "deinit"]
+- !private ["CSo8NSObject", "delegate"]
+- !private ["CSo8NSObject", "identifier"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "locationManager"]
+- ["CSo8NSObject", "locationManagerDidPauseLocationUpdates"]
+- ["CSo8NSObject", "locationManagerDidResumeLocationUpdates"]
+- ["CSo8NSObject", "locationManagerShouldDisplayHeadingCalibration"]
+- !private ["CSo8NSObject", "postNotificationName"]
+- ["CSo8NSObject", "removeBeaconRegionAtIndex"]
+- !private ["CSo8NSObject", "requestAlwaysAuthorization"]
+- !private ["CSo8NSObject", "requestStateForRegion"]
+- !private ["CSo8NSObject", "startMonitoringForRegion"]
+- !private ["CSo8NSObject", "stopMonitoringForRegion"]
+- ["CSo8NSObject", ""]
+- ["PSo16NSObjectProtocol", "CLBeaconRegion"]
+- !private ["PSo16NSObjectProtocol", "CLLocationManager"]
+- !private ["PSo16NSObjectProtocol", "EnteredIBeaconRegionNotification"]
+- !private ["PSo16NSObjectProtocol", "NSNotificationCenter"]
+- !private ["PSo16NSObjectProtocol", "NSUUID"]
+- ["PSo16NSObjectProtocol", "String"]
+- !private ["PSo16NSObjectProtocol", "Util"]
+- ["PSo16NSObjectProtocol", "addBeaconRegionWithUUID"]
+- ["PSo16NSObjectProtocol", "beaconRegions"]
+- !private ["PSo16NSObjectProtocol", "defaultCenter"]
+- !private ["PSo16NSObjectProtocol", "delegate"]
+- !private ["PSo16NSObjectProtocol", "identifier"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "locationManager"]
+- ["PSo16NSObjectProtocol", "locationManagerDidPauseLocationUpdates"]
+- ["PSo16NSObjectProtocol", "locationManagerDidResumeLocationUpdates"]
+- ["PSo16NSObjectProtocol", "locationManagerShouldDisplayHeadingCalibration"]
+- !private ["PSo16NSObjectProtocol", "postNotificationName"]
+- ["PSo16NSObjectProtocol", "removeBeaconRegionAtIndex"]
+- !private ["PSo16NSObjectProtocol", "requestAlwaysAuthorization"]
+- !private ["PSo16NSObjectProtocol", "requestStateForRegion"]
+- !private ["PSo16NSObjectProtocol", "startMonitoringForRegion"]
+- !private ["PSo16NSObjectProtocol", "stopMonitoringForRegion"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "identifier"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo6NSUUID", "init"]
+- !private ["Sq", "deinit"]
+- !private ["PSs21RandomAccessIndexType", "Distance"]
+- !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["PSs30RangeReplaceableCollectionType", "Element"]
+- !private ["PSs30RangeReplaceableCollectionType", "Generator"]
+- !private ["PSs30RangeReplaceableCollectionType", "Index"]
+- !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["PSs30RangeReplaceableCollectionType", "_Element"]
+- !private ["PSs30RangeReplaceableCollectionType", "append"]
+- ["PSs30RangeReplaceableCollectionType", "init"]
+- !private ["PSs30RangeReplaceableCollectionType", "removeAll"]
+- !private ["PSs30RangeReplaceableCollectionType", "removeAtIndex"]
+- !private ["PSs30RangeReplaceableCollectionType", "subscript"]
+- !private ["PSs12SequenceType", "Element"]
+- !private ["PSs12SequenceType", "Generator"]
+- !private ["PSs12SequenceType", "Index"]
+- !private ["PSs12SequenceType", "Key"]
+- !private ["PSs12SequenceType", "SubSequence"]
+- !private ["PSs12SequenceType", "Value"]
+- !private ["PSs12SequenceType", "_Element"]
+- !private ["PSs12SequenceType", "append"]
+- ["PSs12SequenceType", "init"]
+- !private ["PSs12SequenceType", "removeAll"]
+- !private ["PSs12SequenceType", "removeAtIndex"]
+- !private ["PSs12SequenceType", "subscript"]
+- !private ["PSs17SignedIntegerType", "Distance"]
+- !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs16SignedNumberType", "Distance"]
+- !private ["PSs16SignedNumberType", "IntegerLiteralType"]
+- !private ["VSs5Slice", "Generator"]
+- !private ["VSs5Slice", "Index"]
+- !private ["VSs5Slice", "SubSequence"]
+- !private ["VSs5Slice", "_Element"]
+- !private ["PSs10Strideable", "Distance"]
+- !private ["PSs10Strideable", "IntegerLiteralType"]
+- !private ["SS", "deinit"]
+- !private ["C9greenwell4Util", "categoryNames"]
+- !private ["C9greenwell4Util", "iBeaconCategories"]
+- !private ["C9greenwell4Util", "iBeaconKeywords"]
+- !private ["PSs10_ArrayType", "Element"]
+- !private ["PSs10_ArrayType", "Generator"]
+- !private ["PSs10_ArrayType", "Index"]
+- !private ["PSs10_ArrayType", "SubSequence"]
+- !private ["PSs10_ArrayType", "_Element"]
+- !private ["PSs10_ArrayType", "append"]
+- ["PSs10_ArrayType", "init"]
+- !private ["PSs10_ArrayType", "removeAll"]
+- !private ["PSs10_ArrayType", "removeAtIndex"]
+- !private ["PSs10_ArrayType", "subscript"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs24_DestructorSafeContainer", "Element"]
+- !private ["PSs24_DestructorSafeContainer", "Generator"]
+- !private ["PSs24_DestructorSafeContainer", "Index"]
+- !private ["PSs24_DestructorSafeContainer", "SubSequence"]
+- !private ["PSs24_DestructorSafeContainer", "_Element"]
+- !private ["PSs24_DestructorSafeContainer", "append"]
+- ["PSs24_DestructorSafeContainer", "init"]
+- !private ["PSs24_DestructorSafeContainer", "removeAll"]
+- !private ["PSs24_DestructorSafeContainer", "removeAtIndex"]
+- !private ["PSs24_DestructorSafeContainer", "subscript"]
+- !private ["PSs14_Incrementable", "Distance"]
+- !private ["PSs14_Incrementable", "IntegerLiteralType"]
+- !private ["PSs22_IntegerArithmeticType", "Distance"]
+- !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs12_IntegerType", "Distance"]
+- !private ["PSs12_IntegerType", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "Distance"]
+- !private ["PSs21_ObjectiveCBridgeable", "Element"]
+- !private ["PSs21_ObjectiveCBridgeable", "Generator"]
+- !private ["PSs21_ObjectiveCBridgeable", "Index"]
+- !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "Key"]
+- !private ["PSs21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["PSs21_ObjectiveCBridgeable", "Value"]
+- !private ["PSs21_ObjectiveCBridgeable", "_Element"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "append"]
+- ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "removeAll"]
+- !private ["PSs21_ObjectiveCBridgeable", "removeAtIndex"]
+- !private ["PSs21_ObjectiveCBridgeable", "subscript"]
+- !private ["PSs22_RandomAccessAmbiguity", "Distance"]
+- !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "Distance"]
+- !private ["PSs12_Reflectable", "Element"]
+- !private ["PSs12_Reflectable", "Generator"]
+- !private ["PSs12_Reflectable", "Index"]
+- !private ["PSs12_Reflectable", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "Key"]
+- !private ["PSs12_Reflectable", "SubSequence"]
+- !private ["PSs12_Reflectable", "Value"]
+- !private ["PSs12_Reflectable", "_Element"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "append"]
+- ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "removeAll"]
+- !private ["PSs12_Reflectable", "removeAtIndex"]
+- !private ["PSs12_Reflectable", "subscript"]
+- !private ["PSs18_SignedIntegerType", "Distance"]
+- !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs11_Strideable", "Distance"]
+- !private ["PSs11_Strideable", "IntegerLiteralType"]
+depends-nominal:
+- "PSs9AnyObject"
+- "Sa"
+- "PSs23ArrayLiteralConvertible"
+- !private "VSs10ArraySlice"
+- "C9greenwell13BeaconManager"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- !private "CSo14CLBeaconRegion"
+- !private "CSo17CLLocationManager"
+- "PSo25CLLocationManagerDelegate"
+- !private "CSo8CLRegion"
+- "PSs11CVarArgType"
+- "PSs14CollectionType"
+- !private "PSs10Comparable"
+- "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- !private "VSs10Dictionary"
+- !private "PSs28DictionaryLiteralConvertible"
+- "PSs9Equatable"
+- !private "PSs16ForwardIndexType"
+- !private "PSs13GeneratorType"
+- "PSs8Hashable"
+- "PSs9Indexable"
+- !private "VSs17IndexingGenerator"
+- !private "Si"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- !private "PSs14MirrorPathType"
+- "PSs21MutableCollectionType"
+- "PSs16MutableIndexable"
+- "PSs16MutableSliceable"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo20NSNotificationCenter"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo6NSUUID"
+- !private "Sq"
+- !private "PSs21RandomAccessIndexType"
+- "PSs30RangeReplaceableCollectionType"
+- "PSs12SequenceType"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- !private "VSs5Slice"
+- !private "PSs10Strideable"
+- !private "SS"
+- !private "C9greenwell4Util"
+- "PSs10_ArrayType"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- "PSs24_DestructorSafeContainer"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- "PSs21_ObjectiveCBridgeable"
+- !private "PSs22_RandomAccessAmbiguity"
+- "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASUtils.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASSignInOperation.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASServicePrivate.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASServiceOperationPrivate.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASServiceOperationGet.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASServiceOperationDownload.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASServiceOperation.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASRequestResultPrivate.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASRequestPrivate.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASContentItemPrivate.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASAssetResultPrivate.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASNetworkActivityIndicatorManager.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASAssetResult.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASContentItemsResult.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASContentItemResult.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASContentItemsRequest.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASContentItemRequest.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASRequestResult.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASRequest.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASContentItem.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASService.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASObjC.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASAssetRequest.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/Pods-greenwell-CAASObjC-umbrella.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Modules/module.modulemap"
+interface-hash: "cbf5f72a20121041f0a7fa30fc76ea18"

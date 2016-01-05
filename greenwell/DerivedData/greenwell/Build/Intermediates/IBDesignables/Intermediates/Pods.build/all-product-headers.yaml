@@ -1,0 +1,175 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "CAASAssetRequest.h",
+          'external-contents': "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/Pods/CAASObjC/CAASObjC/CAASAssetRequest.h"
+        },
+        {
+          'type': 'file',
+          'name': "CAASAssetResult.h",
+          'external-contents': "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/Pods/CAASObjC/CAASObjC/CAASAssetResult.h"
+        },
+        {
+          'type': 'file',
+          'name': "CAASAssetResultPrivate.h",
+          'external-contents': "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/Pods/CAASObjC/CAASObjC/CAASAssetResultPrivate.h"
+        },
+        {
+          'type': 'file',
+          'name': "CAASContentItem.h",
+          'external-contents': "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/Pods/CAASObjC/CAASObjC/CAASContentItem.h"
+        },
+        {
+          'type': 'file',
+          'name': "CAASContentItemPrivate.h",
+          'external-contents': "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/Pods/CAASObjC/CAASObjC/CAASContentItemPrivate.h"
+        },
+        {
+          'type': 'file',
+          'name': "CAASContentItemRequest.h",
+          'external-contents': "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/Pods/CAASObjC/CAASObjC/CAASContentItemRequest.h"
+        },
+        {
+          'type': 'file',
+          'name': "CAASContentItemResult.h",
+          'external-contents': "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/Pods/CAASObjC/CAASObjC/CAASContentItemResult.h"
+        },
+        {
+          'type': 'file',
+          'name': "CAASContentItemsRequest.h",
+          'external-contents': "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/Pods/CAASObjC/CAASObjC/CAASContentItemsRequest.h"
+        },
+        {
+          'type': 'file',
+          'name': "CAASContentItemsResult.h",
+          'external-contents': "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/Pods/CAASObjC/CAASObjC/CAASContentItemsResult.h"
+        },
+        {
+          'type': 'file',
+          'name': "CAASNetworkActivityIndicatorManager.h",
+          'external-contents': "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/Pods/CAASObjC/CAASObjC/CAASNetworkActivityIndicatorManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "CAASObjC-Swift.h",
+          'external-contents': "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASObjC-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "CAASObjC.h",
+          'external-contents': "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/Pods/CAASObjC/CAASObjC/CAASObjC.h"
+        },
+        {
+          'type': 'file',
+          'name': "CAASRequest.h",
+          'external-contents': "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/Pods/CAASObjC/CAASObjC/CAASRequest.h"
+        },
+        {
+          'type': 'file',
+          'name': "CAASRequestPrivate.h",
+          'external-contents': "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/Pods/CAASObjC/CAASObjC/CAASRequestPrivate.h"
+        },
+        {
+          'type': 'file',
+          'name': "CAASRequestResult.h",
+          'external-contents': "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/Pods/CAASObjC/CAASObjC/CAASRequestResult.h"
+        },
+        {
+          'type': 'file',
+          'name': "CAASRequestResultPrivate.h",
+          'external-contents': "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/Pods/CAASObjC/CAASObjC/CAASRequestResultPrivate.h"
+        },
+        {
+          'type': 'file',
+          'name': "CAASService.h",
+          'external-contents': "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/Pods/CAASObjC/CAASObjC/CAASService.h"
+        },
+        {
+          'type': 'file',
+          'name': "CAASServiceOperation.h",
+          'external-contents': "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/Pods/CAASObjC/CAASObjC/CAASServiceOperation.h"
+        },
+        {
+          'type': 'file',
+          'name': "CAASServiceOperationDownload.h",
+          'external-contents': "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/Pods/CAASObjC/CAASObjC/CAASServiceOperationDownload.h"
+        },
+        {
+          'type': 'file',
+          'name': "CAASServiceOperationGet.h",
+          'external-contents': "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/Pods/CAASObjC/CAASObjC/CAASServiceOperationGet.h"
+        },
+        {
+          'type': 'file',
+          'name': "CAASServiceOperationPrivate.h",
+          'external-contents': "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/Pods/CAASObjC/CAASObjC/CAASServiceOperationPrivate.h"
+        },
+        {
+          'type': 'file',
+          'name': "CAASServicePrivate.h",
+          'external-contents': "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/Pods/CAASObjC/CAASObjC/CAASServicePrivate.h"
+        },
+        {
+          'type': 'file',
+          'name': "CAASSignInOperation.h",
+          'external-contents': "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/Pods/CAASObjC/CAASObjC/CAASSignInOperation.h"
+        },
+        {
+          'type': 'file',
+          'name': "CAASUtils.h",
+          'external-contents': "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/Pods/CAASObjC/CAASObjC/CAASUtils.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods-greenwell-CAASObjC-umbrella.h",
+          'external-contents': "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/Pods/Target Support Files/Pods-greenwell-CAASObjC/Pods-greenwell-CAASObjC-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Intermediates/Pods.build/Debug-iphonesimulator/Pods-greenwell-CAASObjC.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods_greenwell.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-greenwell-umbrella.h",
+          'external-contents': "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/Pods/Target Support Files/Pods-greenwell/Pods-greenwell-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_greenwell-Swift.h",
+          'external-contents': "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods_greenwell.framework/Headers/Pods_greenwell-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods_greenwell.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Intermediates/Pods.build/Debug-iphonesimulator/Pods-greenwell.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

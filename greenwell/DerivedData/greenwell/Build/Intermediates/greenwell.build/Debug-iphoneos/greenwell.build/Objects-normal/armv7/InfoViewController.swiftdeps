@@ -1,0 +1,317 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "InfoViewController"
+provides-nominal:
+- "C9greenwell18InfoViewController"
+provides-member:
+- ["C9greenwell18InfoViewController", ""]
+provides-dynamic-lookup:
+- "touchCloseButton"
+- "viewDidLoad"
+- "fileToLoad"
+- "titleLabel"
+- "shouldAutorotate"
+- "textField"
+depends-top-level:
+- "Bool"
+- !private "BooleanLiteralType"
+- !private "Util"
+- "InfoViewController"
+- "String"
+- "UITextView"
+- "UIViewController"
+- "UILabel"
+- "StringLiteralType"
+- "AnyObject"
+- !private "=="
+depends-member:
+- !private ["PSs9AnyObject", "Util"]
+- !private ["PSs9AnyObject", "dismissViewControllerAnimated"]
+- ["PSs9AnyObject", "fileToLoad"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "loadRTFFile"]
+- !private ["PSs9AnyObject", "shouldAutoRotate"]
+- ["PSs9AnyObject", "shouldAutorotate"]
+- !private ["PSs9AnyObject", "text"]
+- ["PSs9AnyObject", "textField"]
+- ["PSs9AnyObject", "titleLabel"]
+- ["PSs9AnyObject", "touchCloseButton"]
+- ["PSs9AnyObject", "viewDidLoad"]
+- ["PSs9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSs11CVarArgType", "Util"]
+- !private ["PSs11CVarArgType", "dismissViewControllerAnimated"]
+- ["PSs11CVarArgType", "fileToLoad"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "shouldAutorotate"]
+- !private ["PSs11CVarArgType", "text"]
+- ["PSs11CVarArgType", "textField"]
+- ["PSs11CVarArgType", "titleLabel"]
+- ["PSs11CVarArgType", "touchCloseButton"]
+- ["PSs11CVarArgType", "viewDidLoad"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs23CustomStringConvertible", "Util"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "dismissViewControllerAnimated"]
+- ["PSs23CustomStringConvertible", "fileToLoad"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "shouldAutorotate"]
+- !private ["PSs23CustomStringConvertible", "text"]
+- ["PSs23CustomStringConvertible", "textField"]
+- ["PSs23CustomStringConvertible", "titleLabel"]
+- ["PSs23CustomStringConvertible", "touchCloseButton"]
+- ["PSs23CustomStringConvertible", "viewDidLoad"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "Util"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- !private ["PSs9Equatable", "dismissViewControllerAnimated"]
+- ["PSs9Equatable", "fileToLoad"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "shouldAutorotate"]
+- !private ["PSs9Equatable", "text"]
+- ["PSs9Equatable", "textField"]
+- ["PSs9Equatable", "titleLabel"]
+- ["PSs9Equatable", "touchCloseButton"]
+- ["PSs9Equatable", "viewDidLoad"]
+- ["PSs9Equatable", ""]
+- !private ["PSs8Hashable", "Util"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- !private ["PSs8Hashable", "dismissViewControllerAnimated"]
+- ["PSs8Hashable", "fileToLoad"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "shouldAutorotate"]
+- !private ["PSs8Hashable", "text"]
+- ["PSs8Hashable", "textField"]
+- ["PSs8Hashable", "titleLabel"]
+- ["PSs8Hashable", "touchCloseButton"]
+- ["PSs8Hashable", "viewDidLoad"]
+- ["PSs8Hashable", ""]
+- ["C9greenwell18InfoViewController", "AnyObject"]
+- ["C9greenwell18InfoViewController", "Bool"]
+- ["C9greenwell18InfoViewController", "String"]
+- ["C9greenwell18InfoViewController", "UILabel"]
+- ["C9greenwell18InfoViewController", "UITextView"]
+- !private ["C9greenwell18InfoViewController", "Util"]
+- ["C9greenwell18InfoViewController", "deinit"]
+- !private ["C9greenwell18InfoViewController", "dismissViewControllerAnimated"]
+- ["C9greenwell18InfoViewController", "fileToLoad"]
+- ["C9greenwell18InfoViewController", "init"]
+- ["C9greenwell18InfoViewController", "shouldAutorotate"]
+- ["C9greenwell18InfoViewController", "textField"]
+- ["C9greenwell18InfoViewController", "titleLabel"]
+- ["C9greenwell18InfoViewController", "touchCloseButton"]
+- ["C9greenwell18InfoViewController", "viewDidLoad"]
+- !private ["PSo8NSCoding", "Util"]
+- !private ["PSo8NSCoding", "dismissViewControllerAnimated"]
+- ["PSo8NSCoding", "fileToLoad"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "shouldAutorotate"]
+- !private ["PSo8NSCoding", "text"]
+- ["PSo8NSCoding", "textField"]
+- ["PSo8NSCoding", "titleLabel"]
+- ["PSo8NSCoding", "touchCloseButton"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo26NSExtensionRequestHandling", "Util"]
+- !private ["PSo26NSExtensionRequestHandling", "dismissViewControllerAnimated"]
+- ["PSo26NSExtensionRequestHandling", "fileToLoad"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "shouldAutorotate"]
+- ["PSo26NSExtensionRequestHandling", "textField"]
+- ["PSo26NSExtensionRequestHandling", "titleLabel"]
+- ["PSo26NSExtensionRequestHandling", "touchCloseButton"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "UITextView"]
+- !private ["CSo8NSObject", "Util"]
+- !private ["CSo8NSObject", "dismissViewControllerAnimated"]
+- ["CSo8NSObject", "fileToLoad"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "shouldAutorotate"]
+- !private ["CSo8NSObject", "text"]
+- ["CSo8NSObject", "textField"]
+- ["CSo8NSObject", "titleLabel"]
+- ["CSo8NSObject", "touchCloseButton"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "Util"]
+- !private ["PSo16NSObjectProtocol", "dismissViewControllerAnimated"]
+- ["PSo16NSObjectProtocol", "fileToLoad"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "shouldAutorotate"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- ["PSo16NSObjectProtocol", "textField"]
+- ["PSo16NSObjectProtocol", "titleLabel"]
+- ["PSo16NSObjectProtocol", "touchCloseButton"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["Sq", "deinit"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo12UIAppearance", "text"]
+- !private ["PSo21UIAppearanceContainer", "Util"]
+- !private ["PSo21UIAppearanceContainer", "dismissViewControllerAnimated"]
+- ["PSo21UIAppearanceContainer", "fileToLoad"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "shouldAutorotate"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- ["PSo21UIAppearanceContainer", "textField"]
+- ["PSo21UIAppearanceContainer", "titleLabel"]
+- ["PSo21UIAppearanceContainer", "touchCloseButton"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "Util"]
+- !private ["PSo18UIContentContainer", "dismissViewControllerAnimated"]
+- ["PSo18UIContentContainer", "fileToLoad"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "shouldAutorotate"]
+- ["PSo18UIContentContainer", "textField"]
+- ["PSo18UIContentContainer", "titleLabel"]
+- ["PSo18UIContentContainer", "touchCloseButton"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo18UIFocusEnvironment", "Util"]
+- !private ["PSo18UIFocusEnvironment", "dismissViewControllerAnimated"]
+- ["PSo18UIFocusEnvironment", "fileToLoad"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "shouldAutorotate"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- ["PSo18UIFocusEnvironment", "textField"]
+- ["PSo18UIFocusEnvironment", "titleLabel"]
+- ["PSo18UIFocusEnvironment", "touchCloseButton"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo7UILabel", "text"]
+- ["CSo11UIResponder", "AnyObject"]
+- ["CSo11UIResponder", "Bool"]
+- ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "UITextView"]
+- !private ["CSo11UIResponder", "Util"]
+- !private ["CSo11UIResponder", "dismissViewControllerAnimated"]
+- ["CSo11UIResponder", "fileToLoad"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "shouldAutorotate"]
+- !private ["CSo11UIResponder", "text"]
+- ["CSo11UIResponder", "textField"]
+- ["CSo11UIResponder", "titleLabel"]
+- ["CSo11UIResponder", "touchCloseButton"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo16UIStateRestoring", "Util"]
+- !private ["PSo16UIStateRestoring", "dismissViewControllerAnimated"]
+- ["PSo16UIStateRestoring", "fileToLoad"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "shouldAutorotate"]
+- ["PSo16UIStateRestoring", "textField"]
+- ["PSo16UIStateRestoring", "titleLabel"]
+- ["PSo16UIStateRestoring", "touchCloseButton"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "Util"]
+- !private ["PSo18UITraitEnvironment", "dismissViewControllerAnimated"]
+- ["PSo18UITraitEnvironment", "fileToLoad"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "shouldAutorotate"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- ["PSo18UITraitEnvironment", "textField"]
+- ["PSo18UITraitEnvironment", "titleLabel"]
+- ["PSo18UITraitEnvironment", "touchCloseButton"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "text"]
+- ["CSo16UIViewController", "AnyObject"]
+- ["CSo16UIViewController", "Bool"]
+- ["CSo16UIViewController", "String"]
+- ["CSo16UIViewController", "UILabel"]
+- ["CSo16UIViewController", "UITextView"]
+- !private ["CSo16UIViewController", "Util"]
+- !private ["CSo16UIViewController", "dismissViewControllerAnimated"]
+- ["CSo16UIViewController", "fileToLoad"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "shouldAutorotate"]
+- ["CSo16UIViewController", "textField"]
+- ["CSo16UIViewController", "titleLabel"]
+- ["CSo16UIViewController", "touchCloseButton"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- !private ["C9greenwell4Util", "loadRTFFile"]
+- !private ["C9greenwell4Util", "shouldAutoRotate"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "text"]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- "PSs11CVarArgType"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- "C9greenwell18InfoViewController"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "Sq"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "CSo7UILabel"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "C9greenwell4Util"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreLocation.swiftmodule"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASUtils.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASSignInOperation.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASServicePrivate.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASServiceOperationPrivate.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASServiceOperationGet.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASServiceOperationDownload.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASServiceOperation.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASRequestResultPrivate.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASRequestPrivate.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASContentItemPrivate.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASAssetResultPrivate.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASNetworkActivityIndicatorManager.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASAssetResult.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASContentItemsResult.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASContentItemResult.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASContentItemsRequest.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASContentItemRequest.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASRequestResult.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASRequest.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASContentItem.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASService.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASObjC.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASAssetRequest.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/Pods-greenwell-CAASObjC-umbrella.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Modules/module.modulemap"
+interface-hash: "7c33997e165280f36102d140155da5e0"

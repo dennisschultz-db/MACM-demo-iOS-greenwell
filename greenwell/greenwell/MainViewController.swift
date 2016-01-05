@@ -18,6 +18,7 @@ var numCols = 1;
 class MainViewController: UIViewController, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var collectionView: UICollectionView!
+   
     
     var myAccountsCell:MyAccountsCollectionViewCell!
     
@@ -27,6 +28,11 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        /// change the header text  (Tyler) 
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        
+     
+
         collectionView.dataSource = self
         collectionView.delegate = self
 
@@ -41,6 +47,68 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
         
         AppDelegate.caas.signIn(self,completionBlock: nil)        
         animationTimer = NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: Selector("setAccountSummary"), userInfo: nil, repeats: true)
+        
+        
+        ///set user preferences 
+        
+        if (userName == "Spencer"){
+            Util.loanFilters = ["general":true, "Transportation":true,"Home":true,"Small Business":true]
+            Util.insuranceFilters = ["Transportation":true,"Home":false,"Life":false]
+            Util.investmentFilters = ["Retirement":false]
+            Util.stockmarketFilters = ["Fund":false]
+            
+            Util.accountsDictionary = [
+                "Bank Accounts":[
+                    ["name":"Checking","number":"457B-DFR77","total":"0"],
+                    ["name":"Premium Savings","number":"8784DF-DDD","total":"0"],
+                    ["name":"Everyday Savings","number":"3342233","total":"0"]
+                ],
+                "Credits":[
+                    ["name":"Visa","number":"CR-8744FCT","total":"0"],
+                    ["name":"Line of Credit","number":"CR-7844LOC","total":"0"]
+                ],
+                "Retirements":[
+                    ["name":"My 401(k)","number":"RE-DTZ7411","total":"$543,000"],
+                    ["name":"College Savings)","number":"RE-DTZ7411","total":"$45,000"]
+                ]
+            ]
+
+            
+            NSNotificationCenter.defaultCenter().postNotificationName(ReloadContentFromMacmNotification, object: self )
+            
+        
+        }
+        
+        else if (userName == "Abby"){
+           
+            Util.loanFilters = ["Transportation":true,"Home":false,"Small Business":false]
+            Util.insuranceFilters = ["Transportation":true,"Home":false,"Life":false]
+            Util.investmentFilters = ["Retirement":false]
+            Util.stockmarketFilters = ["Fund":true]
+            
+            NSNotificationCenter.defaultCenter().postNotificationName(ReloadContentFromMacmNotification, object: self )
+        }
+        
+        else if (userName == "Robert"){
+          Util.loanFilters = ["greenwheel":true, "Transportation":true,"Home":false,"Small Business":false]
+            Util.insuranceFilters = ["Transportation":false,"Home":false,"Life":false]
+            Util.investmentFilters = ["Retirement":false]
+            Util.stockmarketFilters = ["Fund":false]
+            
+         NSNotificationCenter.defaultCenter().postNotificationName(ReloadContentFromMacmNotification, object: self )
+        }
+        
+        else{
+            Util.loanFilters = ["general":true,"greenwheel":true, "Transportation":false,"Home":false,"Small Business":false]
+            Util.insuranceFilters = ["Transportation":false,"Home":false,"Life":false]
+            Util.investmentFilters = ["Retirement":false]
+            Util.stockmarketFilters = ["Fund":false]
+
+            NSNotificationCenter.defaultCenter().postNotificationName(ReloadContentFromMacmNotification, object: self )
+        }
+        
+        // end user preerences
+        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -126,6 +194,9 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
 
     }
     
+
+    
+    
     func enteredIBeaconRegion(notification:NSNotification) {
         var dico:Dictionary = notification.userInfo!
         let category = dico["category"] as! String
@@ -187,6 +258,7 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
             n = AppDelegate.caas.offerings.count
         case 2:
             n = AppDelegate.caas.articles.count
+            print("numberOfItemsInSection #2 = \(n)")
         default:
             n = 0
         }
@@ -197,7 +269,7 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let reusableID:String
         let cell:UICollectionViewCell
-        print("cellForItemAtIndexPath section=\(indexPath.section)/\(collectionView.numberOfSections())" )
+        print("cellForItemAtIndexPath section=\(indexPath.section) /  \(collectionView.numberOfSections())" )
         switch indexPath.section {
         case 0 :
             switch indexPath.row {
@@ -211,7 +283,8 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
                 cell = collectionView.dequeueReusableCellWithReuseIdentifier("AdCell", forIndexPath: indexPath) as UICollectionViewCell
             }
         case 1 :
-            let c = collectionView.dequeueReusableCellWithReuseIdentifier("OfferCell", forIndexPath: indexPath) as! OfferCollectionViewCell
+            reusableID = "OfferCell"
+            let c = collectionView.dequeueReusableCellWithReuseIdentifier(reusableID, forIndexPath: indexPath) as! OfferCollectionViewCell
             
             // Configure the cell
             let offering = AppDelegate.caas.offerings[indexPath.row]
@@ -220,13 +293,12 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
             let char:Character = "\n"
             c.title.text?.append(char)
             c.title.text?.appendContentsOf(offering.summary)
-            if offering.imageData != nil {
-             c.image.image = offering.imageData
-            }
+            c.image.image = offering.imageData
             cell = c
-        case 2 :
+        case 2:
             //articles
-            let c = collectionView.dequeueReusableCellWithReuseIdentifier("ArticleCell", forIndexPath: indexPath) as! OfferCollectionViewCell
+            reusableID = "ArticleCell"
+            let c = collectionView.dequeueReusableCellWithReuseIdentifier(reusableID, forIndexPath: indexPath) as! OfferCollectionViewCell
             
             // Configure the cell
             let article = AppDelegate.caas.articles[indexPath.row]
@@ -235,9 +307,7 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
             let char:Character = "\n"
             c.title.text?.append(char)
             c.title.text?.appendContentsOf(article.summary)
-            if article.imageData != nil {
-                c.image.image = article.imageData
-            }
+            c.image.image = article.imageData
             cell = c
         default:
             reusableID = "OfferCell"
@@ -297,12 +367,12 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
             
             switch indexPath.section {
             case 0:
-                header.title.text = "Banking Operations".uppercaseString
+                header.title.text = "Welcome \(userName) - Account: \(actNum)"
             case 1:
-                header.title.text = "Offers".uppercaseString
+                header.title.text = "Greenwell Bank Services"
                 header.title.hidden = AppDelegate.caas.offerings.count==0
             case 2:
-                header.title.text = "Articles".uppercaseString
+                header.title.text = "Helpful Articles and Events"
                 header.title.hidden = AppDelegate.caas.articles.count==0
             default:
                 header.title.text = "?????"

@@ -9,6 +9,10 @@
 import Foundation
 import UIKit
 
+
+var userName = ""
+var actNum = ""
+
 class Util {
     
     // list of accounts, sorted in sections
@@ -59,19 +63,23 @@ class Util {
     static var accountDetails = ac1+ac2+ac3
     static var accountDetails2 = ac1_1+ac2_1+ac3
     
-    
-    static var loanFilters:[String:Bool] = ["Transportation":false,"Home":false,"Student":false]
+    static var loanFilters:[String:Bool] = ["general":false,"greenwheel":false,"Transportation":false,"Home":false,"Small Business":false]
+    //static var loanFilters:[String:Bool] = ["Transportation":false,"Home":false,"Student":false]
     static var insuranceFilters:[String:Bool] = ["Transportation":false,"Home":false,"Life":false]
     static var investmentFilters:[String:Bool] = ["Retirement":false]
     static var stockmarketFilters:[String:Bool] = ["Fund":false]
     
-    static private let categoryPrefix = "macm default application"
+    static private let categoryPrefix = "greenwell"
+    //static private let categoryPrefix = "samples"
+    //static private let categoryPrefix = "Library 1"
+    
     static var categoryNames: [String:String] = [
         "Insurance":categoryPrefix+"/macm/insurance",
         "Loan":categoryPrefix+"/macm/loan",
         "Investment":categoryPrefix+"/macm/investment",
         "Stockmarket":categoryPrefix+"/macm/stockmarket",
-        "Greenwheel":categoryPrefix+"/macm/greenwheel"
+        "Greenwheel":categoryPrefix+"/macm/greenwheel",
+        "General":categoryPrefix+"/macm/general"
 
     ]
     
@@ -79,12 +87,14 @@ class Util {
         "Life": "life",
         "Transportation":"transportation",
         "Home":"home",
-        "Student":"student",
+        "smallbusiness":"smallbusiness",
+        //"Student":"student",
         "Retirement":"retirement",
         "invest2":"invest2",
         "invest3":"invest3",
         "Fund":"fund",
-        "Trusts":"trusts"
+        "Trusts":"trusts",
+        "Welcome":"welcome"
     ]
     
     // categories and  keywords coming from entered iBeacon region
@@ -216,12 +226,39 @@ class Util {
             articleCategoriesSet.insert( Util.categoryNames["Loan"]! )
             articleKeywordsSet.insert( Util.keywordNames["Home"]! )
         }
-        if loanFilters["Student"] == true {
+       // if loanFilters["Student"] == true {
+         //   offerCategoriesSet.insert( Util.categoryNames["Loan"]! )
+           // offerKeywordsSet.insert( Util.keywordNames["Student"]! )
+            //articleCategoriesSet.insert( Util.categoryNames["Loan"]! )
+            //articleKeywordsSet.insert( Util.keywordNames["Student"]! )
+       
+         if loanFilters["Small Business"] == true {
             offerCategoriesSet.insert( Util.categoryNames["Loan"]! )
-            offerKeywordsSet.insert( Util.keywordNames["Student"]! )
+            offerKeywordsSet.insert( Util.keywordNames["smallbusiness"]! )
             articleCategoriesSet.insert( Util.categoryNames["Loan"]! )
-            articleKeywordsSet.insert( Util.keywordNames["Student"]! )
+            articleKeywordsSet.insert( Util.keywordNames["smallbusiness"]! )
+    
         }
+        
+        if userName == "Robert"{
+            offerCategoriesSet.insert( Util.categoryNames["Greenwheel"]! )
+            offerKeywordsSet.insert( Util.keywordNames["Welcome"]! )
+            articleCategoriesSet.insert( Util.categoryNames["Greenwheel"]! )
+            articleKeywordsSet.insert( Util.keywordNames["Welcome"]! )
+        
+        }
+        
+        if userName == ""{
+            offerCategoriesSet.insert( Util.categoryNames["General"]! )
+           // offerKeywordsSet.insert( Util.keywordNames["Welcome"]! )
+            articleCategoriesSet.insert( Util.categoryNames["General"]! )
+            //articleKeywordsSet.insert( Util.keywordNames["Welcome"]! )
+            
+            
+            
+        }
+        
+    
 
         if insuranceFilters["Transportation"] == true {
             offerCategoriesSet.insert( Util.categoryNames["Insurance"]! )

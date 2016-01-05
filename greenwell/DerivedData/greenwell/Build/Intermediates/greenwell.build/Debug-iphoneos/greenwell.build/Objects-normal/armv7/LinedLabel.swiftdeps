@@ -1,0 +1,371 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "LinedLabel"
+provides-nominal:
+- "C9greenwell10LinedLabel"
+provides-member:
+- ["C9greenwell10LinedLabel", ""]
+provides-dynamic-lookup:
+- "drawRect"
+depends-top-level:
+- !private "UIScreen"
+- "UILabel"
+- !private "CGContextSetStrokeColorWithColor"
+- !private "-"
+- !private "CGContextAddLineToPoint"
+- "CGRect"
+- !private "CGContextSetLineWidth"
+- !private "CGContextMoveToPoint"
+- !private "/"
+- "LinedLabel"
+- !private "UIGraphicsGetCurrentContext"
+- !private "CGContextStrokePath"
+depends-member:
+- !private ["PSs9AnyObject", "CGColor"]
+- !private ["PSs9AnyObject", "CGContextAddLineToPoint"]
+- !private ["PSs9AnyObject", "CGContextMoveToPoint"]
+- !private ["PSs9AnyObject", "CGContextSetLineWidth"]
+- !private ["PSs9AnyObject", "CGContextSetStrokeColorWithColor"]
+- !private ["PSs9AnyObject", "CGContextStrokePath"]
+- !private ["PSs9AnyObject", "UIGraphicsGetCurrentContext"]
+- !private ["PSs9AnyObject", "UIScreen"]
+- !private ["PSs9AnyObject", "bounds"]
+- ["PSs9AnyObject", "drawRect"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "mainScreen"]
+- !private ["PSs9AnyObject", "scale"]
+- !private ["PSs9AnyObject", "textColor"]
+- ["PSs9AnyObject", ""]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["VSC6CGRect", "size"]
+- !private ["VSC6CGSize", "height"]
+- !private ["VSC6CGSize", "width"]
+- !private ["PSs11CVarArgType", "CGColor"]
+- !private ["PSs11CVarArgType", "CGContextAddLineToPoint"]
+- !private ["PSs11CVarArgType", "CGContextMoveToPoint"]
+- !private ["PSs11CVarArgType", "CGContextSetLineWidth"]
+- !private ["PSs11CVarArgType", "CGContextSetStrokeColorWithColor"]
+- !private ["PSs11CVarArgType", "CGContextStrokePath"]
+- !private ["PSs11CVarArgType", "UIGraphicsGetCurrentContext"]
+- !private ["PSs11CVarArgType", "UIScreen"]
+- !private ["PSs11CVarArgType", "bounds"]
+- ["PSs11CVarArgType", "drawRect"]
+- ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "mainScreen"]
+- !private ["PSs11CVarArgType", "scale"]
+- !private ["PSs11CVarArgType", "textColor"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs23CustomStringConvertible", "CGColor"]
+- !private ["PSs23CustomStringConvertible", "CGContextAddLineToPoint"]
+- !private ["PSs23CustomStringConvertible", "CGContextMoveToPoint"]
+- !private ["PSs23CustomStringConvertible", "CGContextSetLineWidth"]
+- !private ["PSs23CustomStringConvertible", "CGContextSetStrokeColorWithColor"]
+- !private ["PSs23CustomStringConvertible", "CGContextStrokePath"]
+- !private ["PSs23CustomStringConvertible", "UIGraphicsGetCurrentContext"]
+- !private ["PSs23CustomStringConvertible", "UIScreen"]
+- !private ["PSs23CustomStringConvertible", "bounds"]
+- ["PSs23CustomStringConvertible", "drawRect"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "mainScreen"]
+- !private ["PSs23CustomStringConvertible", "scale"]
+- !private ["PSs23CustomStringConvertible", "textColor"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "CGColor"]
+- !private ["PSs9Equatable", "CGContextAddLineToPoint"]
+- !private ["PSs9Equatable", "CGContextMoveToPoint"]
+- !private ["PSs9Equatable", "CGContextSetLineWidth"]
+- !private ["PSs9Equatable", "CGContextSetStrokeColorWithColor"]
+- !private ["PSs9Equatable", "CGContextStrokePath"]
+- !private ["PSs9Equatable", "UIGraphicsGetCurrentContext"]
+- !private ["PSs9Equatable", "UIScreen"]
+- !private ["PSs9Equatable", "bounds"]
+- ["PSs9Equatable", "drawRect"]
+- !private ["PSs9Equatable", "height"]
+- ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "mainScreen"]
+- !private ["PSs9Equatable", "scale"]
+- !private ["PSs9Equatable", "size"]
+- !private ["PSs9Equatable", "textColor"]
+- !private ["PSs9Equatable", "width"]
+- ["PSs9Equatable", ""]
+- !private ["PSs8Hashable", "CGColor"]
+- !private ["PSs8Hashable", "CGContextAddLineToPoint"]
+- !private ["PSs8Hashable", "CGContextMoveToPoint"]
+- !private ["PSs8Hashable", "CGContextSetLineWidth"]
+- !private ["PSs8Hashable", "CGContextSetStrokeColorWithColor"]
+- !private ["PSs8Hashable", "CGContextStrokePath"]
+- !private ["PSs8Hashable", "UIGraphicsGetCurrentContext"]
+- !private ["PSs8Hashable", "UIScreen"]
+- !private ["PSs8Hashable", "bounds"]
+- ["PSs8Hashable", "drawRect"]
+- ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "mainScreen"]
+- !private ["PSs8Hashable", "scale"]
+- !private ["PSs8Hashable", "textColor"]
+- ["PSs8Hashable", ""]
+- !private ["C9greenwell10LinedLabel", "CGContextAddLineToPoint"]
+- !private ["C9greenwell10LinedLabel", "CGContextMoveToPoint"]
+- !private ["C9greenwell10LinedLabel", "CGContextSetLineWidth"]
+- !private ["C9greenwell10LinedLabel", "CGContextSetStrokeColorWithColor"]
+- !private ["C9greenwell10LinedLabel", "CGContextStrokePath"]
+- ["C9greenwell10LinedLabel", "CGRect"]
+- !private ["C9greenwell10LinedLabel", "UIGraphicsGetCurrentContext"]
+- !private ["C9greenwell10LinedLabel", "UIScreen"]
+- !private ["C9greenwell10LinedLabel", "bounds"]
+- ["C9greenwell10LinedLabel", "deinit"]
+- ["C9greenwell10LinedLabel", "drawRect"]
+- ["C9greenwell10LinedLabel", "init"]
+- !private ["C9greenwell10LinedLabel", "textColor"]
+- !private ["PSo8NSCoding", "CGColor"]
+- !private ["PSo8NSCoding", "CGContextAddLineToPoint"]
+- !private ["PSo8NSCoding", "CGContextMoveToPoint"]
+- !private ["PSo8NSCoding", "CGContextSetLineWidth"]
+- !private ["PSo8NSCoding", "CGContextSetStrokeColorWithColor"]
+- !private ["PSo8NSCoding", "CGContextStrokePath"]
+- !private ["PSo8NSCoding", "UIGraphicsGetCurrentContext"]
+- !private ["PSo8NSCoding", "UIScreen"]
+- !private ["PSo8NSCoding", "bounds"]
+- ["PSo8NSCoding", "drawRect"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "textColor"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "CGColor"]
+- !private ["CSo8NSObject", "CGColor"]
+- !private ["CSo8NSObject", "CGContextAddLineToPoint"]
+- !private ["CSo8NSObject", "CGContextMoveToPoint"]
+- !private ["CSo8NSObject", "CGContextSetLineWidth"]
+- !private ["CSo8NSObject", "CGContextSetStrokeColorWithColor"]
+- !private ["CSo8NSObject", "CGContextStrokePath"]
+- ["CSo8NSObject", "CGRect"]
+- !private ["CSo8NSObject", "UIGraphicsGetCurrentContext"]
+- !private ["CSo8NSObject", "UIScreen"]
+- !private ["CSo8NSObject", "bounds"]
+- ["CSo8NSObject", "drawRect"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "mainScreen"]
+- !private ["CSo8NSObject", "scale"]
+- !private ["CSo8NSObject", "textColor"]
+- !private ["PSo16NSObjectProtocol", "CGColor"]
+- !private ["PSo16NSObjectProtocol", "CGContextAddLineToPoint"]
+- !private ["PSo16NSObjectProtocol", "CGContextMoveToPoint"]
+- !private ["PSo16NSObjectProtocol", "CGContextSetLineWidth"]
+- !private ["PSo16NSObjectProtocol", "CGContextSetStrokeColorWithColor"]
+- !private ["PSo16NSObjectProtocol", "CGContextStrokePath"]
+- !private ["PSo16NSObjectProtocol", "UIGraphicsGetCurrentContext"]
+- !private ["PSo16NSObjectProtocol", "UIScreen"]
+- !private ["PSo16NSObjectProtocol", "bounds"]
+- ["PSo16NSObjectProtocol", "drawRect"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "mainScreen"]
+- !private ["PSo16NSObjectProtocol", "scale"]
+- !private ["PSo16NSObjectProtocol", "textColor"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "CGColor"]
+- !private ["PSo29UIAccessibilityIdentification", "CGContextAddLineToPoint"]
+- !private ["PSo29UIAccessibilityIdentification", "CGContextMoveToPoint"]
+- !private ["PSo29UIAccessibilityIdentification", "CGContextSetLineWidth"]
+- !private ["PSo29UIAccessibilityIdentification", "CGContextSetStrokeColorWithColor"]
+- !private ["PSo29UIAccessibilityIdentification", "CGContextStrokePath"]
+- !private ["PSo29UIAccessibilityIdentification", "UIGraphicsGetCurrentContext"]
+- !private ["PSo29UIAccessibilityIdentification", "UIScreen"]
+- !private ["PSo29UIAccessibilityIdentification", "bounds"]
+- ["PSo29UIAccessibilityIdentification", "drawRect"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "textColor"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- !private ["PSo12UIAppearance", "CGContextAddLineToPoint"]
+- !private ["PSo12UIAppearance", "CGContextMoveToPoint"]
+- !private ["PSo12UIAppearance", "CGContextSetLineWidth"]
+- !private ["PSo12UIAppearance", "CGContextSetStrokeColorWithColor"]
+- !private ["PSo12UIAppearance", "CGContextStrokePath"]
+- !private ["PSo12UIAppearance", "UIGraphicsGetCurrentContext"]
+- !private ["PSo12UIAppearance", "UIScreen"]
+- !private ["PSo12UIAppearance", "bounds"]
+- ["PSo12UIAppearance", "drawRect"]
+- ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "textColor"]
+- ["PSo12UIAppearance", ""]
+- !private ["PSo21UIAppearanceContainer", "CGContextAddLineToPoint"]
+- !private ["PSo21UIAppearanceContainer", "CGContextMoveToPoint"]
+- !private ["PSo21UIAppearanceContainer", "CGContextSetLineWidth"]
+- !private ["PSo21UIAppearanceContainer", "CGContextSetStrokeColorWithColor"]
+- !private ["PSo21UIAppearanceContainer", "CGContextStrokePath"]
+- !private ["PSo21UIAppearanceContainer", "UIGraphicsGetCurrentContext"]
+- !private ["PSo21UIAppearanceContainer", "UIScreen"]
+- !private ["PSo21UIAppearanceContainer", "bounds"]
+- ["PSo21UIAppearanceContainer", "drawRect"]
+- ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "textColor"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo7UIColor", "CGColor"]
+- !private ["PSo17UICoordinateSpace", "CGContextAddLineToPoint"]
+- !private ["PSo17UICoordinateSpace", "CGContextMoveToPoint"]
+- !private ["PSo17UICoordinateSpace", "CGContextSetLineWidth"]
+- !private ["PSo17UICoordinateSpace", "CGContextSetStrokeColorWithColor"]
+- !private ["PSo17UICoordinateSpace", "CGContextStrokePath"]
+- !private ["PSo17UICoordinateSpace", "UIGraphicsGetCurrentContext"]
+- !private ["PSo17UICoordinateSpace", "UIScreen"]
+- !private ["PSo17UICoordinateSpace", "bounds"]
+- ["PSo17UICoordinateSpace", "drawRect"]
+- ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "textColor"]
+- ["PSo17UICoordinateSpace", ""]
+- !private ["PSo13UIDynamicItem", "CGContextAddLineToPoint"]
+- !private ["PSo13UIDynamicItem", "CGContextMoveToPoint"]
+- !private ["PSo13UIDynamicItem", "CGContextSetLineWidth"]
+- !private ["PSo13UIDynamicItem", "CGContextSetStrokeColorWithColor"]
+- !private ["PSo13UIDynamicItem", "CGContextStrokePath"]
+- !private ["PSo13UIDynamicItem", "UIGraphicsGetCurrentContext"]
+- !private ["PSo13UIDynamicItem", "UIScreen"]
+- !private ["PSo13UIDynamicItem", "bounds"]
+- ["PSo13UIDynamicItem", "drawRect"]
+- ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "textColor"]
+- ["PSo13UIDynamicItem", ""]
+- !private ["PSo18UIFocusEnvironment", "CGContextAddLineToPoint"]
+- !private ["PSo18UIFocusEnvironment", "CGContextMoveToPoint"]
+- !private ["PSo18UIFocusEnvironment", "CGContextSetLineWidth"]
+- !private ["PSo18UIFocusEnvironment", "CGContextSetStrokeColorWithColor"]
+- !private ["PSo18UIFocusEnvironment", "CGContextStrokePath"]
+- !private ["PSo18UIFocusEnvironment", "UIGraphicsGetCurrentContext"]
+- !private ["PSo18UIFocusEnvironment", "UIScreen"]
+- !private ["PSo18UIFocusEnvironment", "bounds"]
+- ["PSo18UIFocusEnvironment", "drawRect"]
+- ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "textColor"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo7UILabel", "CGContextAddLineToPoint"]
+- !private ["CSo7UILabel", "CGContextMoveToPoint"]
+- !private ["CSo7UILabel", "CGContextSetLineWidth"]
+- !private ["CSo7UILabel", "CGContextSetStrokeColorWithColor"]
+- !private ["CSo7UILabel", "CGContextStrokePath"]
+- ["CSo7UILabel", "CGRect"]
+- !private ["CSo7UILabel", "UIGraphicsGetCurrentContext"]
+- !private ["CSo7UILabel", "UIScreen"]
+- !private ["CSo7UILabel", "bounds"]
+- ["CSo7UILabel", "drawRect"]
+- ["CSo7UILabel", "init"]
+- !private ["CSo7UILabel", "textColor"]
+- ["CSo7UILabel", ""]
+- !private ["CSo11UIResponder", "CGContextAddLineToPoint"]
+- !private ["CSo11UIResponder", "CGContextMoveToPoint"]
+- !private ["CSo11UIResponder", "CGContextSetLineWidth"]
+- !private ["CSo11UIResponder", "CGContextSetStrokeColorWithColor"]
+- !private ["CSo11UIResponder", "CGContextStrokePath"]
+- ["CSo11UIResponder", "CGRect"]
+- !private ["CSo11UIResponder", "UIGraphicsGetCurrentContext"]
+- !private ["CSo11UIResponder", "UIScreen"]
+- !private ["CSo11UIResponder", "bounds"]
+- ["CSo11UIResponder", "drawRect"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "textColor"]
+- !private ["CSo8UIScreen", "mainScreen"]
+- !private ["CSo8UIScreen", "scale"]
+- !private ["PSo18UITraitEnvironment", "CGContextAddLineToPoint"]
+- !private ["PSo18UITraitEnvironment", "CGContextMoveToPoint"]
+- !private ["PSo18UITraitEnvironment", "CGContextSetLineWidth"]
+- !private ["PSo18UITraitEnvironment", "CGContextSetStrokeColorWithColor"]
+- !private ["PSo18UITraitEnvironment", "CGContextStrokePath"]
+- !private ["PSo18UITraitEnvironment", "UIGraphicsGetCurrentContext"]
+- !private ["PSo18UITraitEnvironment", "UIScreen"]
+- !private ["PSo18UITraitEnvironment", "bounds"]
+- ["PSo18UITraitEnvironment", "drawRect"]
+- ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "mainScreen"]
+- !private ["PSo18UITraitEnvironment", "scale"]
+- !private ["PSo18UITraitEnvironment", "textColor"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "CGContextAddLineToPoint"]
+- !private ["CSo6UIView", "CGContextMoveToPoint"]
+- !private ["CSo6UIView", "CGContextSetLineWidth"]
+- !private ["CSo6UIView", "CGContextSetStrokeColorWithColor"]
+- !private ["CSo6UIView", "CGContextStrokePath"]
+- ["CSo6UIView", "CGRect"]
+- !private ["CSo6UIView", "UIGraphicsGetCurrentContext"]
+- !private ["CSo6UIView", "UIScreen"]
+- !private ["CSo6UIView", "bounds"]
+- ["CSo6UIView", "drawRect"]
+- ["CSo6UIView", "init"]
+- !private ["CSo6UIView", "textColor"]
+- !private ["PSs24_ColorLiteralConvertible", "CGColor"]
+- !private ["PSs12_Reflectable", "CGContextAddLineToPoint"]
+- !private ["PSs12_Reflectable", "CGContextMoveToPoint"]
+- !private ["PSs12_Reflectable", "CGContextSetLineWidth"]
+- !private ["PSs12_Reflectable", "CGContextSetStrokeColorWithColor"]
+- !private ["PSs12_Reflectable", "CGContextStrokePath"]
+- !private ["PSs12_Reflectable", "UIGraphicsGetCurrentContext"]
+- !private ["PSs12_Reflectable", "UIScreen"]
+- !private ["PSs12_Reflectable", "bounds"]
+- ["PSs12_Reflectable", "drawRect"]
+- !private ["PSs12_Reflectable", "height"]
+- ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "size"]
+- !private ["PSs12_Reflectable", "textColor"]
+- !private ["PSs12_Reflectable", "width"]
+- ["PSs12_Reflectable", ""]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "V12CoreGraphics7CGFloat"
+- !private "VSC6CGRect"
+- !private "VSC6CGSize"
+- "PSs11CVarArgType"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- "C9greenwell10LinedLabel"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- !private "CSo7UIColor"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "CSo7UILabel"
+- "CSo11UIResponder"
+- !private "CSo8UIScreen"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- !private "PSs24_ColorLiteralConvertible"
+- "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreLocation.swiftmodule"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASUtils.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASSignInOperation.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASServicePrivate.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASServiceOperationPrivate.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASServiceOperationGet.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASServiceOperationDownload.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASServiceOperation.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASRequestResultPrivate.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASRequestPrivate.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASContentItemPrivate.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASAssetResultPrivate.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASNetworkActivityIndicatorManager.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASAssetResult.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASContentItemsResult.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASContentItemResult.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASContentItemsRequest.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASContentItemRequest.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASRequestResult.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASRequest.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASContentItem.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASService.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASObjC.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/CAASAssetRequest.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Headers/Pods-greenwell-CAASObjC-umbrella.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Products/Debug-iphoneos/Pods-greenwell/CAASObjC.framework/Modules/module.modulemap"
+interface-hash: "e0193f785e58d7a84419399d6ff510c0"

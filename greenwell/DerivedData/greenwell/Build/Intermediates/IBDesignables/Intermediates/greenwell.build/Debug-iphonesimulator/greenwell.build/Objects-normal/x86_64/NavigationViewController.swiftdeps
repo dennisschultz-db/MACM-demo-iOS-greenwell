@@ -1,0 +1,186 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "NavigationViewController"
+provides-nominal:
+- "C9greenwell24NavigationViewController"
+provides-member:
+- ["C9greenwell24NavigationViewController", ""]
+provides-dynamic-lookup:
+- "viewDidLoad"
+- "didReceiveMemoryWarning"
+- "shouldAutorotate"
+depends-top-level:
+- "Bool"
+- "NavigationViewController"
+- "UINavigationController"
+- !private "Util"
+depends-member:
+- !private ["PSs9AnyObject", "Util"]
+- ["PSs9AnyObject", "didReceiveMemoryWarning"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "shouldAutoRotate"]
+- ["PSs9AnyObject", "shouldAutorotate"]
+- ["PSs9AnyObject", "viewDidLoad"]
+- ["PSs9AnyObject", ""]
+- !private ["PSs11CVarArgType", "Util"]
+- ["PSs11CVarArgType", "didReceiveMemoryWarning"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "shouldAutorotate"]
+- ["PSs11CVarArgType", "viewDidLoad"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs23CustomStringConvertible", "Util"]
+- ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "shouldAutorotate"]
+- ["PSs23CustomStringConvertible", "viewDidLoad"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "Util"]
+- ["PSs9Equatable", "didReceiveMemoryWarning"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "shouldAutorotate"]
+- ["PSs9Equatable", "viewDidLoad"]
+- ["PSs9Equatable", ""]
+- !private ["PSs8Hashable", "Util"]
+- ["PSs8Hashable", "didReceiveMemoryWarning"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "shouldAutorotate"]
+- ["PSs8Hashable", "viewDidLoad"]
+- ["PSs8Hashable", ""]
+- !private ["PSo8NSCoding", "Util"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "shouldAutorotate"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo26NSExtensionRequestHandling", "Util"]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "shouldAutorotate"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "Util"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "shouldAutorotate"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "Util"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "shouldAutorotate"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- ["C9greenwell24NavigationViewController", "Bool"]
+- !private ["C9greenwell24NavigationViewController", "Util"]
+- ["C9greenwell24NavigationViewController", "deinit"]
+- ["C9greenwell24NavigationViewController", "didReceiveMemoryWarning"]
+- ["C9greenwell24NavigationViewController", "init"]
+- ["C9greenwell24NavigationViewController", "shouldAutorotate"]
+- ["C9greenwell24NavigationViewController", "viewDidLoad"]
+- !private ["PSo21UIAppearanceContainer", "Util"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "shouldAutorotate"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "Util"]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "shouldAutorotate"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo18UIFocusEnvironment", "Util"]
+- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "shouldAutorotate"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["CSo22UINavigationController", "Bool"]
+- !private ["CSo22UINavigationController", "Util"]
+- ["CSo22UINavigationController", "didReceiveMemoryWarning"]
+- ["CSo22UINavigationController", "init"]
+- ["CSo22UINavigationController", "shouldAutorotate"]
+- ["CSo22UINavigationController", "viewDidLoad"]
+- ["CSo22UINavigationController", ""]
+- ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "Util"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "shouldAutorotate"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo16UIStateRestoring", "Util"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "shouldAutorotate"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "Util"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "shouldAutorotate"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo16UIViewController", "Bool"]
+- !private ["CSo16UIViewController", "Util"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "shouldAutorotate"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- !private ["C9greenwell4Util", "shouldAutoRotate"]
+depends-nominal:
+- "PSs9AnyObject"
+- "PSs11CVarArgType"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "C9greenwell24NavigationViewController"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- "PSo18UIFocusEnvironment"
+- "CSo22UINavigationController"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- "CSo16UIViewController"
+- !private "C9greenwell4Util"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASUtils.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASSignInOperation.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASServicePrivate.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASServiceOperationPrivate.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASServiceOperationGet.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASServiceOperationDownload.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASServiceOperation.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASRequestResultPrivate.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASRequestPrivate.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASContentItemPrivate.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASAssetResultPrivate.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASNetworkActivityIndicatorManager.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASAssetResult.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASContentItemsResult.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASContentItemResult.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASContentItemsRequest.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASContentItemRequest.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASRequestResult.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASRequest.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASContentItem.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASService.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASObjC.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/CAASAssetRequest.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Headers/Pods-greenwell-CAASObjC-umbrella.h"
+- "/Users/tylertribe/Desktop/MACM/Apps/MACM-demo-iOS-greenwell.git (original 2)/greenwell/DerivedData/greenwell/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods-greenwell/CAASObjC.framework/Modules/module.modulemap"
+interface-hash: "0d97c011ef5111b08c42ed67d8aae99b"
