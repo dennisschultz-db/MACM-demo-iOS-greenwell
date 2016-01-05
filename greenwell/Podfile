@@ -1,0 +1,14 @@
+# Uncomment this line to define a global platform for your project
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'greenwell' do
+    
+    pod 'CAASObjC', :git => 'git@gitlabhost.rtp.raleigh.ibm.com:MACMTeam/MACM-SDK-iOS.git'
+    
+    pod 'IMFCore'
+    pod 'IMFPush'
+    
+end

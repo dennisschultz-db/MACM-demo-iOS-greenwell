@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+*/
+
+
+"OK" = "OK";
+"Cancel" = "Cancel";
+
+"SignIn.Alert.Title" = "Sign In Error";
+"SignIn.Alert.WrongCredentials" = "Wrong connection parameters or wrong Credentials\nPlease check your settings";
+
+"NetworkError.Alert.Title" = "Network Error";

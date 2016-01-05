@@ -1,0 +1,24 @@
+{
+  "name": "CAASObjC",
+  "version": "1.0.0",
+  "license": {
+    "type": "???",
+    "text": "???\n"
+  },
+  "summary": "IBM Adaptive Content SDK",
+  "homepage": "https://github.rtp.raleigh.ibm.com/caas/ios_sdk",
+  "social_media_url": "https://twitter.com/ibmmobile",
+  "authors": {
+    "IBM": "support@ibm.com"
+  },
+  "source": {
+    "git": "git@github.rtp.raleigh.ibm.com:caas/ios_sdk.git",
+    "tag": "1.0.0"
+  },
+  "requires_arc": true,
+  "platforms": {
+    "ios": "8.0"
+  },
+  "private_header_files": "*Private.h",
+  "source_files": "CAASObjC"
+}
