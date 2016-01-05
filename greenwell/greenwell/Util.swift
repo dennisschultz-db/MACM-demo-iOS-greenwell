@@ -65,15 +65,17 @@ class Util {
     static var investmentFilters:[String:Bool] = ["Retirement":false]
     static var stockmarketFilters:[String:Bool] = ["Fund":false]
     
-    static private let categoryPrefix = "macm default application"
-    static var categoryNames: [String:String] = [
-        "Insurance":categoryPrefix+"/macm/insurance",
-        "Loan":categoryPrefix+"/macm/loan",
-        "Investment":categoryPrefix+"/macm/investment",
-        "Stockmarket":categoryPrefix+"/macm/stockmarket",
-        "Greenwheel":categoryPrefix+"/macm/greenwheel"
-
-    ]
+    static var categoryNames: [String:String] {
+        get {
+            return [
+                    "Insurance"  : AppDelegate.caas.library + "/macm/insurance",
+                    "Loan"       : AppDelegate.caas.library + "/macm/loan",
+                    "Investment" : AppDelegate.caas.library + "/macm/investment",
+                    "Stockmarket": AppDelegate.caas.library + "/macm/stockmarket",
+                    "Greenwheel" : AppDelegate.caas.library + "/macm/greenwheel"
+                ]
+        }
+    }
     
     static var keywordNames: [String:String] = [
         "Life": "life",
@@ -177,7 +179,6 @@ class Util {
         }
         return attrStr!
     }
-    
     
 
     

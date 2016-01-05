@@ -32,8 +32,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
-        let bluemixAppRoute = "http://gw1.mybluemix.net"
-        let backendGuid = "2ba6d53a-6b4b-43e2-adae-564cf0b65293"
+        let configuration = PropertiesManager.sharedInstance.configuration
+        let bluemixAppRoute = configuration["bluemixAppRoute"] as! String
+        let backendGuid = configuration["backendGuid"] as! String
         // Initialize the Mobile First SDK with IBM Bluemix GUID and route
         IMFClient.sharedInstance().initializeWithBackendRoute(bluemixAppRoute, backendGUID: backendGuid)
         let push = IMFPushClient.sharedInstance()
@@ -45,13 +46,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             else {
                 print("-> Response after device registration (json): \(response.responseJson.description)")
                 // Subscribe to tages to be notified of new publication in categories loan, insurance, investment and stockmarket
-                push.subscribeToTags(["category:MACM Default Application:MACM:loan", "category:MACM Default Application:MACM:insurance", "category:MACM Default Application:MACM:investment", "category:MACM Default Application:MACM:stockmarket"], completionHandler: { (response, error) -> Void in
-                    if error != nil {
-                        print("-> Error during device subscription to tags \(error.description)")
-                    } else {
-                        print("-> Response after device subscription to tags (json): \(response.responseJson.description)")
-                    }
-                })
+//                push.subscribeToTags(["category:MACM Default Application:MACM:loan", "category:MACM Default Application:MACM:insurance", "category:MACM Default Application:MACM:investment", "category:MACM Default Application:MACM:stockmarket"], completionHandler: { (response, error) -> Void in
+//                    if error != nil {
+//                        print("-> Error during device subscription to tags \(error.description)")
+//                    } else {
+//                        print("-> Response after device subscription to tags (json): \(response.responseJson.description)")
+//                    }
+//                })
             }
         })
     }

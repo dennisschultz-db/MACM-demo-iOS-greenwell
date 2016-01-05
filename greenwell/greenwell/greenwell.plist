@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MACMInstance</key>
+	<string>https://macm-rendering.saas.ibmcloud.com</string>
+	<key>tenant</key>
+	<string>your-tenant</string>
+	<key>library</key>
+	<string>Samples</string>
+	<key>MACMUsername</key>
+	<string>your-username</string>
+	<key>MACMPassword</key>
+	<string>your-password</string>
+	<key>bluemixAppRoute</key>
+	<string>your-bluemix-app-route (For Push)</string>
+	<key>backendGuid</key>
+	<string>your-bluemix-app GUID (For Push)</string>
+</dict>
+</plist>

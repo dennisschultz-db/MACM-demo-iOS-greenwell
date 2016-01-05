@@ -26,8 +26,23 @@ class BeaconManager:NSObject, CLLocationManagerDelegate  {
         locationManager.delegate = self
         locationManager.requestAlwaysAuthorization()
         
-        // add a default iBeacon to monitor GreenWheel Regions
-        addBeaconRegionWithUUID( NSUUID(UUIDString: "F0018B9B-7509-4C31-A905-1A27D39C003C")!, identifier: "GreenWheel iBeacon Region",category:Util.categoryNames["Greenwheel"]!,keywords: ["welcome","modelz","modelj"])
+        // Read array of beacon information from project configuration file
+        let propertiesManager = PropertiesManager.sharedInstance
+        let beaconInfo = propertiesManager.configuration["beaconInfo"] as! [AnyObject]
+        
+        for beacon in beaconInfo {
+            print("beaconInfo " + beacon.debugDescription!)
+            let uuid = beacon["uuid"] as! String
+            let region = beacon["region"] as! String
+            let categoryFilter = beacon["categoryFilter"] as! String
+            let keywordFilter = beacon["keywordFilter"] as! [String]
+            addBeaconRegionWithUUID(
+                NSUUID(UUIDString: uuid)!,
+                identifier: region,
+                category: categoryFilter,
+                keywords: keywordFilter)
+            
+        }
 
     }
     
@@ -63,7 +78,7 @@ class BeaconManager:NSObject, CLLocationManagerDelegate  {
                 
                 // notify that user entered an iBeacon region. 
                 // we use the category, and the first keyword, associated to the beacon to get notification message from MACM
-                NSNotificationCenter.defaultCenter().postNotificationName(EnteredIBeaconRegionNotification, object: self, userInfo: ["category":c, "keywords":k])
+                NSNotificationCenter.defaultCenter().postNotificationName(EnteredIBeaconRegionNotification, object: self, userInfo: ["category":AppDelegate.caas.library + "/macm/" + c, "keywords":k])
             }
         }
         
