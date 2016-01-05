@@ -62,6 +62,7 @@
 
 /* Begin PBXFileReference section */
 		76353C17C219E6A0898F2EB0 /* Pods-greenwell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-greenwell.release.xcconfig"; path = "Pods/Target Support Files/Pods-greenwell/Pods-greenwell.release.xcconfig"; sourceTree = "<group>"; };
+		950182021C3C8A5500121E99 /* MFBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFBridge.h; sourceTree = "<group>"; };
 		951D79EF1C28AECF002936A0 /* PropertiesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertiesManager.swift; sourceTree = "<group>"; };
 		951D79F11C28AEDE002936A0 /* greenwell.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = greenwell.plist; sourceTree = "<group>"; };
 		CE99BBA59E87928A28198128 /* Pods_greenwell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_greenwell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -237,6 +238,7 @@
 		E43A41721B6FB91B00CD34F4 /* new UI */ = {
 			isa = PBXGroup;
 			children = (
+				950182021C3C8A5500121E99 /* MFBridge.h */,
 				E43A41731B6FB93E00CD34F4 /* main.storyboard */,
 				E43A41751B7205E900CD34F4 /* InitialViewController.swift */,
 				E44245671B73886E00C261C9 /* InfoViewController.swift */,
@@ -590,6 +592,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -617,6 +620,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.GreenwellNative;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = greenwell/MFBridge.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -629,6 +633,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -656,6 +661,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.GreenwellNative;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = greenwell/MFBridge.h;
 			};
 			name = Release;
 		};
