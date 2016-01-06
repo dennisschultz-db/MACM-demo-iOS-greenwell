@@ -167,12 +167,12 @@ class Caas {
                     // load item details like long description, authors and keyword lists
                     let itemRequest = CAASContentItemRequest(oid: offeringItem.id) { (itemRequestResult) -> Void in
 
-                        print("\(Util.timestamp()): details for \(offeringItem.title) returned")
+//                        print("\(Util.timestamp()): details for \(offeringItem.title) returned")
                         if (itemRequestResult.error != nil) || (itemRequestResult.httpStatusCode != 200) {
                             print("Error while executing ContentItemRequest. Http Status code is : \(itemRequestResult.httpStatusCode)"   )
                             
                         } else if let ci = itemRequestResult.contentItem {
-                            print("Got details for offer \(offeringItem.title)")
+//                            print("Got details for offer \(offeringItem.title)")
                             let elements = ci.elements
                             let properties = ci.properties
                             var values:[NSObject:AnyObject] = [:]
@@ -190,14 +190,14 @@ class Caas {
                             offeringItem.imageURL = values["Image"] as! NSURL
                             let url = offeringItem.imageURL
                             let imgRequest = CAASAssetRequest(assetURL: url!) { (imgResult) -> Void in
-                                print("\(Util.timestamp()): img for \(offeringItem.title) returned")
+//                                print("\(Util.timestamp()): img for \(offeringItem.title) returned")
                                 if imgResult.image != nil {
-                                    print("Got image for offer \(offeringItem.title)")
+//                                    print("Got image for offer \(offeringItem.title)")
                                     offeringItem.imageData = imgResult.image
                                     updateBlock(ip)
                                 }
                             }
-                            print("\(Util.timestamp()): send request for img for \(offeringItem.title)")
+//                            print("\(Util.timestamp()): send request for img for \(offeringItem.title)")
                             self.caasService.executeRequest(imgRequest)
 
                         } else {
@@ -209,7 +209,7 @@ class Caas {
                         }
                     }
 
-                    print("\(Util.timestamp()): send request for details for \(offeringItem.title)")
+//                    print("\(Util.timestamp()): send request for details for \(offeringItem.title)")
                     self.caasService.executeRequest(itemRequest)
                 } //end for
                 
@@ -269,7 +269,7 @@ class Caas {
                             
                         } else if let ci = itemRequestResult.contentItem {
                             
-                            print("Got details for article \(articleItem.title)")
+//                            print("Got details for article \(articleItem.title)")
                             let elements = ci.elements
                             let properties = ci.properties
                             var values:[NSObject:AnyObject] = [:]
@@ -287,7 +287,7 @@ class Caas {
                             let url = articleItem.imageURL
                             let imgRequest = CAASAssetRequest(assetURL: url!) { (imgResult) -> Void in
                                 if imgResult.image != nil {
-                                    print("Got image for article \(articleItem.title)")
+//                                    print("Got image for article \(articleItem.title)")
                                     articleItem.imageData = imgResult.image
                                     updateBlock(ip)
                                 }
