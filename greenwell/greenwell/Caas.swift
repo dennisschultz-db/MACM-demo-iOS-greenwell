@@ -68,11 +68,14 @@ class Caas {
     */
     func signIn(vc:UIViewController, completionBlock:(()->Void)?){
         
-        
         caasService = CAASService(baseURL: NSURL(string: macminstance)!, contextRoot: "wps", tenant: tenant)
         
         if !caasService.isUserAlreadySignedIn() {
+            let startTime = NSDate()
+            
+            print("\(Util.timestamp(startTime)): signIn")
             caasService.signIn(username, password: password) { (error, httpStatusCode) -> Void in
+                print("signIn took \(Util.elapsedTime(then: startTime))")
                 if (httpStatusCode == 204) {
                     NSNotificationCenter.defaultCenter().postNotificationName(ReloadContentFromMacmNotification, object: self)
                     if completionBlock != nil {
@@ -130,13 +133,17 @@ class Caas {
     */
     func getOffers(categories:[String]?, keywords:[String]?, updateBlock:([NSIndexPath])->Void){
         
+        let getOffersStartTime = NSDate()
+        
         let contentItemsRequest = CAASContentItemsRequest(contentPath: offerLibrary, completionBlock: { (requestResult) -> Void in
+
+            print("getOffers took \(Util.elapsedTime(then: getOffersStartTime)) sec")
             if (requestResult.error != nil) || (requestResult.httpStatusCode != 200) {
                 //self.presentNetworkError(vc, error: requestResult.error,httpStatusCode: requestResult.httpStatusCode)
                 print("getOffers error: " + requestResult.error.debugDescription)
+
             } else if let contentItems = requestResult.contentItems {
-                
-                print("getOffers returned \(contentItems.count)")
+                print("getOffers returned (# items): \(contentItems.count)")
                 for contentItem in contentItems {
                     // merge content item dictionaries into one 
                     let elements = contentItem.elements
@@ -159,10 +166,12 @@ class Caas {
                     
                     // load item details like long description, authors and keyword lists
                     let itemRequest = CAASContentItemRequest(oid: offeringItem.id) { (itemRequestResult) -> Void in
+
+                        print("\(Util.timestamp()): details for \(offeringItem.title) returned")
                         if (itemRequestResult.error != nil) || (itemRequestResult.httpStatusCode != 200) {
                             print("Error while executing ContentItemRequest. Http Status code is : \(itemRequestResult.httpStatusCode)"   )
-                        } else if let ci = itemRequestResult.contentItem {
                             
+                        } else if let ci = itemRequestResult.contentItem {
                             print("Got details for offer \(offeringItem.title)")
                             let elements = ci.elements
                             let properties = ci.properties
@@ -181,15 +190,26 @@ class Caas {
                             offeringItem.imageURL = values["Image"] as! NSURL
                             let url = offeringItem.imageURL
                             let imgRequest = CAASAssetRequest(assetURL: url!) { (imgResult) -> Void in
+                                print("\(Util.timestamp()): img for \(offeringItem.title) returned")
                                 if imgResult.image != nil {
                                     print("Got image for offer \(offeringItem.title)")
                                     offeringItem.imageData = imgResult.image
                                     updateBlock(ip)
                                 }
                             }
+                            print("\(Util.timestamp()): send request for img for \(offeringItem.title)")
                             self.caasService.executeRequest(imgRequest)
+
+                        } else {
+                            print("No error but also no contentItem for \(offeringItem.title):")
+                            print("Error: \(itemRequestResult.error)")
+                            print("HTTP Status Code: \(itemRequestResult.httpStatusCode)")
+                            print("HTTP Request: \(itemRequestResult.httpRequest)")
+                            print("contentItem: \(itemRequestResult.contentItem.debugDescription)")
                         }
                     }
+
+                    print("\(Util.timestamp()): send request for details for \(offeringItem.title)")
                     self.caasService.executeRequest(itemRequest)
                 } //end for
                 
@@ -201,6 +221,7 @@ class Caas {
         
         contentItemsRequest.anyCategories = categories
         contentItemsRequest.anyKeywords = keywords
+        print("\(Util.timestamp(getOffersStartTime)): send getOffers request")
         self.caasService.executeRequest(contentItemsRequest)
         
 
@@ -211,13 +232,16 @@ class Caas {
     Get articles, filtered on given categorie(s) and keyword(s)
     */
     func getArticles( categories:[String]?, keywords:[String]?, updateBlock:([NSIndexPath])->Void){
+        let getArticlesStartTime = NSDate()
+        
         let contentItemsRequest = CAASContentItemsRequest(contentPath: articleLibrary, completionBlock: { (requestResult) -> Void in
+            print("getArticles took \(Util.elapsedTime(then: getArticlesStartTime)) sec")
             if (requestResult.error != nil) || (requestResult.httpStatusCode != 200) {
                 //self.presentNetworkError(vc, error: requestResult.error,httpStatusCode: requestResult.httpStatusCode)
                 print("getArticles error: " + requestResult.error.debugDescription)
             } else if let contentItems = requestResult.contentItems {
                 
-                print("getArticles returned \(contentItems.count)")
+                print("getArticles returned (# items): \(contentItems.count)")
                for contentItem in contentItems {
                     
                     // merge content item dictionaries into one
@@ -270,6 +294,13 @@ class Caas {
                             }
                             self.caasService.executeRequest(imgRequest)
 
+                        } else {
+                            print("No error but also no contentItem for \(articleItem.title):")
+                            print("Error: \(itemRequestResult.error)")
+                            print("HTTP Status Code: \(itemRequestResult.httpStatusCode)")
+                            print("HTTP Request: \(itemRequestResult.httpRequest)")
+                            print("contentItem: \(itemRequestResult.contentItem.debugDescription)")
+                            
                         }
                     }
                     self.caasService.executeRequest(itemRequest)
@@ -279,6 +310,7 @@ class Caas {
         })
         contentItemsRequest.anyCategories = categories
         contentItemsRequest.anyKeywords = keywords
+        print("\(Util.timestamp()): send getArticles request")
         self.caasService.executeRequest(contentItemsRequest)
     }
     

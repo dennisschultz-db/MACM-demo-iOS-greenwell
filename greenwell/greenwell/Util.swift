@@ -314,7 +314,16 @@ class Util {
     }
     
 
+    static func timestamp(now: NSDate = NSDate()) -> String {
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "hh:mm:ss.SSS"
+        return formatter.stringFromDate(now)
+    }
     
-        
+    static func elapsedTime(now: NSDate = NSDate(), then: NSDate) -> String {
+        return String(now.timeIntervalSinceDate(then))
+    }
+    
+    
    
 }
