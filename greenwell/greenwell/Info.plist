@@ -35,6 +35,7 @@
 	<string>Location is required for iBeacon support</string>
 	<key>UIBackgroundModes</key>
 	<array>
+		<string>remote-notification</string>
 		<string>bluetooth-central</string>
 		<string>location</string>
 	</array>

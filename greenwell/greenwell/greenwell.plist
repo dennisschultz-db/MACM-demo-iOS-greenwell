@@ -2,19 +2,58 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>beaconInfo</key>
+	<array>
+		<dict>
+			<key>region</key>
+			<string>Greenwell Cars</string>
+			<key>uuid</key>
+			<string>E2C56DB5-DFFB-48D2-B060-D0F5A71096E0</string>
+			<key>categoryFilter</key>
+			<string>greenwheel</string>
+			<key>keywordFilter</key>
+			<array>
+				<string>welcome</string>
+			</array>
+		</dict>
+		<dict>
+			<key>region</key>
+			<string>Greenwheel Model Z</string>
+			<key>uuid</key>
+			<string>E2C56DB5-DFFB-48D2-B060-D0F5A71096E1</string>
+			<key>categoryFilter</key>
+			<string>greenwheel</string>
+			<key>keywordFilter</key>
+			<array>
+				<string>modelz</string>
+			</array>
+		</dict>
+		<dict>
+			<key>region</key>
+			<string>Greenwheel Model J</string>
+			<key>uuid</key>
+			<string>E2C56DB5-DFFB-48D2-B060-D0F5A71096E2</string>
+			<key>categoryFilter</key>
+			<string>greenwheel</string>
+			<key>keywordFilter</key>
+			<array>
+				<string>modelj</string>
+			</array>
+		</dict>
+	</array>
 	<key>MACMInstance</key>
 	<string>https://macm-rendering.saas.ibmcloud.com</string>
 	<key>tenant</key>
-	<string>your-tenant</string>
+	<string>vp6071</string>
 	<key>library</key>
-	<string>Samples</string>
+	<string>Greenwell</string>
 	<key>MACMUsername</key>
-	<string>your-username</string>
+	<string>1212999212066071</string>
 	<key>MACMPassword</key>
-	<string>your-password</string>
+	<string>hvgMk(-076</string>
 	<key>bluemixAppRoute</key>
-	<string>your-bluemix-app-route (For Push)</string>
+	<string>http://MACM-DWS.mybluemix.net</string>
 	<key>backendGuid</key>
-	<string>your-bluemix-app GUID (For Push)</string>
+	<string>de8d6e4e-fd64-4279-9c9c-af891d1aa5a3</string>
 </dict>
 </plist>

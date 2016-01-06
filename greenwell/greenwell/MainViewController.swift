@@ -155,11 +155,7 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
         if indexPaths.count == 0 {
             collectionView.reloadData()
         }else {
-            do {
-                collectionView.reloadItemsAtIndexPaths(indexPaths )
-            } catch is NSException {
-                collectionView.reloadData()
-            }
+            collectionView.reloadItemsAtIndexPaths(indexPaths )
         }
     }
     
@@ -256,9 +252,10 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
             n = 3
         case 1:
             n = AppDelegate.caas.offerings.count
+//            print("numberOfItemsInSection Offers = \(n)")
         case 2:
             n = AppDelegate.caas.articles.count
-            print("numberOfItemsInSection #2 = \(n)")
+//            print("numberOfItemsInSection Articles = \(n)")
         default:
             n = 0
         }
@@ -269,7 +266,7 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let reusableID:String
         let cell:UICollectionViewCell
-        print("cellForItemAtIndexPath section=\(indexPath.section) /  \(collectionView.numberOfSections())" )
+//        print("cellForItemAtIndexPath section=\(indexPath.section) /  \(collectionView.numberOfSections())" )
         switch indexPath.section {
         case 0 :
             switch indexPath.row {

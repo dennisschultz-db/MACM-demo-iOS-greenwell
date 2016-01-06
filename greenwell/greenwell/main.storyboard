@@ -1104,7 +1104,7 @@
                         <viewControllerLayoutGuide type="bottom" id="fes-kt-nbn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="C3u-Xu-r3M">
-                        <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
+                        <rect key="frame" x="0.0" y="64" width="500" height="436"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1mn-DG-ryf">
@@ -5974,7 +5974,7 @@ Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed 
     <inferredMetricsTieBreakers>
         <segue reference="YNe-8P-2ff"/>
         <segue reference="U3X-2Y-NoF"/>
-        <segue reference="Yue-Iy-kfH"/>
+        <segue reference="NCt-7T-C4x"/>
         <segue reference="KN9-e9-w2O"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -133,9 +133,10 @@ class Caas {
         let contentItemsRequest = CAASContentItemsRequest(contentPath: offerLibrary, completionBlock: { (requestResult) -> Void in
             if (requestResult.error != nil) || (requestResult.httpStatusCode != 200) {
                 //self.presentNetworkError(vc, error: requestResult.error,httpStatusCode: requestResult.httpStatusCode)
-                print("Network error")
+                print("getOffers error: " + requestResult.error.debugDescription)
             } else if let contentItems = requestResult.contentItems {
                 
+                print("getOffers returned \(contentItems.count)")
                 for contentItem in contentItems {
                     // merge content item dictionaries into one 
                     let elements = contentItem.elements
@@ -162,6 +163,7 @@ class Caas {
                             print("Error while executing ContentItemRequest. Http Status code is : \(itemRequestResult.httpStatusCode)"   )
                         } else if let ci = itemRequestResult.contentItem {
                             
+                            print("Got details for offer \(offeringItem.title)")
                             let elements = ci.elements
                             let properties = ci.properties
                             var values:[NSObject:AnyObject] = [:]
@@ -180,6 +182,7 @@ class Caas {
                             let url = offeringItem.imageURL
                             let imgRequest = CAASAssetRequest(assetURL: url!) { (imgResult) -> Void in
                                 if imgResult.image != nil {
+                                    print("Got image for offer \(offeringItem.title)")
                                     offeringItem.imageData = imgResult.image
                                     updateBlock(ip)
                                 }
@@ -211,8 +214,10 @@ class Caas {
         let contentItemsRequest = CAASContentItemsRequest(contentPath: articleLibrary, completionBlock: { (requestResult) -> Void in
             if (requestResult.error != nil) || (requestResult.httpStatusCode != 200) {
                 //self.presentNetworkError(vc, error: requestResult.error,httpStatusCode: requestResult.httpStatusCode)
+                print("getArticles error: " + requestResult.error.debugDescription)
             } else if let contentItems = requestResult.contentItems {
                 
+                print("getArticles returned \(contentItems.count)")
                for contentItem in contentItems {
                     
                     // merge content item dictionaries into one
@@ -240,6 +245,7 @@ class Caas {
                             
                         } else if let ci = itemRequestResult.contentItem {
                             
+                            print("Got details for article \(articleItem.title)")
                             let elements = ci.elements
                             let properties = ci.properties
                             var values:[NSObject:AnyObject] = [:]
@@ -257,6 +263,7 @@ class Caas {
                             let url = articleItem.imageURL
                             let imgRequest = CAASAssetRequest(assetURL: url!) { (imgResult) -> Void in
                                 if imgResult.image != nil {
+                                    print("Got image for article \(articleItem.title)")
                                     articleItem.imageData = imgResult.image
                                     updateBlock(ip)
                                 }
