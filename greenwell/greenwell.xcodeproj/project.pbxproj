@@ -104,7 +104,7 @@
 		E49C8CD11B8F5DCE005BC49D /* BeaconDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconDetailViewController.swift; sourceTree = "<group>"; };
 		E4C16DFA1B8B3DDF00C5B9AA /* ServerSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerSettingsViewController.swift; sourceTree = "<group>"; };
 		E4CAB4A11B7B67FF000CCC66 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
-		E4D029CF1BD92E7900B2AC9D /* .localized */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .localized; sourceTree = "<group>"; };
+		E4D029CF1BD92E7900B2AC9D /* .localized */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .localized; path = ../../../../../../Desktop/.localized; sourceTree = "<group>"; };
 		E4D02A631BD92EA200B2AC9D /* appicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon.png; sourceTree = "<group>"; };
 		E4D2BB611B83610B00EEDCBA /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		E4D2BB631B8376B100EEDCBA /* FiltersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +131,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		950182031C3CD87B00121E99 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E4D029CF1BD92E7900B2AC9D /* .localized */,
+				E4D02A631BD92EA200B2AC9D /* appicon.png */,
+				E464D2891ABCB06000E80FBE /* privacy.rtf */,
+				E464D28A1ABCB06000E80FBE /* legal.rtf */,
+				E464D2921ABCB06000E80FBE /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		950182041C3CD8B200121E99 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E43A41751B7205E900CD34F4 /* InitialViewController.swift */,
+				E44245671B73886E00C261C9 /* InfoViewController.swift */,
+				E44245691B73898300C261C9 /* MainViewController.swift */,
+				E442456D1B7A1F9700C261C9 /* OfferDetailsViewController.swift */,
+				E450B7FD1B821F20001FC27A /* ArticleDetailsViewController.swift */,
+				E4D2BB631B8376B100EEDCBA /* FiltersViewController.swift */,
+				E4D2BB611B83610B00EEDCBA /* NavigationViewController.swift */,
+				E4732FB11B8606BA00CF7AB4 /* AccountsTableViewController.swift */,
+				E4732FB31B860DCC00CF7AB4 /* AccountDetailsViewController.swift */,
+				E47ED2111B877E8A00718A88 /* SettingsViewController.swift */,
+				E4C16DFA1B8B3DDF00C5B9AA /* ServerSettingsViewController.swift */,
+				E48D27A11B8DD79200397050 /* BeaconManager.swift */,
+				E4198ACA1B8F17360095E5B9 /* BeaconsViewController.swift */,
+				E49C8CD11B8F5DCE005BC49D /* BeaconDetailViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		950182051C3D43F700121E99 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				950182021C3C8A5500121E99 /* MFBridge.h */,
+				E47F6F1E1ACD4C1100DCEDA2 /* Util.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		951D79EA1C28ADCE002936A0 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,18 +224,14 @@
 		E423CF321ABCAB0400CA1935 /* greenwell */ = {
 			isa = PBXGroup;
 			children = (
-				951D79EA1C28ADCE002936A0 /* Configuration */,
-				E4D029CE1BD92E7900B2AC9D /* Desktop */,
-				E4D02A631BD92EA200B2AC9D /* appicon.png */,
-				E423CF561ABCAB4D00CA1935 /* caas */,
-				E422CE4C1B84B1B400971C7F /* custom controls */,
-				E43A41721B6FB91B00CD34F4 /* new UI */,
-				E464D2891ABCB06000E80FBE /* privacy.rtf */,
-				E464D28A1ABCB06000E80FBE /* legal.rtf */,
-				E47F6F1E1ACD4C1100DCEDA2 /* Util.swift */,
 				E464D28B1ABCB06000E80FBE /* AppDelegate.swift */,
-				E464D2921ABCB06000E80FBE /* Images.xcassets */,
-				E464D2931ABCB06000E80FBE /* LaunchScreen.xib */,
+				950182041C3CD8B200121E99 /* Controllers */,
+				E43A41721B6FB91B00CD34F4 /* View */,
+				E423CF561ABCAB4D00CA1935 /* caas */,
+				950182051C3D43F700121E99 /* Utils */,
+				E422CE4C1B84B1B400971C7F /* custom controls */,
+				951D79EA1C28ADCE002936A0 /* Configuration */,
+				950182031C3CD87B00121E99 /* Resources */,
 				E423CF331ABCAB0400CA1935 /* Supporting Files */,
 			);
 			path = greenwell;
@@ -235,42 +273,19 @@
 			name = caas;
 			sourceTree = "<group>";
 		};
-		E43A41721B6FB91B00CD34F4 /* new UI */ = {
+		E43A41721B6FB91B00CD34F4 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				950182021C3C8A5500121E99 /* MFBridge.h */,
 				E43A41731B6FB93E00CD34F4 /* main.storyboard */,
-				E43A41751B7205E900CD34F4 /* InitialViewController.swift */,
-				E44245671B73886E00C261C9 /* InfoViewController.swift */,
-				E44245691B73898300C261C9 /* MainViewController.swift */,
+				E464D2931ABCB06000E80FBE /* LaunchScreen.xib */,
 				E442456B1B74D79B00C261C9 /* OfferCollectionViewCell.swift */,
-				E442456D1B7A1F9700C261C9 /* OfferDetailsViewController.swift */,
-				E450B7FD1B821F20001FC27A /* ArticleDetailsViewController.swift */,
 				E4CAB4A11B7B67FF000CCC66 /* HeaderCollectionReusableView.swift */,
-				E4D2BB631B8376B100EEDCBA /* FiltersViewController.swift */,
-				E4D2BB611B83610B00EEDCBA /* NavigationViewController.swift */,
 				E422CE4D1B84B60400971C7F /* MyAccountsCollectionViewCell.swift */,
-				E4732FB11B8606BA00CF7AB4 /* AccountsTableViewController.swift */,
-				E4732FB31B860DCC00CF7AB4 /* AccountDetailsViewController.swift */,
 				E4963A6E1AD7F25700F271CD /* AccountCell.swift */,
 				E47ED20F1B87592900718A88 /* DetailCell.swift */,
-				E47ED2111B877E8A00718A88 /* SettingsViewController.swift */,
-				E4C16DFA1B8B3DDF00C5B9AA /* ServerSettingsViewController.swift */,
-				E48D27A11B8DD79200397050 /* BeaconManager.swift */,
-				E4198ACA1B8F17360095E5B9 /* BeaconsViewController.swift */,
 				E49C8CCF1B8F36D4005BC49D /* BeaconCell.swift */,
-				E49C8CD11B8F5DCE005BC49D /* BeaconDetailViewController.swift */,
 			);
-			name = "new UI";
-			sourceTree = "<group>";
-		};
-		E4D029CE1BD92E7900B2AC9D /* Desktop */ = {
-			isa = PBXGroup;
-			children = (
-				E4D029CF1BD92E7900B2AC9D /* .localized */,
-			);
-			name = Desktop;
-			path = ../../../../../../Desktop;
+			name = View;
 			sourceTree = "<group>";
 		};
 		EF1C6643967D2D716C2DC05C /* Frameworks */ = {
