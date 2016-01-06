@@ -90,12 +90,12 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
         }
         
         else if (userName == "Robert"){
-          Util.loanFilters = ["greenwheel":true, "Transportation":true,"Home":false,"Small Business":false]
+            Util.loanFilters = ["greenwheel":true, "Transportation":true,"Home":false,"Small Business":false]
             Util.insuranceFilters = ["Transportation":false,"Home":false,"Life":false]
             Util.investmentFilters = ["Retirement":false]
             Util.stockmarketFilters = ["Fund":false]
             
-         NSNotificationCenter.defaultCenter().postNotificationName(ReloadContentFromMacmNotification, object: self )
+            NSNotificationCenter.defaultCenter().postNotificationName(ReloadContentFromMacmNotification, object: self )
         }
         
         else{

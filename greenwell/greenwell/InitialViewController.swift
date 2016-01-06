@@ -78,9 +78,9 @@ class InitialViewController: UIViewController, UITextFieldDelegate {
        let loginNum = pinTextfield.text
         
         if (loginNum == "111"){
-        userName = "Spencer"
-        actNum = "1245430"
-        print(userName,actNum)
+            userName = "Spencer"
+            actNum = "1245430"
+            print(userName,actNum)
         
         }
         else if (loginNum == "123"){
