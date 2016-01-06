@@ -1776,7 +1776,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ApK-uj-qF0">
-                                                    <rect key="frame" x="-12" y="-12" width="730" height="260"/>
+                                                    <rect key="frame" x="-12" y="-12" width="730" height="72"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hEz-Ja-NdP">
                                                             <rect key="frame" x="0.0" y="0.0" width="201" height="34"/>
@@ -2447,6 +2447,14 @@
                                     </connections>
                                 </collectionReusableView>
                             </collectionView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="jP6-tb-B1X">
+                                <rect key="frame" x="275" y="243" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="bQg-B2-HN3"/>
+                                    <constraint firstAttribute="width" constant="50" id="uKx-u1-lPN"/>
+                                </constraints>
+                                <color key="color" red="0.0078431372550000003" green="0.65098039220000004" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -2463,6 +2471,7 @@
                                 <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
                             </constraint>
                             <constraint firstItem="be4-ma-zXM" firstAttribute="top" secondItem="Pvw-w3-KWb" secondAttribute="bottom" constant="8" symbolic="YES" id="HVJ-P9-kam"/>
+                            <constraint firstItem="jP6-tb-B1X" firstAttribute="centerY" secondItem="Z16-a1-MYd" secondAttribute="centerY" id="LIz-bG-OdQ"/>
                             <constraint firstItem="Pvw-w3-KWb" firstAttribute="top" secondItem="3rV-3O-Vve" secondAttribute="bottom" id="STP-VX-61b"/>
                             <constraint firstItem="Pvw-w3-KWb" firstAttribute="trailing" secondItem="Z16-a1-MYd" secondAttribute="trailingMargin" id="a3m-68-P2I"/>
                             <constraint firstItem="ubf-cf-anV" firstAttribute="top" secondItem="3rV-3O-Vve" secondAttribute="bottom" id="dDw-he-T36"/>
@@ -2476,6 +2485,7 @@
                             </constraint>
                             <constraint firstItem="Pvw-w3-KWb" firstAttribute="leading" secondItem="Z16-a1-MYd" secondAttribute="leading" id="ooc-kG-mkY"/>
                             <constraint firstItem="Pvw-w3-KWb" firstAttribute="leading" secondItem="Z16-a1-MYd" secondAttribute="leadingMargin" id="qrU-Qs-gb7"/>
+                            <constraint firstItem="jP6-tb-B1X" firstAttribute="centerX" secondItem="Z16-a1-MYd" secondAttribute="centerX" id="vyW-Jc-evE"/>
                             <constraint firstItem="ubf-cf-anV" firstAttribute="leading" secondItem="Z16-a1-MYd" secondAttribute="leadingMargin" constant="260" id="xWK-6e-bD6">
                                 <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
                             </constraint>
@@ -2557,6 +2567,7 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="activityIndicator" destination="jP6-tb-B1X" id="SfD-Jo-bEy"/>
                         <outlet property="collectionView" destination="Pvw-w3-KWb" id="9OJ-kI-DPk"/>
                         <segue destination="kJf-a9-PZx" kind="show" identifier="segueToAccounts1" id="U3X-2Y-NoF"/>
                         <segue destination="8Y7-lI-t94" kind="show" identifier="segueToAccounts2" id="7HY-vD-Ge5"/>

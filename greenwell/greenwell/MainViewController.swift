@@ -18,7 +18,7 @@ var numCols = 1;
 class MainViewController: UIViewController, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var collectionView: UICollectionView!
-   
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     var myAccountsCell:MyAccountsCollectionViewCell!
     
@@ -31,7 +31,6 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
         /// change the header text  (Tyler) 
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         
-     
 
         collectionView.dataSource = self
         collectionView.delegate = self
@@ -121,6 +120,7 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
 
     
     func reloadContentFromMacm() {
+        
         let (offerCategories,offerKeywords,articleCategories,articleKeywords) = Util.getFilters()
         
         AppDelegate.caas.offerings.removeAll(keepCapacity: false)
@@ -130,15 +130,20 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
         AppDelegate.caas.caasService.cancelAllPendingRequests()
         
         if offerCategories.count>0 || offerKeywords.count>0 {
+            activityIndicator.startAnimating()
+            
             AppDelegate.caas.getOffers(offerCategories, keywords:offerKeywords, updateBlock:{ (paths)->Void in
+                self.activityIndicator.stopAnimating()
                 self.reloadCollectionViewData(paths)
                 }
             )
         }
 
         if articleCategories.count>0 || articleKeywords.count>0 {
+            activityIndicator.startAnimating()
+            
             AppDelegate.caas.getArticles(articleCategories, keywords: articleKeywords, updateBlock:{ (paths)->Void in
-                //self.reloadCollectionViewData(paths)
+                self.activityIndicator.stopAnimating()
                 self.collectionView.reloadSections(NSIndexSet(index: 2))
                 }
             )
