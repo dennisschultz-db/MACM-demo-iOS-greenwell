@@ -20,9 +20,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
 
+        // Register beacons defined in greenwell.plist or through UI
         AppDelegate.beaconManager = BeaconManager()
-        //AppDelegate.beaconManager.addBeaconRegion( NSUUID(UUIDString: "F0018B9B-7509-4C31-A905-1A27D39C003C")!, identifier: "beacon 1")
         
+        // Push notifications
+        let notificationTypes: UIUserNotificationType = [UIUserNotificationType.Badge, UIUserNotificationType.Alert, UIUserNotificationType.Sound]
+        let notificationSettings: UIUserNotificationSettings = UIUserNotificationSettings(forTypes: notificationTypes, categories: nil)
+        application.registerUserNotificationSettings(notificationSettings)
+        application.registerForRemoteNotifications()
+
         return true
     }
     
@@ -30,6 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let configuration = PropertiesManager.sharedInstance.configuration
         let bluemixAppRoute = configuration["bluemixAppRoute"] as! String
         let backendGuid = configuration["backendGuid"] as! String
+
         // Initialize the Mobile First SDK with IBM Bluemix GUID and route
         IMFClient.sharedInstance().initializeWithBackendRoute(bluemixAppRoute, backendGUID: backendGuid)
         let push = IMFPushClient.sharedInstance()
@@ -57,7 +64,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject], fetchCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
-        print("DEBUG");
+        print("Push notification received");
         let contentAPS = userInfo["aps"] as! [NSObject : AnyObject]
         if let contentAvailable = contentAPS["content-available"] as? Int {
             //silent or mixed push
