@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -10,20 +10,29 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hN6-9l-k14">
-                    <rect key="frame" x="0.0" y="0.0" width="480" height="50"/>
-                    <animations/>
-                    <color key="backgroundColor" red="0.32766930620000001" green="0.58089701760000001" blue="0.81865228580000005" alpha="1" colorSpace="calibratedRGB"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B61-cA-t1W">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="128"/>
+                    <color key="backgroundColor" red="0.1947064211" green="0.39078012140000001" blue="0.79888731059999996" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="50" id="Du9-QI-bXc"/>
+                        <constraint firstAttribute="height" constant="128" id="heD-hW-WeF"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="pqz-zU-lEA"/>
                     </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="pqz-zU-lEA"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="pqz-zU-lEA"/>
+                        </mask>
+                    </variation>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bLc-s5-x94">
                     <rect key="frame" x="0.0" y="430" width="480" height="50"/>
                     <subviews>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2015 IBM. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
                             <rect key="frame" x="0.0" y="14" width="480" height="21"/>
-                            <animations/>
                             <color key="tintColor" red="0.0" green="0.54117647059999996" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="21" id="av8-HE-GY1"/>
@@ -33,7 +42,6 @@
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <animations/>
                     <color key="backgroundColor" red="0.32766930620000001" green="0.58089701760000001" blue="0.81865228580000005" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="8ie-xW-0ye" secondAttribute="trailing" id="QNg-bW-37f"/>
@@ -52,104 +60,41 @@
                         </mask>
                     </variation>
                 </view>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="mountain_climber_02" translatesAutoresizingMaskIntoConstraints="NO" id="rll-X2-OM3">
-                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                    <animations/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-white" translatesAutoresizingMaskIntoConstraints="NO" id="jan-kk-yop">
-                    <rect key="frame" x="8" y="202" width="464" height="76"/>
-                    <animations/>
-                    <color key="backgroundColor" white="0.0" alpha="0.38" colorSpace="calibratedWhite"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreenwellwtLogo-1" translatesAutoresizingMaskIntoConstraints="NO" id="9Rk-DZ-hU2">
+                    <rect key="frame" x="120" y="25" width="240" height="60"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="76" id="W5M-gq-Yuo">
-                            <variation key="heightClass=regular-widthClass=compact" constant="80"/>
-                            <variation key="heightClass=regular-widthClass=regular" constant="80"/>
-                        </constraint>
+                        <constraint firstAttribute="height" constant="60" id="pJE-uL-Rut"/>
+                        <constraint firstAttribute="width" constant="240" id="tTD-hp-iKQ"/>
                     </constraints>
                 </imageView>
             </subviews>
-            <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="B61-cA-t1W" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1Xt-XK-lk4"/>
                 <constraint firstAttribute="bottom" secondItem="bLc-s5-x94" secondAttribute="bottom" id="2OV-eR-R59"/>
-                <constraint firstItem="rll-X2-OM3" firstAttribute="top" secondItem="hN6-9l-k14" secondAttribute="bottom" constant="8" id="2aE-e9-gah">
-                    <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
-                </constraint>
-                <constraint firstItem="hN6-9l-k14" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3og-gw-HLw"/>
-                <constraint firstAttribute="trailing" secondItem="hN6-9l-k14" secondAttribute="trailing" id="CMK-rg-gKC"/>
-                <constraint firstItem="jan-kk-yop" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="PcZ-wA-nmY"/>
-                <constraint firstItem="rll-X2-OM3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="W47-rP-lLI"/>
-                <constraint firstItem="rll-X2-OM3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="WO8-Px-wO5"/>
-                <constraint firstItem="jan-kk-yop" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Yvn-89-OGX">
-                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
-                    <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
-                </constraint>
-                <constraint firstItem="bLc-s5-x94" firstAttribute="top" secondItem="rll-X2-OM3" secondAttribute="bottom" constant="8" id="cI3-Y9-STq">
-                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
-                </constraint>
-                <constraint firstItem="rll-X2-OM3" firstAttribute="top" secondItem="hN6-9l-k14" secondAttribute="bottom" constant="8" id="gyc-eq-i95">
-                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
-                </constraint>
+                <constraint firstItem="9Rk-DZ-hU2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="8QF-OM-J2o"/>
+                <constraint firstAttribute="trailing" secondItem="B61-cA-t1W" secondAttribute="trailing" id="Paq-jU-ZsN"/>
+                <constraint firstItem="B61-cA-t1W" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="R91-gA-nbt"/>
+                <constraint firstItem="9Rk-DZ-hU2" firstAttribute="top" secondItem="B61-cA-t1W" secondAttribute="top" constant="25" id="Vvq-AM-tUg"/>
                 <constraint firstItem="bLc-s5-x94" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="k1V-7L-PZP"/>
                 <constraint firstAttribute="trailing" secondItem="bLc-s5-x94" secondAttribute="trailing" id="mre-VD-M1q"/>
-                <constraint firstAttribute="trailing" secondItem="rll-X2-OM3" secondAttribute="trailing" id="nZ0-mb-ROU"/>
-                <constraint firstItem="bLc-s5-x94" firstAttribute="top" secondItem="rll-X2-OM3" secondAttribute="bottom" constant="8" id="pEN-Bd-4XX">
-                    <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
-                </constraint>
-                <constraint firstItem="hN6-9l-k14" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pNR-1S-vIM"/>
-                <constraint firstAttribute="trailing" secondItem="rll-X2-OM3" secondAttribute="trailing" id="tOY-PC-oZl"/>
-                <constraint firstAttribute="trailing" secondItem="jan-kk-yop" secondAttribute="trailing" constant="8" id="x79-Vw-If4">
-                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
-                    <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
-                </constraint>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <variation key="default">
-                <mask key="constraints">
-                    <exclude reference="2aE-e9-gah"/>
-                    <exclude reference="W47-rP-lLI"/>
-                    <exclude reference="WO8-Px-wO5"/>
-                    <exclude reference="gyc-eq-i95"/>
-                    <exclude reference="nZ0-mb-ROU"/>
-                    <exclude reference="tOY-PC-oZl"/>
-                    <exclude reference="cI3-Y9-STq"/>
-                    <exclude reference="pEN-Bd-4XX"/>
-                </mask>
-            </variation>
             <variation key="heightClass=regular-widthClass=compact">
                 <mask key="subviews">
-                    <include reference="hN6-9l-k14"/>
                     <include reference="bLc-s5-x94"/>
-                    <include reference="rll-X2-OM3"/>
-                    <include reference="jan-kk-yop"/>
-                </mask>
-                <mask key="constraints">
-                    <include reference="W47-rP-lLI"/>
-                    <include reference="gyc-eq-i95"/>
-                    <include reference="nZ0-mb-ROU"/>
-                    <include reference="cI3-Y9-STq"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=regular">
                 <mask key="subviews">
-                    <include reference="hN6-9l-k14"/>
                     <include reference="bLc-s5-x94"/>
-                    <include reference="rll-X2-OM3"/>
-                    <include reference="jan-kk-yop"/>
-                </mask>
-                <mask key="constraints">
-                    <include reference="2aE-e9-gah"/>
-                    <include reference="WO8-Px-wO5"/>
-                    <include reference="tOY-PC-oZl"/>
-                    <include reference="pEN-Bd-4XX"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="548" y="455"/>
         </view>
     </objects>
     <resources>
-        <image name="logo-white" width="365" height="74"/>
-        <image name="mountain_climber_02" width="2420" height="1536"/>
+        <image name="GreenwellwtLogo-1" width="365" height="74"/>
     </resources>
 </document>
