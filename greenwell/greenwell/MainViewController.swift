@@ -44,8 +44,8 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "reloadContentFromMacm", name: ReloadContentFromMacmNotification, object: nil)
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "enteredIBeaconRegion:", name: EnteredIBeaconRegionNotification, object: nil)
-        
-        AppDelegate.caas.signIn(self,completionBlock: nil)        
+
+        AppDelegate.caas.signIn(self,completionBlock: nil)
         animationTimer = NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: Selector("setAccountSummary"), userInfo: nil, repeats: true)
         
         
@@ -72,10 +72,6 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
                     ["name":"College Savings)","number":"RE-DTZ7411","total":"$45,000"]
                 ]
             ]
-
-            
-            NSNotificationCenter.defaultCenter().postNotificationName(ReloadContentFromMacmNotification, object: self )
-            
         
         }
         
@@ -86,7 +82,6 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
             Util.investmentFilters = ["Retirement":false]
             Util.stockmarketFilters = ["Fund":true]
             
-            NSNotificationCenter.defaultCenter().postNotificationName(ReloadContentFromMacmNotification, object: self )
         }
         
         else if (userName == "Robert"){
@@ -95,7 +90,6 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
             Util.investmentFilters = ["Retirement":false]
             Util.stockmarketFilters = ["Fund":false]
             
-            NSNotificationCenter.defaultCenter().postNotificationName(ReloadContentFromMacmNotification, object: self )
         }
         
         else{
@@ -104,11 +98,11 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
             Util.investmentFilters = ["Retirement":false]
             Util.stockmarketFilters = ["Fund":false]
 
-            NSNotificationCenter.defaultCenter().postNotificationName(ReloadContentFromMacmNotification, object: self )
         }
         
-        // end user preerences
+        // end user preferences
         
+        NSNotificationCenter.defaultCenter().postNotificationName(ReloadContentFromMacmNotification, object: self )
     }
     
     override func viewDidAppear(animated: Bool) {
