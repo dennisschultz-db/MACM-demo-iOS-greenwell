@@ -72,6 +72,7 @@ class BeaconManager:NSObject, CLLocationManagerDelegate  {
     
     func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion) {
         
+        print ("didEnterRegion for iBeacon")
         // find the beacon according to its identifer and also gets keywords corresponding to the region
         for (r,c,k) in beaconRegions {
             if r.identifier == region.identifier {
@@ -87,9 +88,13 @@ class BeaconManager:NSObject, CLLocationManagerDelegate  {
     }
     
     func locationManager(manager: CLLocationManager, didExitRegion region: CLRegion) {
+        print ("didExitRegion for iBeacon")
         // removes category and keyword to set
         Util.iBeaconCategories.removeAll(keepCapacity: false)
         Util.iBeaconKeywords.removeAll(keepCapacity: false)
+        
+        // Uncommenting this would cause the home screen to refresh for no apparent reason since the
+        // user really doesn't know that he has exited a beacon region.
         //NSNotificationCenter.defaultCenter().postNotificationName(ReloadContentFromMacmNotification, object: self)
     }
 
