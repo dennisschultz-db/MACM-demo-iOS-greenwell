@@ -10,6 +10,7 @@
 		6F6F562902D54BCE24D5774F /* Pods_greenwell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE99BBA59E87928A28198128 /* Pods_greenwell.framework */; };
 		951D79F01C28AECF002936A0 /* PropertiesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951D79EF1C28AECF002936A0 /* PropertiesManager.swift */; };
 		951D79F21C28AEDE002936A0 /* greenwell.plist in Resources */ = {isa = PBXBuildFile; fileRef = 951D79F11C28AEDE002936A0 /* greenwell.plist */; };
+		957AC2511C3DDE4E00535E28 /* DBAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957AC2501C3DDE4E00535E28 /* DBAlertController.swift */; };
 		E4198ACB1B8F17360095E5B9 /* BeaconsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4198ACA1B8F17360095E5B9 /* BeaconsViewController.swift */; };
 		E41E86621AEE544B000EAC50 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E41E86611AEE544B000EAC50 /* Localizable.strings */; };
 		E422CE4E1B84B60400971C7F /* MyAccountsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E422CE4D1B84B60400971C7F /* MyAccountsCollectionViewCell.swift */; };
@@ -65,6 +66,7 @@
 		950182021C3C8A5500121E99 /* MFBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFBridge.h; sourceTree = "<group>"; };
 		951D79EF1C28AECF002936A0 /* PropertiesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertiesManager.swift; sourceTree = "<group>"; };
 		951D79F11C28AEDE002936A0 /* greenwell.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = greenwell.plist; sourceTree = "<group>"; };
+		957AC2501C3DDE4E00535E28 /* DBAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBAlertController.swift; sourceTree = "<group>"; };
 		CE99BBA59E87928A28198128 /* Pods_greenwell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_greenwell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4198ACA1B8F17360095E5B9 /* BeaconsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconsViewController.swift; sourceTree = "<group>"; };
 		E41E86611AEE544B000EAC50 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 			children = (
 				950182021C3C8A5500121E99 /* MFBridge.h */,
 				E47F6F1E1ACD4C1100DCEDA2 /* Util.swift */,
+				957AC2501C3DDE4E00535E28 /* DBAlertController.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -482,6 +485,7 @@
 				E4CAB4A21B7B67FF000CCC66 /* HeaderCollectionReusableView.swift in Sources */,
 				E4198ACB1B8F17360095E5B9 /* BeaconsViewController.swift in Sources */,
 				E422CE501B84B6C700971C7F /* AnimatedLabel.swift in Sources */,
+				957AC2511C3DDE4E00535E28 /* DBAlertController.swift in Sources */,
 				E4D2BB641B8376B100EEDCBA /* FiltersViewController.swift in Sources */,
 				E49C8CD21B8F5DCE005BC49D /* BeaconDetailViewController.swift in Sources */,
 				E4C16DFB1B8B3DDF00C5B9AA /* ServerSettingsViewController.swift in Sources */,

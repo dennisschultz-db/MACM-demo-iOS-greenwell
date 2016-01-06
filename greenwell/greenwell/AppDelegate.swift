@@ -8,6 +8,8 @@
 
 import UIKit
 
+let logger = IMFLogger(forName: "Greenwell")
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -47,14 +49,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
             else {
                 print("-> Response after device registration (json): \(response.responseJson.description)")
-                // Subscribe to tages to be notified of new publication in categories loan, insurance, investment and stockmarket
-//                push.subscribeToTags(["category:MACM Default Application:MACM:loan", "category:MACM Default Application:MACM:insurance", "category:MACM Default Application:MACM:investment", "category:MACM Default Application:MACM:stockmarket"], completionHandler: { (response, error) -> Void in
-//                    if error != nil {
-//                        print("-> Error during device subscription to tags \(error.description)")
-//                    } else {
-//                        print("-> Response after device subscription to tags (json): \(response.responseJson.description)")
-//                    }
-//                })
             }
         })
     }
@@ -63,21 +57,47 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("-> Application failed to register for remote notifications: \(error)")
     }
     
-    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject], fetchCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
+    // ========================================
+    //   didReceiveRemoteNotifiation
+    //      Called by the framework whenever a remote notification (Push) is received
+    //   Retrieve the message text (from the body) and the filename of the image (from the URL).
+    //   If the app was Inactive or in the Background, the user has already tapped the notification
+    //   so go directly to load the image.  If the app was in the foreground, display an alert
+    //   so the user can choose to open the picture or not.
+    // ========================================
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject])
+    {
         print("Push notification received");
         let contentAPS = userInfo["aps"] as! [NSObject : AnyObject]
-        if let contentAvailable = contentAPS["content-available"] as? Int {
-            //silent or mixed push
-            if contentAvailable == 1 {
-                completionHandler(UIBackgroundFetchResult.NewData)
-            } else {
-                completionHandler(UIBackgroundFetchResult.NoData)
+        if let alert = contentAPS["alert"] as? NSDictionary {
+            if let message = alert["body"] as? NSString {
+                if (application.applicationState == UIApplicationState.Inactive ||
+                    application.applicationState == UIApplicationState.Background) {
+                    print("App was in the background when push arrived")
+                        
+                } else {
+                    let noticeAlert = DBAlertController(
+                        title: "Greenwell",
+                        message: message as String,
+                        preferredStyle: UIAlertControllerStyle.Alert)
+                    
+                    noticeAlert.addAction(UIAlertAction(
+                        title: "OK",
+                        style: .Default,
+                        handler: { (action: UIAlertAction!) in
+                            print("User wants to see content.")
+                            NSNotificationCenter.defaultCenter().postNotificationName(ReloadContentFromMacmNotification, object: self )
+                            
+                    }))
+                    
+                    // Display the dialog
+                    noticeAlert.show()
+                }
+                
             }
-        } else {
-            //Default notification
-            completionHandler(UIBackgroundFetchResult.NoData)
         }
     }
+    
     
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
