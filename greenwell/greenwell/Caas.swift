@@ -133,11 +133,11 @@ class Caas {
     */
     func getOffers(categories:[String]?, keywords:[String]?, updateBlock:([NSIndexPath])->Void){
         
-        let getOffersStartTime = NSDate()
+        let startTime = NSDate()
         
         let contentItemsRequest = CAASContentItemsRequest(contentPath: offerLibrary, completionBlock: { (requestResult) -> Void in
 
-            print("getOffers took \(Util.elapsedTime(then: getOffersStartTime)) sec")
+            print("getOffers took \(Util.elapsedTime(then: startTime)) sec")
             if (requestResult.error != nil) || (requestResult.httpStatusCode != 200) {
                 //self.presentNetworkError(vc, error: requestResult.error,httpStatusCode: requestResult.httpStatusCode)
                 print("getOffers error: " + requestResult.error.debugDescription)
@@ -156,94 +156,70 @@ class Caas {
                     offeringItem.id = values["id"] as! String
                     offeringItem.title = values["title"] as! String
                     offeringItem.lastModifiedDate = values["lastmodifieddate"] as! NSDate
+                    offeringItem.summary =  values["Summary"] as! String
+                    offeringItem.price = (values["Price"] != nil ? String(values["Price"]) : "")
+                    offeringItem.body = values["Body"] as! String
+                    offeringItem.keywords =  values["keywords"] as! String
+                    offeringItem.imageURL = values["Image"] as! NSURL
                     self.offerings.append(offeringItem)
                 }
+                
                 updateBlock([])
                 
-                // load item details for each offer
+                // Load images for each content item
                 for (idx,offeringItem) in self.offerings.enumerate() {
                     let ip = [NSIndexPath(forItem: idx, inSection: 1)]
                     
-                    // load item details like long description, authors and keyword lists
-                    let itemRequest = CAASContentItemRequest(oid: offeringItem.id) { (itemRequestResult) -> Void in
-
-//                        print("\(Util.timestamp()): details for \(offeringItem.title) returned")
-                        if (itemRequestResult.error != nil) || (itemRequestResult.httpStatusCode != 200) {
-                            print("Error while executing ContentItemRequest. Http Status code is : \(itemRequestResult.httpStatusCode)"   )
-                            
-                        } else if let ci = itemRequestResult.contentItem {
-//                            print("Got details for offer \(offeringItem.title)")
-                            let elements = ci.elements
-                            let properties = ci.properties
-                            var values:[NSObject:AnyObject] = [:]
-                            values.update(elements)
-                            values.update(properties)
-                            
-                            offeringItem.summary =  values["Summary"] as! String
-                            offeringItem.price = (values["Price"] != nil ? String(values["Price"]) : "")
-                            offeringItem.body = values["Body"] as! String
-                            offeringItem.keywords =  values["keywords"] as! String
-                            
+                    // load image
+                    let imgRequest = CAASAssetRequest(assetURL: offeringItem.imageURL) {
+                        (imgResult) -> Void in
+                        
+                        //print("\(Util.timestamp()): img for \(offeringItem.title) returned")
+                        if imgResult.image != nil {
+                            //print("Got image for offer \(offeringItem.title)")
+                            offeringItem.imageData = imgResult.image
                             updateBlock(ip)
-                            
-                            // load image
-                            offeringItem.imageURL = values["Image"] as! NSURL
-                            let url = offeringItem.imageURL
-                            let imgRequest = CAASAssetRequest(assetURL: url!) { (imgResult) -> Void in
-//                                print("\(Util.timestamp()): img for \(offeringItem.title) returned")
-                                if imgResult.image != nil {
-//                                    print("Got image for offer \(offeringItem.title)")
-                                    offeringItem.imageData = imgResult.image
-                                    updateBlock(ip)
-                                }
-                            }
-//                            print("\(Util.timestamp()): send request for img for \(offeringItem.title)")
-                            self.caasService.executeRequest(imgRequest)
-
-                        } else {
-                            print("No error but also no contentItem for \(offeringItem.title):")
-                            print("Error: \(itemRequestResult.error)")
-                            print("HTTP Status Code: \(itemRequestResult.httpStatusCode)")
-                            print("HTTP Request: \(itemRequestResult.httpRequest)")
-                            print("contentItem: \(itemRequestResult.contentItem.debugDescription)")
                         }
                     }
-
-//                    print("\(Util.timestamp()): send request for details for \(offeringItem.title)")
-                    self.caasService.executeRequest(itemRequest)
+                    //print("\(Util.timestamp()): send request for img for \(offeringItem.title)")
+                    self.caasService.executeRequest(imgRequest)
+                
                 } //end for
                 
+            } else {
+                print("No error but also no Offer contentItems")
 
-                
             }
-            
-        })
         
+        })
+    
         contentItemsRequest.anyCategories = categories
-        contentItemsRequest.anyKeywords = keywords
-        print("\(Util.timestamp(getOffersStartTime)): send getOffers request")
+        contentItemsRequest.anyKeywords   = keywords
+        contentItemsRequest.properties    = Util.offerProperties
+        contentItemsRequest.elements      = Util.offerElements
+        print("\(Util.timestamp(startTime)): send getOffers request")
         self.caasService.executeRequest(contentItemsRequest)
         
-
-        
     }
+    
     
     /**
     Get articles, filtered on given categorie(s) and keyword(s)
     */
     func getArticles( categories:[String]?, keywords:[String]?, updateBlock:([NSIndexPath])->Void){
-        let getArticlesStartTime = NSDate()
+        
+        let startTime = NSDate()
         
         let contentItemsRequest = CAASContentItemsRequest(contentPath: articleLibrary, completionBlock: { (requestResult) -> Void in
-            print("getArticles took \(Util.elapsedTime(then: getArticlesStartTime)) sec")
+            
+            print("getArticles took \(Util.elapsedTime(then: startTime)) sec")
             if (requestResult.error != nil) || (requestResult.httpStatusCode != 200) {
                 //self.presentNetworkError(vc, error: requestResult.error,httpStatusCode: requestResult.httpStatusCode)
                 print("getArticles error: " + requestResult.error.debugDescription)
-            } else if let contentItems = requestResult.contentItems {
                 
+            } else if let contentItems = requestResult.contentItems {
                 print("getArticles returned (# items): \(contentItems.count)")
-               for contentItem in contentItems {
-                    
+                for contentItem in contentItems {
                     // merge content item dictionaries into one
                     let elements = contentItem.elements
                     let properties = contentItem.properties
@@ -254,63 +230,43 @@ class Caas {
                     let articleItem:ArticleItem = ArticleItem()
                     articleItem.id = values["id"] as! String
                     articleItem.title = values["title"] as! String
+                    articleItem.summary =  values["Summary"] as! String
+                    articleItem.body = values["Body"] as! String
+                    articleItem.keywords =  values["keywords"] as! String
+                    articleItem.imageURL = values["Image"] as! NSURL
                     self.articles.append(articleItem)
                 }
-                 updateBlock([])
                 
-                // load item details for each article
+                updateBlock([])
+                
+                // Load images for each content item
                 for (idx,articleItem) in self.articles.enumerate() {
                     let ip = [NSIndexPath(forItem: idx, inSection: 2)]
                     
-                    // load item details like long description, authors and keyword lists
-                    let itemRequest = CAASContentItemRequest(oid: articleItem.id) { (itemRequestResult) -> Void in
-                        if (itemRequestResult.error != nil) || (itemRequestResult.httpStatusCode != 200) {
-                            print("Error while executing ContentItemRequest for Articles. Http Status code is : \(itemRequestResult.httpStatusCode)"   )
-                            
-                        } else if let ci = itemRequestResult.contentItem {
-                            
-//                            print("Got details for article \(articleItem.title)")
-                            let elements = ci.elements
-                            let properties = ci.properties
-                            var values:[NSObject:AnyObject] = [:]
-                            values.update(elements)
-                            values.update(properties)
-                            
-                            articleItem.summary =  values["Summary"] as! String
-                            articleItem.body = values["Body"] as! String
-                            articleItem.keywords =  values["keywords"] as! String
-                            
+                    // load image
+                    let imgRequest = CAASAssetRequest(assetURL: articleItem.imageURL) {
+                        (imgResult) -> Void in
+                        
+                        //print("\(Util.timestamp()): img for \(articleItem.title) returned")
+                        if imgResult.image != nil {
+                            //print("Got image for offer \(articleItem.title)")
+                            articleItem.imageData = imgResult.image
                             updateBlock(ip)
-                            
-                            // load image
-                            articleItem.imageURL = values["Image"] as! NSURL
-                            let url = articleItem.imageURL
-                            let imgRequest = CAASAssetRequest(assetURL: url!) { (imgResult) -> Void in
-                                if imgResult.image != nil {
-//                                    print("Got image for article \(articleItem.title)")
-                                    articleItem.imageData = imgResult.image
-                                    updateBlock(ip)
-                                }
-                            }
-                            self.caasService.executeRequest(imgRequest)
-
-                        } else {
-                            print("No error but also no contentItem for \(articleItem.title):")
-                            print("Error: \(itemRequestResult.error)")
-                            print("HTTP Status Code: \(itemRequestResult.httpStatusCode)")
-                            print("HTTP Request: \(itemRequestResult.httpRequest)")
-                            print("contentItem: \(itemRequestResult.contentItem.debugDescription)")
-                            
                         }
                     }
-                    self.caasService.executeRequest(itemRequest)
-                } // end for
+                    //print("\(Util.timestamp()): send request for img for \(articleItem.title)")
+                    self.caasService.executeRequest(imgRequest)
+                    
+                } //end for
                 
             }
         })
+        
         contentItemsRequest.anyCategories = categories
-        contentItemsRequest.anyKeywords = keywords
-        print("\(Util.timestamp()): send getArticles request")
+        contentItemsRequest.anyKeywords   = keywords
+        contentItemsRequest.properties    = Util.articleProperties
+        contentItemsRequest.elements      = Util.articleElements
+        print("\(Util.timestamp(startTime)): send getArticles request")
         self.caasService.executeRequest(contentItemsRequest)
     }
     
@@ -318,6 +274,7 @@ class Caas {
     Get iBeacon message
     */
     func getBeaconMessage(category:String, keyword:String, senderCompletionBlock:(String,String)->Void){
+
         let contentItemsRequest = CAASContentItemsRequest(contentPath: iBeaconLibrary, completionBlock: { (requestResult) -> Void in
             if (requestResult.error != nil) || (requestResult.httpStatusCode != 200) {
                 //self.presentNetworkError(vc, error: requestResult.error,httpStatusCode: requestResult.httpStatusCode)
@@ -332,30 +289,17 @@ class Caas {
                     values.update(elements)
                     values.update(properties)
                     
-                    // load item details like long description, authors and keyword lists
-                    let itemRequest = CAASContentItemRequest(oid: values["id"] as! String) {(itemRequestResult) -> Void in
-                        if (itemRequestResult.error != nil) || (itemRequestResult.httpStatusCode != 200) {
-                            print("Error while executing CAASContentItemRequest in getBeaconMessage. Http Status code is : \(itemRequestResult.httpStatusCode)"   )
-                            senderCompletionBlock("IBeacon Message","You have entered an iBeacon area, click OK to see our special offers.")                            
-                        } else if let ci = itemRequestResult.contentItem {
-                            
-                            let elements = ci.elements
-                            let properties = ci.properties
-                            var values:[NSObject:AnyObject] = [:]
-                            values.update(elements)
-                            values.update(properties)
-                            
-                            senderCompletionBlock(values["title"] as! String,values["Dialog Message"] as! String)
-                      }
-                    }
-                    self.caasService.executeRequest(itemRequest)
+                    senderCompletionBlock(values["title"] as! String,values["Dialog Message"] as! String)
                     
                 }
             }
             
         })
+        
         contentItemsRequest.anyCategories = [category]
-        contentItemsRequest.anyKeywords = [keyword]
+        contentItemsRequest.anyKeywords   = [keyword]
+        contentItemsRequest.properties    = Util.iBeaconProperties
+        contentItemsRequest.elements      = Util.iBeaconElements
         self.caasService.executeRequest(contentItemsRequest)
     }
     

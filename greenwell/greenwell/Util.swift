@@ -100,6 +100,14 @@ class Util {
     static var iBeaconCategories = [String]()
     static var iBeaconKeywords = [String]()
 
+    // element and property key lists for various content types
+    static let offerProperties   = ["id", "title", "keywords", "categories", "lastmodifieddate"]
+    static let offerElements     = ["Summary", "Price", "Body", "Image"]
+    static let articleProperties = ["id", "title", "keywords", "categories", "lastmodifieddate"]
+    static let articleElements   = ["Body", "Image", "Summary"]
+    static let iBeaconProperties = ["id", "title", "keywords", "categories", "lastmodifieddate"]
+    static let iBeaconElements   = ["Dialog Message"]
+
     
     /**
     Indicates if the device is a tablet
@@ -323,7 +331,6 @@ class Util {
     static func elapsedTime(now: NSDate = NSDate(), then: NSDate) -> String {
         return String(now.timeIntervalSinceDate(then))
     }
-    
     
    
 }
