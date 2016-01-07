@@ -45,7 +45,6 @@
 		E49C8CD21B8F5DCE005BC49D /* BeaconDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49C8CD11B8F5DCE005BC49D /* BeaconDetailViewController.swift */; };
 		E4C16DFB1B8B3DDF00C5B9AA /* ServerSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C16DFA1B8B3DDF00C5B9AA /* ServerSettingsViewController.swift */; };
 		E4CAB4A21B7B67FF000CCC66 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CAB4A11B7B67FF000CCC66 /* HeaderCollectionReusableView.swift */; };
-		E4D02A1D1BD92E7900B2AC9D /* .localized in Resources */ = {isa = PBXBuildFile; fileRef = E4D029CF1BD92E7900B2AC9D /* .localized */; };
 		E4D02A641BD92EA200B2AC9D /* appicon.png in Resources */ = {isa = PBXBuildFile; fileRef = E4D02A631BD92EA200B2AC9D /* appicon.png */; };
 		E4D2BB621B83610B00EEDCBA /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D2BB611B83610B00EEDCBA /* NavigationViewController.swift */; };
 		E4D2BB641B8376B100EEDCBA /* FiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D2BB631B8376B100EEDCBA /* FiltersViewController.swift */; };
@@ -106,7 +105,6 @@
 		E49C8CD11B8F5DCE005BC49D /* BeaconDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconDetailViewController.swift; sourceTree = "<group>"; };
 		E4C16DFA1B8B3DDF00C5B9AA /* ServerSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerSettingsViewController.swift; sourceTree = "<group>"; };
 		E4CAB4A11B7B67FF000CCC66 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
-		E4D029CF1BD92E7900B2AC9D /* .localized */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .localized; path = ../../../../../../Desktop/.localized; sourceTree = "<group>"; };
 		E4D02A631BD92EA200B2AC9D /* appicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon.png; sourceTree = "<group>"; };
 		E4D2BB611B83610B00EEDCBA /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		E4D2BB631B8376B100EEDCBA /* FiltersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersViewController.swift; sourceTree = "<group>"; };
@@ -136,7 +134,6 @@
 		950182031C3CD87B00121E99 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E4D029CF1BD92E7900B2AC9D /* .localized */,
 				E4D02A631BD92EA200B2AC9D /* appicon.png */,
 				E464D2891ABCB06000E80FBE /* privacy.rtf */,
 				E464D28A1ABCB06000E80FBE /* legal.rtf */,
@@ -401,7 +398,6 @@
 				E43A41741B6FB93E00CD34F4 /* main.storyboard in Resources */,
 				951D79F21C28AEDE002936A0 /* greenwell.plist in Resources */,
 				E464D2941ABCB06000E80FBE /* privacy.rtf in Resources */,
-				E4D02A1D1BD92E7900B2AC9D /* .localized in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
