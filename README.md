@@ -70,6 +70,10 @@ For now, you must populate your MACM content manually through the UI.  Log into 
   - (Optional) iBeacon Notification
 
   ![](images/iBeaconNotificationTemplate.jpg)
+  
+4. Create content
+
+You are on your own here until we come up with a way to automate this process.  You will probably want at least one offer for each category/keyword pair used by the app.  You will also want at least a few Articles to demonstrate that we can handle multiple content types.  At a minimum, we will try to provide a zip file with images and content you can copy/paste when creating content, but that is not yet available.
 
 ## (Optional) Configure Push Notifications
 This requires three steps.  First, you must register your app on the Apple Developer Member Center. Then you install the SSL certificate in your Bluemix Push service.  Finally, you configure MACM to use the Push service.
