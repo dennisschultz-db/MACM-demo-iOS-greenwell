@@ -44,16 +44,16 @@
 	<key>MACMInstance</key>
 	<string>https://macm-rendering.saas.ibmcloud.com</string>
 	<key>tenant</key>
-	<string>vp6071</string>
+	<string>your-tenant-value</string>
 	<key>library</key>
-	<string>Greenwell</string>
+	<string>your-library</string>
 	<key>MACMUsername</key>
-	<string>1212999212066071</string>
+	<string>your-username</string>
 	<key>MACMPassword</key>
-	<string>hvgMk(-076</string>
+	<string>your-password</string>
 	<key>bluemixAppRoute</key>
-	<string>http://MACM-DWS.mybluemix.net</string>
+	<string>your-bluemix-app-route-for-push</string>
 	<key>backendGuid</key>
-	<string>de8d6e4e-fd64-4279-9c9c-af891d1aa5a3</string>
+	<string>your-bluemix-guid-for-push</string>
 </dict>
 </plist>
