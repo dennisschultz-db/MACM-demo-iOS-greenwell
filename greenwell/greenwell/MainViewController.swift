@@ -197,6 +197,11 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
         let category = dico["category"] as! String
         let keywords = dico["keywords"] as! [String]
 
+        // Especially in demo situations, the device may enter a new beacon region before exiting another.
+        // Remove any category and keyword values that possibly already exist
+        Util.iBeaconCategories.removeAll(keepCapacity: false)
+        Util.iBeaconKeywords.removeAll(keepCapacity: false)
+
         // get notification message associted to the ibeacon in MACM
         // we use the category, and the first keyword, associated to the beacon to get notification message from MACM: those
         // info can be found in the NSNotification userInfo
