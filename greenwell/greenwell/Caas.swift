@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 import CAASObjC
 
+var transactionCounter = 0
+
 /**
 This class manages the communication with the MACM instance
 */
@@ -137,13 +139,23 @@ class Caas {
         
         let contentItemsRequest = CAASContentItemsRequest(contentPath: offerLibrary, completionBlock: { (requestResult) -> Void in
 
-            print("getOffers took \(Util.elapsedTime(then: startTime)) sec")
             if (requestResult.error != nil) || (requestResult.httpStatusCode != 200) {
                 //self.presentNetworkError(vc, error: requestResult.error,httpStatusCode: requestResult.httpStatusCode)
                 print("getOffers error: " + requestResult.error.debugDescription)
 
             } else if let contentItems = requestResult.contentItems {
-                print("getOffers returned (# items): \(contentItems.count)")
+                let path : String = "\(self.caasService.baseURL)/\(self.caasService.contextRoot)/\(self.caasService.tenant!)/\(self.offerLibrary)"
+                transactionCounter++
+                print(
+                    "getOffers : transaction \(transactionCounter)",
+                    "    contentPath  : \(path)",
+                    "    categories   : \(categories!)",
+                    "    keywords     : \(keywords!)",
+                    "    # items rtrnd: \(contentItems.count)",
+                    "       start Time   : \(Util.timestamp(startTime))",
+                    "       end Time     : \(Util.timestamp(NSDate()))",
+                    "       elapsed Time : \(Util.elapsedTime(then: startTime)) sec\n", separator: "\n" )
+                
                 for contentItem in contentItems {
                     // merge content item dictionaries into one 
                     let elements = contentItem.elements
@@ -197,7 +209,7 @@ class Caas {
         contentItemsRequest.anyKeywords   = keywords
         contentItemsRequest.properties    = Util.offerProperties
         contentItemsRequest.elements      = Util.offerElements
-        print("\(Util.timestamp(startTime)): send getOffers request")
+        print("\(Util.timestamp(startTime)): send getOffers request...")
         self.caasService.executeRequest(contentItemsRequest)
         
     }
@@ -212,13 +224,23 @@ class Caas {
         
         let contentItemsRequest = CAASContentItemsRequest(contentPath: articleLibrary, completionBlock: { (requestResult) -> Void in
             
-            print("getArticles took \(Util.elapsedTime(then: startTime)) sec")
             if (requestResult.error != nil) || (requestResult.httpStatusCode != 200) {
                 //self.presentNetworkError(vc, error: requestResult.error,httpStatusCode: requestResult.httpStatusCode)
                 print("getArticles error: " + requestResult.error.debugDescription)
                 
             } else if let contentItems = requestResult.contentItems {
-                print("getArticles returned (# items): \(contentItems.count)")
+                let path : String = "\(self.caasService.baseURL)/\(self.caasService.contextRoot)/\(self.caasService.tenant!)/\(self.offerLibrary)"
+                transactionCounter++
+                print(
+                    "getArticles: transaction \(transactionCounter)",
+                    "    contentPath  : \(path)",
+                    "    categories   : \(categories!)",
+                    "    keywords     : \(keywords!)",
+                    "    # items rtrnd: \(contentItems.count)",
+                    "       start Time   : \(Util.timestamp(startTime))",
+                    "       end Time     : \(Util.timestamp(NSDate()))",
+                    "       elapsed Time : \(Util.elapsedTime(then: startTime)) sec\n", separator: "\n" )
+                
                 for contentItem in contentItems {
                     // merge content item dictionaries into one
                     let elements = contentItem.elements
@@ -266,7 +288,7 @@ class Caas {
         contentItemsRequest.anyKeywords   = keywords
         contentItemsRequest.properties    = Util.articleProperties
         contentItemsRequest.elements      = Util.articleElements
-        print("\(Util.timestamp(startTime)): send getArticles request")
+        print("\(Util.timestamp(startTime)): send getArticles request...")
         self.caasService.executeRequest(contentItemsRequest)
     }
     

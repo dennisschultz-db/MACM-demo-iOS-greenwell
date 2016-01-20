@@ -1638,9 +1638,6 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ubf-cf-anV">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                            </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Pvw-w3-KWb">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1651,15 +1648,15 @@
                                     <inset key="sectionInset" minX="2" minY="5" maxX="2" maxY="5"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyAccountCell" id="J9G-ct-LjY" customClass="MyAccountsCollectionViewCell" customModule="greenwell" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="MyAccountCell" id="J9G-ct-LjY" customClass="MyAccountsCollectionViewCell" customModule="greenwell" customModuleProvider="target">
                                         <rect key="frame" x="12" y="55" width="216" height="192"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="216" height="192"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Accounts" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ycz-u8-vYF">
-                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Accounts" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ycz-u8-vYF">
+                                                    <rect key="frame" x="0.0" y="0.0" width="75.5" height="20.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="ReP-9F-nSh"/>
                                                         <constraint firstAttribute="height" constant="22" id="mwR-AW-UT7"/>
@@ -1685,8 +1682,8 @@
                                                         </mask>
                                                     </variation>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8HO-kG-mJa" customClass="AnimatedLabel" customModule="greenwell" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="EVERYDAY SAVINGS" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8HO-kG-mJa" customClass="AnimatedLabel" customModule="greenwell" customModuleProvider="target">
+                                                    <rect key="frame" x="29" y="25" width="159" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -1776,7 +1773,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ApK-uj-qF0">
-                                                    <rect key="frame" x="-12" y="-12" width="730" height="72"/>
+                                                    <rect key="frame" x="-12" y="-38" width="730" height="72"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hEz-Ja-NdP">
                                                             <rect key="frame" x="0.0" y="0.0" width="201" height="34"/>
@@ -2387,13 +2384,13 @@
                                     <rect key="frame" x="0.0" y="0.0" width="240" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwC-p3-dbE">
-                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Welcome Spencer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwC-p3-dbE">
+                                            <rect key="frame" x="0.0" y="0.0" width="232" height="18"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="Gmy-3z-kOm"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                            <color key="textColor" red="0.25490196079999999" green="0.47058823529999999" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" red="0.1947064211" green="0.39078012140000001" blue="0.79888731059999996" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                             <variation key="default">
                                                 <mask key="constraints">
@@ -2458,15 +2455,6 @@
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="ubf-cf-anV" secondAttribute="trailing" constant="140" id="3PL-Qk-m4a">
-                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
-                            </constraint>
-                            <constraint firstItem="be4-ma-zXM" firstAttribute="top" secondItem="ubf-cf-anV" secondAttribute="bottom" constant="304" id="BTf-Pb-rCD">
-                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
-                            </constraint>
-                            <constraint firstItem="ubf-cf-anV" firstAttribute="top" secondItem="3rV-3O-Vve" secondAttribute="bottom" constant="304" id="CYj-hz-cMa">
-                                <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
-                            </constraint>
                             <constraint firstItem="Pvw-w3-KWb" firstAttribute="top" secondItem="3rV-3O-Vve" secondAttribute="bottom" constant="64" id="FiR-fl-zQp">
                                 <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
                             </constraint>
@@ -2474,24 +2462,11 @@
                             <constraint firstItem="jP6-tb-B1X" firstAttribute="centerY" secondItem="Z16-a1-MYd" secondAttribute="centerY" id="LIz-bG-OdQ"/>
                             <constraint firstItem="Pvw-w3-KWb" firstAttribute="top" secondItem="3rV-3O-Vve" secondAttribute="bottom" id="STP-VX-61b"/>
                             <constraint firstItem="Pvw-w3-KWb" firstAttribute="trailing" secondItem="Z16-a1-MYd" secondAttribute="trailingMargin" id="a3m-68-P2I"/>
-                            <constraint firstItem="ubf-cf-anV" firstAttribute="top" secondItem="3rV-3O-Vve" secondAttribute="bottom" id="dDw-he-T36"/>
                             <constraint firstAttribute="trailing" secondItem="Pvw-w3-KWb" secondAttribute="trailing" id="dWy-oX-FpG"/>
-                            <constraint firstItem="ubf-cf-anV" firstAttribute="leading" secondItem="Z16-a1-MYd" secondAttribute="leadingMargin" constant="-20" id="g4e-zw-SWP">
-                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
-                            </constraint>
                             <constraint firstItem="be4-ma-zXM" firstAttribute="top" secondItem="Pvw-w3-KWb" secondAttribute="bottom" constant="20" id="lth-tv-Fy9"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ubf-cf-anV" secondAttribute="trailing" constant="260" id="oG6-hp-ymB">
-                                <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
-                            </constraint>
                             <constraint firstItem="Pvw-w3-KWb" firstAttribute="leading" secondItem="Z16-a1-MYd" secondAttribute="leading" id="ooc-kG-mkY"/>
                             <constraint firstItem="Pvw-w3-KWb" firstAttribute="leading" secondItem="Z16-a1-MYd" secondAttribute="leadingMargin" id="qrU-Qs-gb7"/>
                             <constraint firstItem="jP6-tb-B1X" firstAttribute="centerX" secondItem="Z16-a1-MYd" secondAttribute="centerX" id="vyW-Jc-evE"/>
-                            <constraint firstItem="ubf-cf-anV" firstAttribute="leading" secondItem="Z16-a1-MYd" secondAttribute="leadingMargin" constant="260" id="xWK-6e-bD6">
-                                <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
-                            </constraint>
-                            <constraint firstItem="be4-ma-zXM" firstAttribute="top" secondItem="ubf-cf-anV" secondAttribute="bottom" constant="608" id="yhY-R7-Zyg" userLabel="IBottom Layout Guide.top = Image View.bottom + 608">
-                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
-                            </constraint>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -2501,47 +2476,29 @@
                                 <exclude reference="dWy-oX-FpG"/>
                                 <exclude reference="ooc-kG-mkY"/>
                                 <exclude reference="qrU-Qs-gb7"/>
-                                <exclude reference="3PL-Qk-m4a"/>
-                                <exclude reference="CYj-hz-cMa"/>
-                                <exclude reference="dDw-he-T36"/>
-                                <exclude reference="g4e-zw-SWP"/>
-                                <exclude reference="oG6-hp-ymB"/>
-                                <exclude reference="xWK-6e-bD6"/>
-                                <exclude reference="BTf-Pb-rCD"/>
                                 <exclude reference="HVJ-P9-kam"/>
                                 <exclude reference="lth-tv-Fy9"/>
-                                <exclude reference="yhY-R7-Zyg"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="ubf-cf-anV"/>
                                 <include reference="Pvw-w3-KWb"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="STP-VX-61b"/>
                                 <include reference="dWy-oX-FpG"/>
                                 <include reference="ooc-kG-mkY"/>
-                                <include reference="3PL-Qk-m4a"/>
-                                <include reference="dDw-he-T36"/>
-                                <include reference="g4e-zw-SWP"/>
                                 <include reference="HVJ-P9-kam"/>
-                                <include reference="yhY-R7-Zyg"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
                             <mask key="subviews">
-                                <include reference="ubf-cf-anV"/>
                                 <include reference="Pvw-w3-KWb"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="FiR-fl-zQp"/>
                                 <include reference="a3m-68-P2I"/>
                                 <include reference="qrU-Qs-gb7"/>
-                                <include reference="CYj-hz-cMa"/>
-                                <include reference="oG6-hp-ymB"/>
-                                <include reference="xWK-6e-bD6"/>
-                                <include reference="BTf-Pb-rCD"/>
                                 <include reference="lth-tv-Fy9"/>
                             </mask>
                         </variation>
