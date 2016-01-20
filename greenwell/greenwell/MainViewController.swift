@@ -248,7 +248,7 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
         
         switch section {
         case 0:
-            n = 3
+            n = 2
         case 1:
             n = AppDelegate.caas.offerings.count
 //            print("numberOfItemsInSection Offers = \(n)")
@@ -337,15 +337,6 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
             // ipad
             if Util.isTablet() {
                 h = w/2
-                // set "customize dashboard" height
-                if indexPath.row == 2 {
-                    h = h/2
-                }
-            } else  {
-                // set "customize dashboard" height
-                if indexPath.row == 2 {
-                    h = h/2
-                }
             }
         }
         

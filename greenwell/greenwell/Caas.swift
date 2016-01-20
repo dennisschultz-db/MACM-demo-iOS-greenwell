@@ -69,7 +69,7 @@ class Caas {
     func signIn(vc:UIViewController, completionBlock:(()->Void)?){
         
         caasService = CAASService(baseURL: NSURL(string: macminstance)!, contextRoot: "wps", tenant: tenant)
-        
+
         if !caasService.isUserAlreadySignedIn() {
             let startTime = NSDate()
             
