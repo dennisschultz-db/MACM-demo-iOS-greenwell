@@ -1641,15 +1641,10 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Pvw-w3-KWb">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="tke-y9-MV8">
-                                    <size key="itemSize" width="0.0" height="0.0"/>
-                                    <size key="headerReferenceSize" width="50" height="50"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="2" minY="5" maxX="2" maxY="5"/>
-                                </collectionViewFlowLayout>
+                                <collectionViewLayout key="collectionViewLayout" id="8BY-d1-M3D" customClass="MainLayout" customModule="greenwell" customModuleProvider="target"/>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="MyAccountCell" id="J9G-ct-LjY" customClass="MyAccountsCollectionViewCell" customModule="greenwell" customModuleProvider="target">
-                                        <rect key="frame" x="12" y="55" width="216" height="192"/>
+                                        <rect key="frame" x="12" y="0.0" width="216" height="192"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="216" height="192"/>
@@ -1766,7 +1761,7 @@
                                         </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OperationsCell" id="hyl-bg-RAW">
-                                        <rect key="frame" x="26.5" y="252" width="187" height="145"/>
+                                        <rect key="frame" x="26.5" y="202" width="187" height="145"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="187" height="145"/>
@@ -1938,10 +1933,10 @@
                                         </variation>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OfferCell" id="fDr-b5-C97" customClass="OfferCollectionViewCell" customModule="greenwell" customModuleProvider="target">
-                                        <rect key="frame" x="4.5" y="402" width="231" height="192"/>
+                                        <rect key="frame" x="20" y="357" width="200" height="192"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="231" height="192"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="192"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oix-uX-IyC">
@@ -2112,7 +2107,7 @@
                                                 <variation key="heightClass=regular-widthClass=regular" constant="-6"/>
                                             </constraint>
                                         </constraints>
-                                        <size key="customSize" width="231" height="192"/>
+                                        <size key="customSize" width="200" height="192"/>
                                         <variation key="default">
                                             <mask key="constraints">
                                                 <exclude reference="97M-wC-1yQ"/>
@@ -2154,10 +2149,10 @@
                                         </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ArticleCell" id="7h5-Is-MqB" userLabel="ArticleCell" customClass="OfferCollectionViewCell" customModule="greenwell" customModuleProvider="target">
-                                        <rect key="frame" x="2" y="599" width="231" height="192"/>
+                                        <rect key="frame" x="20" y="559" width="200" height="192"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="231" height="192"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="192"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dgh-Wx-CGO">
@@ -2330,7 +2325,7 @@
                                                 <variation key="heightClass=regular-widthClass=compact" constant="-6"/>
                                             </constraint>
                                         </constraints>
-                                        <size key="customSize" width="231" height="192"/>
+                                        <size key="customSize" width="200" height="192"/>
                                         <variation key="default">
                                             <mask key="constraints">
                                                 <exclude reference="9Y8-Qa-ij1"/>
@@ -2372,77 +2367,15 @@
                                         </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AdCell" id="XiL-PC-Xxb">
-                                        <rect key="frame" x="238" y="695" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="95" y="761" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Header" id="rhy-Rw-WTo" customClass="HeaderCollectionReusableView" customModule="greenwell" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="240" height="50"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Welcome Spencer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwC-p3-dbE">
-                                            <rect key="frame" x="0.0" y="0.0" width="232" height="18"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="21" id="Gmy-3z-kOm"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                            <color key="textColor" red="0.1947064211" green="0.39078012140000001" blue="0.79888731059999996" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="Gmy-3z-kOm"/>
-                                                </mask>
-                                            </variation>
-                                            <variation key="heightClass=regular-widthClass=compact">
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
-                                                <mask key="constraints">
-                                                    <include reference="Gmy-3z-kOm"/>
-                                                </mask>
-                                            </variation>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="uwC-p3-dbE" firstAttribute="leading" secondItem="rhy-Rw-WTo" secondAttribute="leadingMargin" id="mOz-X6-AVU"/>
-                                        <constraint firstItem="uwC-p3-dbE" firstAttribute="centerY" secondItem="rhy-Rw-WTo" secondAttribute="centerY" id="mYX-2Y-WNs"/>
-                                        <constraint firstItem="uwC-p3-dbE" firstAttribute="centerY" secondItem="rhy-Rw-WTo" secondAttribute="centerY" id="qMe-uR-msg"/>
-                                        <constraint firstItem="uwC-p3-dbE" firstAttribute="leading" secondItem="rhy-Rw-WTo" secondAttribute="leadingMargin" id="rQF-Q9-Exs">
-                                            <variation key="heightClass=regular-widthClass=regular" constant="-6"/>
-                                        </constraint>
-                                    </constraints>
-                                    <variation key="default">
-                                        <mask key="constraints">
-                                            <exclude reference="mOz-X6-AVU"/>
-                                            <exclude reference="mYX-2Y-WNs"/>
-                                            <exclude reference="qMe-uR-msg"/>
-                                            <exclude reference="rQF-Q9-Exs"/>
-                                        </mask>
-                                    </variation>
-                                    <variation key="heightClass=regular-widthClass=compact">
-                                        <mask key="subviews">
-                                            <include reference="uwC-p3-dbE"/>
-                                        </mask>
-                                        <mask key="constraints">
-                                            <include reference="mOz-X6-AVU"/>
-                                            <include reference="qMe-uR-msg"/>
-                                        </mask>
-                                    </variation>
-                                    <variation key="heightClass=regular-widthClass=regular">
-                                        <mask key="subviews">
-                                            <include reference="uwC-p3-dbE"/>
-                                        </mask>
-                                        <mask key="constraints">
-                                            <include reference="mYX-2Y-WNs"/>
-                                            <include reference="rQF-Q9-Exs"/>
-                                        </mask>
-                                    </variation>
-                                    <connections>
-                                        <outlet property="title" destination="uwC-p3-dbE" id="rP9-yH-2B5"/>
-                                    </connections>
-                                </collectionReusableView>
                             </collectionView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="jP6-tb-B1X">
                                 <rect key="frame" x="275" y="243" width="50" height="50"/>
