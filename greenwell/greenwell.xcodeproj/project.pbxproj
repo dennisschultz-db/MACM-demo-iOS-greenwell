@@ -10,6 +10,8 @@
 		6F6F562902D54BCE24D5774F /* Pods_greenwell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE99BBA59E87928A28198128 /* Pods_greenwell.framework */; };
 		951D79F01C28AECF002936A0 /* PropertiesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951D79EF1C28AECF002936A0 /* PropertiesManager.swift */; };
 		951D79F21C28AEDE002936A0 /* greenwell.plist in Resources */ = {isa = PBXBuildFile; fileRef = 951D79F11C28AEDE002936A0 /* greenwell.plist */; };
+		95725D161C511159005C44B8 /* MainLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95725D151C511159005C44B8 /* MainLayout.swift */; };
+		95725D181C5164A2005C44B8 /* HeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95725D171C5164A2005C44B8 /* HeaderCollectionReusableView.xib */; };
 		957AC2511C3DDE4E00535E28 /* DBAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957AC2501C3DDE4E00535E28 /* DBAlertController.swift */; };
 		E4198ACB1B8F17360095E5B9 /* BeaconsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4198ACA1B8F17360095E5B9 /* BeaconsViewController.swift */; };
 		E41E86621AEE544B000EAC50 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E41E86611AEE544B000EAC50 /* Localizable.strings */; };
@@ -65,6 +67,8 @@
 		950182021C3C8A5500121E99 /* MFBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFBridge.h; sourceTree = "<group>"; };
 		951D79EF1C28AECF002936A0 /* PropertiesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertiesManager.swift; sourceTree = "<group>"; };
 		951D79F11C28AEDE002936A0 /* greenwell.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = greenwell.plist; sourceTree = "<group>"; };
+		95725D151C511159005C44B8 /* MainLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainLayout.swift; sourceTree = "<group>"; };
+		95725D171C5164A2005C44B8 /* HeaderCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderCollectionReusableView.xib; sourceTree = "<group>"; };
 		957AC2501C3DDE4E00535E28 /* DBAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBAlertController.swift; sourceTree = "<group>"; };
 		CE99BBA59E87928A28198128 /* Pods_greenwell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_greenwell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4198ACA1B8F17360095E5B9 /* BeaconsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconsViewController.swift; sourceTree = "<group>"; };
@@ -277,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				E43A41731B6FB93E00CD34F4 /* main.storyboard */,
+				95725D171C5164A2005C44B8 /* HeaderCollectionReusableView.xib */,
 				E464D2931ABCB06000E80FBE /* LaunchScreen.xib */,
 				E442456B1B74D79B00C261C9 /* OfferCollectionViewCell.swift */,
 				E4CAB4A11B7B67FF000CCC66 /* HeaderCollectionReusableView.swift */,
@@ -284,6 +289,7 @@
 				E4963A6E1AD7F25700F271CD /* AccountCell.swift */,
 				E47ED20F1B87592900718A88 /* DetailCell.swift */,
 				E49C8CCF1B8F36D4005BC49D /* BeaconCell.swift */,
+				95725D151C511159005C44B8 /* MainLayout.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -398,6 +404,7 @@
 				E43A41741B6FB93E00CD34F4 /* main.storyboard in Resources */,
 				951D79F21C28AEDE002936A0 /* greenwell.plist in Resources */,
 				E464D2941ABCB06000E80FBE /* privacy.rtf in Resources */,
+				95725D181C5164A2005C44B8 /* HeaderCollectionReusableView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +493,7 @@
 				E49C8CD21B8F5DCE005BC49D /* BeaconDetailViewController.swift in Sources */,
 				E4C16DFB1B8B3DDF00C5B9AA /* ServerSettingsViewController.swift in Sources */,
 				E44B81071AC97BDE003ADA03 /* LinedLabel.swift in Sources */,
+				95725D161C511159005C44B8 /* MainLayout.swift in Sources */,
 				E48D27A21B8DD79200397050 /* BeaconManager.swift in Sources */,
 				E47F6F1F1ACD4C1100DCEDA2 /* Util.swift in Sources */,
 				E4732FB41B860DCC00CF7AB4 /* AccountDetailsViewController.swift in Sources */,
