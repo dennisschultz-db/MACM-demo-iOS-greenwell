@@ -15,7 +15,7 @@
     
     <!--Optional for SigningSetupiOS: default, apns_enabled, other(more than one APNS)-->
     <!--Notice: for other option, you need to specify the APNS NAME, such as APNS_YOUR_APP_NAME -->
-    <property name="SigningSetupiOS" value="default"/>
+    <property name="SigningSetupiOS" value="APNS_GREENWELL"/>
     <property name="APPDescription" value="Greenwell Banking Native"/>
     
     <!--Optional for XcodeVersion: Xcode64.app, Xcode7.app, Xcode71.app Xcode.app-->
@@ -28,7 +28,7 @@
     <property name="SchemeName" value="default" />
     
     <!--This is for download_iOS, you may comment out if you run other ant method-->
-    <property name="BundleID" value="com.ibm.cio.be.iphone.dennisschultz.GreenwellNative" />
+    <property name="BundleID" value="com.ibm.cio.be.iphone.dennisschultz.GreenwellNative1" />
     
     <!--  BuildEnvoy Properties -->
     <property name="BuildServerURL" value="https://atlbzbuild01.atl.dst.ibm.com:8443"/>
