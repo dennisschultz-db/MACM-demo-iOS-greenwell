@@ -107,6 +107,15 @@ class Caas {
                 AppDelegate.caas.username = pusername
                 AppDelegate.caas.password = ppassword
                 
+                let propertiesManager = PropertiesManager.sharedInstance
+                
+                propertiesManager.configuration.setValue(purl, forKey: "MACMInstance")
+                propertiesManager.configuration.setValue(ptenant, forKey: "tenant")
+                propertiesManager.configuration.setValue(plibrary, forKey: "library")
+                propertiesManager.configuration.setValue(pusername, forKey: "MACMUsername")
+                propertiesManager.configuration.setValue(ppassword, forKey: "MACMPassword")
+                propertiesManager.saveData()
+                
  
                 NSNotificationCenter.defaultCenter().postNotificationName(ReloadContentFromMacmNotification, object: self)
                 successCompletionBlock!()
