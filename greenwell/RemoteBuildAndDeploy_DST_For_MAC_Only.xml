@@ -19,7 +19,7 @@
     <property name="APPDescription" value="Greenwell Banking Native"/>
     
     <!--Optional for XcodeVersion: Xcode64.app, Xcode7.app, Xcode71.app Xcode.app-->
-    <property name="XcodeVersion" value="Xcode71.app"/>
+    <property name="XcodeVersion" value="Xcode72.app"/>
     
     <!--Please specific your Target Name or Scheme Name, if your names are different with your project name -->
     <!--TargetName for iOS regular project -->
@@ -28,7 +28,7 @@
     <property name="SchemeName" value="default" />
     
     <!--This is for download_iOS, you may comment out if you run other ant method-->
-    <property name="BundleID" value="com.ibm.cio.be.*" />
+    <property name="BundleID" value="com.ibm.cio.be.iphone.dennisschultz.GreenwellNative" />
     
     <!--  BuildEnvoy Properties -->
     <property name="BuildServerURL" value="https://atlbzbuild01.atl.dst.ibm.com:8443"/>
@@ -80,8 +80,8 @@
     </target>
     
     <target name="buildenvoy_iOS" depends="-welcome, -prep_iOS, -check_appcenter_status" description="launch remote xcode build and deploy app">
-        <input message="Please enter your IBM Intranet ID:"  addproperty="IBMIntranetID" defaultvalue="youribmid@us.ibm.com"/>
-        <input message="Please enter your IBM Intranet password:"  addproperty="IBMIntranetPW" defaultvalue="enter_your_password" >
+        <input message="Please enter your IBM Intranet ID:"  addproperty="IBMIntranetID" defaultvalue="dennis.schultz@us.ibm.com"/>
+        <input message="Please enter your IBM Intranet password:"  addproperty="IBMIntranetPW" defaultvalue="" >
             <handler type="secure"/>
         </input>
         <echo>${IBMIntranetID}</echo>
@@ -303,15 +303,15 @@
     </target>
     
     <target name="download_iOS" depends="-welcome, -prep_IOSDownload">
-        <input message="You are accessing an .ipa file created using the Apple iOS SDK Enterprise Account for IBM.This file must only be used internally within IBM.Transmitting this file outside of IBM is in breach of the license and may be a violation of the Business Conduct Guidelines." addproperty="Warning" defaultvalue="Disagree" validargs="Agree,Disagree"/>
+        <input message="You are accessing an .ipa file created using the Apple iOS SDK Enterprise Account for IBM.This file must only be used internally within IBM.Transmitting this file outside of IBM is in breach of the license and may be a violation of the Business Conduct Guidelines." addproperty="Warning" defaultvalue="Agree" validargs="Agree,Disagree"/>
         <condition property="iOSDownload_LegalWarning_Error">
             <contains string="${Warning}" substring="disagree" casesensitive="false" />
         </condition>
         <fail
         if="${iOSDownload_LegalWarning_Error}"
         message="You need agree the Legal Warning" />
-        <input message="Please enter your IBM Intranet ID:"  addproperty="IBMIntranetID" defaultvalue="youribmid@us.ibm.com"/>
-        <input message="Please enter your IBM Intranet password:"  addproperty="IBMIntranetPW" defaultvalue="enter_your_password" />
+        <input message="Please enter your IBM Intranet ID:"  addproperty="IBMIntranetID" defaultvalue="dennis.schultz@us.ibm.com"/>
+        <input message="Please enter your IBM Intranet password:"  addproperty="IBMIntranetPW" defaultvalue="" />
         <echo>${IBMIntranetID}</echo>
         <echo>${BuildServerURL}</echo>
         <echo>${BundleID}</echo>
