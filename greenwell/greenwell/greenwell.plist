@@ -2,6 +2,26 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>bluemix</key>
+	<dict>
+		<key>route</key>
+		<string>your-bluemix-app-route-for-push</string>
+		<key>guid</key>
+		<string>your-bluemix-guid-for-push</string>
+	</dict>
+	<key>macm</key>
+	<dict>
+		<key>instance</key>
+		<string>https://macm.saas.ibmcloud.com</string>
+		<key>tenant</key>
+		<string>your-tenant-value</string>
+		<key>library</key>
+		<string>your-library</string>
+		<key>username</key>
+		<string>your-username</string>
+		<key>password</key>
+		<string>your-password</string>
+	</dict>
 	<key>beaconInfo</key>
 	<array>
 		<dict>
@@ -41,19 +61,5 @@
 			</array>
 		</dict>
 	</array>
-	<key>MACMInstance</key>
-	<string>https://macm-rendering.saas.ibmcloud.com</string>
-	<key>tenant</key>
-	<string>your-tenant-value</string>
-	<key>library</key>
-	<string>your-library</string>
-	<key>MACMUsername</key>
-	<string>your-username</string>
-	<key>MACMPassword</key>
-	<string>your-password</string>
-	<key>bluemixAppRoute</key>
-	<string>your-bluemix-app-route-for-push</string>
-	<key>backendGuid</key>
-	<string>your-bluemix-guid-for-push</string>
 </dict>
 </plist>
