@@ -12,32 +12,49 @@ import CoreLocation
 let ReloadContentFromMacmNotification = "ReloadContentFromMacmNotification"
 let EnteredIBeaconRegionNotification = "EnteredIBeaconRegionNotification"
 
-var numCols = 1;
+let operationsSection = 0
+let offersSection = 1
+let articlesSection = 2
+
+var numCols = 2;
 
 
-class MainViewController: UIViewController, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+class MainViewController: UIViewController {
 
-    @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    
     var myAccountsCell:MyAccountsCollectionViewCell!
     
     // a timer to animated text in Accounts cell: a cyclic display of each bank account.
     var animationTimer:NSTimer!
     
     
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
+    @IBAction func touchOperationButton(sender: AnyObject) {
+        let alert = UIAlertController(title: "Information", message: "This feature is not yet available", preferredStyle: .Alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "OK Button"), style: .Default, handler: { (alertAction) -> Void in
+        }))
+        self.presentViewController(alert, animated: true, completion: nil)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         /// change the header text  (Tyler) 
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         
+        // Register the nib containing the section header view
+        let nib = UINib(nibName: "HeaderCollectionReusableView", bundle: nil)
+        collectionView.registerNib(nib, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "HeaderCollectionReusableView")
 
         collectionView.dataSource = self
         collectionView.delegate = self
 
+        // Fixed at two columns for now
+        //computeColumnCount()
+
         // listen to notification about device orientation changes
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "computeColumnCount", name: UIDeviceOrientationDidChangeNotification, object: nil)
-        computeColumnCount()
         
         // listen to notification about reloading the content from MACM
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "reloadContentFromMacm", name: ReloadContentFromMacmNotification, object: nil)
@@ -48,8 +65,7 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
         animationTimer = NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: Selector("setAccountSummary"), userInfo: nil, repeats: true)
         
         
-        ///set user preferences 
-        
+        ///set user preferences
         if (userName == "Spencer"){
             Util.loanFilters = ["general":true, "Transportation":true,"Home":true,"Small Business":true]
             Util.insuranceFilters = ["Transportation":true,"Home":false,"Life":false]
@@ -99,13 +115,19 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
 
         }
         
-        // end user preferences
+        // end user preference setup
         
         NSNotificationCenter.defaultCenter().postNotificationName(ReloadContentFromMacmNotification, object: self )
+        
+        // Assign this view controller as the delegate for the layout
+        if let layout = collectionView?.collectionViewLayout as? MainLayout {
+            layout.delegate = self
+        }
     }
     
     override func viewDidAppear(animated: Bool) {
-        computeColumnCount()
+        // Fixed at two columns for now
+        //computeColumnCount()
     }
  
     // a kind of logout feature to go back to the login screen
@@ -144,17 +166,18 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
             
             AppDelegate.caas.getArticles(articleCategories, keywords: articleKeywords, updateBlock:{ (paths)->Void in
                 self.activityIndicator.stopAnimating()
-                self.collectionView.reloadSections(NSIndexSet(index: 2))
+                self.collectionView.reloadSections(NSIndexSet(index: articlesSection))
                 }
             )
         }
     }
     
+    // Reloads the items at the given indexPaths - or the entire page if indexPaths is nil
     func reloadCollectionViewData(indexPaths:[NSIndexPath]) {
         if indexPaths.count == 0 {
             collectionView.reloadData()
-        }else {
-            collectionView.reloadItemsAtIndexPaths(indexPaths )
+        } else {
+            collectionView.reloadItemsAtIndexPaths(indexPaths)
         }
     }
     
@@ -175,6 +198,7 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
         
     }
 
+    // Cycles through all accounts in animated box
     var accountIndex = 0
     func setAccountSummary() {
         let accounts:[[String:String]] = Util.accountsDictionary["Bank Accounts"]!
@@ -188,9 +212,6 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
         accountIndex = (accountIndex + 1) % (accounts.count)
 
     }
-    
-
-    
     
     func enteredIBeaconRegion(notification:NSNotification) {
         var dico:Dictionary = notification.userInfo!
@@ -219,8 +240,6 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
             
             self.presentViewController(alert, animated: true, completion: nil)
         })
-        
-        
 
     }
 
@@ -242,37 +261,47 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
         }
     }
     
-    
-    
+
+
+
+}
+
+// MARK: - UIViewDataSource
+
+extension MainViewController: UICollectionViewDataSource {
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 3
     }
-    
+
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         var n = 0
         
         switch section {
-        case 0:
+        case operationsSection:
             n = 2
-        case 1:
+        case offersSection:
             n = AppDelegate.caas.offerings.count
-//            print("numberOfItemsInSection Offers = \(n)")
-        case 2:
+        case articlesSection:
             n = AppDelegate.caas.articles.count
-//            print("numberOfItemsInSection Articles = \(n)")
         default:
             n = 0
         }
         
         return n
     }
-    
+}
+
+
+// MARK: - UICollectionViewDelegate
+
+extension MainViewController: UICollectionViewDelegate {
+
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let reusableID:String
         let cell:UICollectionViewCell
-//        print("cellForItemAtIndexPath section=\(indexPath.section) /  \(collectionView.numberOfSections())" )
+        
         switch indexPath.section {
-        case 0 :
+        case operationsSection :
             switch indexPath.row {
             case 0 :
                 myAccountsCell = collectionView.dequeueReusableCellWithReuseIdentifier("MyAccountCell", forIndexPath: indexPath) as! MyAccountsCollectionViewCell
@@ -283,7 +312,8 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
             default :
                 cell = collectionView.dequeueReusableCellWithReuseIdentifier("AdCell", forIndexPath: indexPath) as UICollectionViewCell
             }
-        case 1 :
+            
+        case offersSection :
             reusableID = "OfferCell"
             let c = collectionView.dequeueReusableCellWithReuseIdentifier(reusableID, forIndexPath: indexPath) as! OfferCollectionViewCell
             
@@ -296,7 +326,8 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
             c.title.text?.appendContentsOf(offering.summary)
             c.image.image = offering.imageData
             cell = c
-        case 2:
+            
+        case articlesSection:
             //articles
             reusableID = "ArticleCell"
             let c = collectionView.dequeueReusableCellWithReuseIdentifier(reusableID, forIndexPath: indexPath) as! OfferCollectionViewCell
@@ -310,16 +341,18 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
             c.title.text?.appendContentsOf(article.summary)
             c.image.image = article.imageData
             cell = c
+            
         default:
             reusableID = "OfferCell"
             let c = collectionView.dequeueReusableCellWithReuseIdentifier(reusableID, forIndexPath: indexPath) as! OfferCollectionViewCell
             cell = c
         }
+        
         return cell
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-
+        
         var nCol = numCols // default
         let iiS = Int( (collectionView.collectionViewLayout as! UICollectionViewFlowLayout).minimumInteritemSpacing )
         let siR = Int( (collectionView.collectionViewLayout as! UICollectionViewFlowLayout).sectionInset.right )
@@ -327,23 +360,23 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
         //let siT = Int( (collectionView.collectionViewLayout as! UICollectionViewFlowLayout).sectionInset.top )
         
         // in case of banking operation section
-        if indexPath.section == 0 {
+        if indexPath.section == operationsSection {
             nCol = 2 //default
-       }
-
-        var w = Int(collectionView.bounds.width) - siR - siL - Int((nCol-1)*iiS)
-            w = w / Int(nCol)
-
-        var h = w
- 
-        // customize cell's height for "bank operations" section
-        if indexPath.section == 0 {
-            
-            // ipad
-            if Util.isTablet() {
-                h = w/2
-            }
         }
+        
+        var w = Int(collectionView.bounds.width) - siR - siL - Int((nCol-1)*iiS)
+        w = w / Int(nCol)
+        
+        var h = w
+        
+        // customize cell's height for "bank operations" section
+//        if indexPath.section == operationsSection {
+//            
+//            // ipad
+//            if Util.isTablet() {
+//                h = w/2
+//            }
+//        }
         
         //print("----> \(collectionView.hidden)   \( collectionView.numberOfItemsInSection(0) )  \( collectionView.numberOfItemsInSection(1) )  \( collectionView.numberOfItemsInSection(2) )")
         return CGSize(width: w,height: h)
@@ -355,15 +388,15 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
         var reusableView:UICollectionReusableView!
         
         if kind == UICollectionElementKindSectionHeader {
-            let header = collectionView.dequeueReusableSupplementaryViewOfKind(UICollectionElementKindSectionHeader, withReuseIdentifier: "Header", forIndexPath: indexPath) as! HeaderCollectionReusableView
+            let header = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "HeaderCollectionReusableView", forIndexPath: indexPath) as! HeaderCollectionReusableView
             
             switch indexPath.section {
-            case 0:
+            case operationsSection:
                 header.title.text = "Welcome \(userName) - Account: \(actNum)"
-            case 1:
+            case offersSection:
                 header.title.text = "Greenwell Bank Services"
                 header.title.hidden = AppDelegate.caas.offerings.count==0
-            case 2:
+            case articlesSection:
                 header.title.text = "Helpful Articles and Events"
                 header.title.hidden = AppDelegate.caas.articles.count==0
             default:
@@ -377,7 +410,7 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        if indexPath.section==0 {
+        if indexPath.section == operationsSection {
             if indexPath.row==0 {
                 if   Util.isTablet() {
                     self.performSegueWithIdentifier("segueToAccounts2", sender: self)
@@ -388,15 +421,29 @@ class MainViewController: UIViewController, UICollectionViewDataSource,UICollect
             }
         }
     }
+
+}
+
+
+// MARK: - MainLayoutDelegate
+
+extension MainViewController: MainLayoutDelegate {
     
-    
-    @IBAction func touchOperationButton(sender: AnyObject) {
-        let alert = UIAlertController(title: "Information", message: "This feature is not yet available", preferredStyle: .Alert)
-        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "OK Button"), style: .Default, handler: { (alertAction) -> Void in
-        }))
-        self.presentViewController(alert, animated: true, completion: nil)
+    func collectionView(collectionView: UICollectionView, heightForItemAtIndexPath indexPath: NSIndexPath, withWidth: CGFloat) -> CGFloat {
         
+        // All elements have aspect ration 1:1, except the operations buttons
+        var h = withWidth
+        
+        // customize cell's height for "bank operations" section
+//        if indexPath.section == operationsSection {
+//            
+//            // ipad
+//            if Util.isTablet() {
+//                h = withWidth / 4
+//            }
+//        }
+        
+        return CGFloat(h)
     }
-    
 
 }

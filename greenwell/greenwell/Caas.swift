@@ -25,21 +25,23 @@ class Caas {
     // data structure for content type Article
     var articles:[ArticleItem] = [ArticleItem]()
     
+    static let configuration = PropertiesManager.sharedInstance.configuration["macm"]
+    
     /** URL of the MACM instance */
-    var macminstance = PropertiesManager.sharedInstance.configuration["MACMInstance"] as! String
+    var macminstance = Caas.configuration!["instance"] as! String
 
     
     /** library of content items */
-     var library = PropertiesManager.sharedInstance.configuration["library"] as! String
+     var library = Caas.configuration!["library"] as! String
     
     /** Tenant */
-     var tenant = PropertiesManager.sharedInstance.configuration["tenant"] as! String
+     var tenant = Caas.configuration!["tenant"] as! String
     
     /** Anonymous username for connection to MACM instance */
-     var username = PropertiesManager.sharedInstance.configuration["MACMUsername"] as! String
+     var username = Caas.configuration!["username"] as! String
     
     /** Anonymous password for connection to MACM instance */
-    var password = PropertiesManager.sharedInstance.configuration["MACMPassword"] as! String
+    var password = Caas.configuration!["password"] as! String
     
     var offerLibrary: String {
         get {
@@ -106,6 +108,13 @@ class Caas {
                 AppDelegate.caas.library = plibrary
                 AppDelegate.caas.username = pusername
                 AppDelegate.caas.password = ppassword
+                
+                Caas.configuration!.setValue(purl, forKey: "instance")
+                Caas.configuration!.setValue(ptenant, forKey: "tenant")
+                Caas.configuration!.setValue(plibrary, forKey: "library")
+                Caas.configuration!.setValue(pusername, forKey: "rsername")
+                Caas.configuration!.setValue(ppassword, forKey: "password")
+                PropertiesManager.sharedInstance.saveData()
                 
  
                 NSNotificationCenter.defaultCenter().postNotificationName(ReloadContentFromMacmNotification, object: self)
