@@ -35,9 +35,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
-        let configuration = PropertiesManager.sharedInstance.configuration
-        let bluemixAppRoute = configuration["bluemixAppRoute"] as! String
-        let backendGuid = configuration["backendGuid"] as! String
+        let configuration = PropertiesManager.sharedInstance.configuration["bluemix"]
+        let bluemixAppRoute = configuration!["route"] as! String
+        let backendGuid = configuration!["guid"] as! String
 
         // Initialize the Mobile First SDK with IBM Bluemix GUID and route
         IMFClient.sharedInstance().initializeWithBackendRoute(bluemixAppRoute, backendGUID: backendGuid)
