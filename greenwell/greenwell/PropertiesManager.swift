@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 class PropertiesManager: NSObject {
     
     let propertyFilename = "greenwell"
@@ -33,28 +32,53 @@ class PropertiesManager: NSObject {
     func loadData() {
         
         do {
+            
+            // Read the configuration file in the bundle
+            guard let bundlePath = NSBundle.mainBundle().URLForResource(propertyFilename, withExtension: "plist") else {
+                print("Bundle \(propertyFilename).plist not found in Application bundle")
+                return
+            }
+            guard let bundleConfiguration = NSMutableDictionary(contentsOfURL: bundlePath) else {
+                print("Bundle \(propertyFilename).plist not a valid dictionary")
+                return
+            }
+
             let fileManager = NSFileManager.defaultManager()
             // Find Documents directory
             let documentsDirectory = try fileManager.URLForDirectory(.DocumentDirectory, inDomain: .UserDomainMask, appropriateForURL: nil, create: false)
             // Append filename
             let path = documentsDirectory.URLByAppendingPathComponent(propertyFilename + ".plist")
+
             
-            if(!fileManager.fileExistsAtPath(path.path!)) {
-                if let bundlePath = NSBundle.mainBundle().URLForResource(propertyFilename, withExtension: "plist") {
+            // Look for a saved configuration file
+            if fileManager.fileExistsAtPath(path.path!) {
+                print ("A saved version of the configuration exists")
+                let savedConfiguration = NSMutableDictionary(contentsOfURL: path)!
+                
+                if savedConfiguration["version"] as? Int == bundleConfiguration["version"] as? Int {
+                    print("Saved version is the correct version")
+                    configuration = savedConfiguration
+                } else {
+                    print("Saved version is an incorrect version")
+                    configuration = bundleConfiguration
+                    // Delete and replace the saved configuration.
                     do {
+                        try fileManager.removeItemAtURL(path)
                         try fileManager.copyItemAtURL(bundlePath, toURL: path)
                     } catch {
-                        print("Error copying properties file: \(error)")
+                        print("Error replacing properties file: \(error)")
                     }
-                } else {
-                    print("Bundle \(propertyFilename).plist not found in Application bundle")
                 }
             } else {
-                print ("Saved file exists")
-                // try fileManager.removeItemAtURL(path)
+                // No saved configuration file
+                print("No saved configuration file")
+                configuration = bundleConfiguration
+                do {
+                    try fileManager.copyItemAtURL(bundlePath, toURL: path)
+                } catch {
+                    print("Error replacing properties file: \(error)")
+                }
             }
-            
-            configuration = NSMutableDictionary(contentsOfURL: path)!
             
         } catch {
             print ("Some misc error retrieving properties file \(error)")
